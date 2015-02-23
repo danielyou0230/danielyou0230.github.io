@@ -1,14 +1,26 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title: Ape's Banana Tree
+description: A simple site for Hexiang's public announcements, tech/non-tech posts and personal updates
 
+user:
+    name: Hexiang Hu
+    email: hexianghu@sfu.ca
+
+# this means to ignore newlines until "baseurl:"
+# Write an awesome description for your new site here. You can edit this
+# line in _config.yml. It will appear in your document head meta (for
+# Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://Hex-iang.github.io" # the base hostname & protocol for your site
+social:
+    twitter: Hexiang_Hu
+    github:  Hex-iang
+    facebook: Hu.Hexiang
+    linkedin: hexianghu
 # Build settings
 markdown: kramdown
+
+
+# scss:
+#   sass_dir: _scss
+#   style: :compressed
