@@ -91,7 +91,7 @@
     border-radius: 25px;
     position: absolute;
     top: 50%;
-    width: 40%;
+    width: 600px;
     height: 200px;
     margin-left: 30%;
     margin-right: 30%;
@@ -100,9 +100,9 @@
 
 .profile-col {
     float: left;
-    margin-top: $spacing-unit * 0.75;
-    margin-bottom: $spacing-unit * 0.75;
-    padding-left: $spacing-unit / 2;
+    margin-top: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 4;
 }
 
 .profile-col-1 {
