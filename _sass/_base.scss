@@ -174,35 +174,6 @@ pre {
 }
 
 
-/**
- * Cover
- */
-.cover {
-    min-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    min-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    width: 100%;
-    height: 75%;
-    background-size: cover;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 0px;
-    padding-left: 0px;
-    @extend %clearfix;
-}
-
-/**
- * Circle image
- */
-.circle-img {
-    width: 168px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 50%;
-    margin-right:  $spacing-unit;
-    margin-left:   $spacing-unit;
-}
-
 
 /**
  * Clearfix
@@ -233,4 +204,65 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+#my-name {
+    font-family: 'Roboto', Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    color: gray;
+}
+
+#my-title {
+    font-family: 'Roboto', Helvetica,Arial,sans-serif;
+    font: 20px Serif;
+    color: gray;
+    font-weight: 200;
+}
+
+#my-email {
+    font-family: 'Roboto',Helvetica,Arial,sans-serif;
+    font: 16px Serif;
+    color: gray;
+    font-weight: 160;
+}
+
+@include media-query($on-palm) {
+    #my-title,
+    #my-email {
+        display: none;
+    }
+}
+
+/**
+ * Cover
+*/
+.cover {
+   max-width: 100%;
+   height: 75%;
+   background-size: cover;
+   margin-right: auto;
+   margin-left: auto;
+   padding-right: 0px;
+   padding-left: 0px;
+   @extend %clearfix;
+   @include media-query($on-laptop) {
+       max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+       max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+       padding-right:  $spacing-unit / 2;
+       padding-left:   $spacing-unit / 2;
+   }
+}
+
+/**
+* Circle image
+*/
+.circle-img {
+   width: 168px;
+   border-width: 3px;
+   border-style: solid;
+   border-color: white;
+   border-radius: 50%;
+   margin-right:  $spacing-unit;
+   margin-left:   $spacing-unit;
 }

@@ -89,20 +89,28 @@
 .profile-wrapper {
     background-color: rgba(255, 255, 255, .8);
     border-radius: 25px;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top:40%;
     width: 600px;
-    height: 200px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
     @extend %clearfix;
+
+    @include media-query($on-palm){
+        top:10px;
+        border-radius: 25px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .profile-col {
-    float: left;
-    margin-top: $spacing-unit / 2;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 4;
+    float: left !important;
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    padding-left: $spacing-unit / 2;
 }
 
 .profile-col-1 {
@@ -115,28 +123,26 @@
     width:         calc(60% - (#{$spacing-unit} / 2));
 }
 
-#my-name {
-    font-family: 'Roboto', Helvetica,Arial,sans-serif;
-    font-size: 40px;
-    color: gray;
-    font-weight: 400;
-
+@include media-query($on-palm) {
+    .profile-col-1,
+    .profile-col-2 {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
 }
 
-#my-title {
-    font-family: 'Roboto', Helvetica,Arial,sans-serif;
-    font: 20px Serif;
-    color: gray;
-    font-weight: 200;
-
+@include media-query($on-palm) {
+    .profile-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
 }
 
-#my-email {
-    font-family: 'Roboto',Helvetica,Arial,sans-serif;
-    font: 16px Serif;
-    color: gray;
-    font-weight: 160;
-}
+
 /**
  * Site footer
  */
