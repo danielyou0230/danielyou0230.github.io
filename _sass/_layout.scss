@@ -86,8 +86,57 @@
     }
 }
 
+.profile-wrapper {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 200px;
+    margin-left: 30%;
+    margin-right: 30%;
+    @extend %clearfix;
+}
 
+.profile-col {
+    float: left;
+    margin-top: $spacing-unit * 0.75;
+    margin-bottom: $spacing-unit * 0.75;
+    padding-left: $spacing-unit / 2;
+}
 
+.profile-col-1 {
+    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+    width:         calc(40% - (#{$spacing-unit} / 2));
+}
+
+.profile-col-2 {
+    width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+    width:         calc(60% - (#{$spacing-unit} / 2));
+}
+
+#my-name {
+    font-family: 'Roboto', Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    color: gray;
+    font-weight: 400;
+
+}
+
+#my-title {
+    font-family: 'Roboto', Helvetica,Arial,sans-serif;
+    font: 20px Serif;
+    color: gray;
+    font-weight: 200;
+
+}
+
+#my-email {
+    font-family: 'Roboto',Helvetica,Arial,sans-serif;
+    font: 16px Serif;
+    color: gray;
+    font-weight: 160;
+}
 /**
  * Site footer
  */

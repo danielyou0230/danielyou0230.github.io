@@ -1,0 +1,21 @@
+<div class="cover" style="background-image: url({{ site.background }})">
+    <div class="profile-wrapper">
+        <div class="profile-col profile-col-1">
+            <img src="{{ site.user.head_pic }}" alt="Me" class="circle-img"/>
+        </div>
+        <div class="profile-col profile-col-2">
+            <div id="my-name">
+                {{ site.user.name }}
+            </div>
+            <div id="my-title">
+                {{ site.user.title }}
+            </div>
+            <div id="my-email">
+                {{ site.user.email }}
+            </div>
+            <div class="social-media">
+                {% include grey-social.html %}
+            </div>
+        </div>
+    </div>
+</div>

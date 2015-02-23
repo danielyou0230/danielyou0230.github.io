@@ -9,6 +9,9 @@ dl, dd, ol, ul, figure {
 }
 
 
+body, html {
+    height: 100%;
+}
 
 /**
  * Basic styling
@@ -165,11 +168,40 @@ pre {
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+        padding-right:  $spacing-unit / 2;
+        padding-left:   $spacing-unit / 2;
     }
 }
 
+
+/**
+ * Cover
+ */
+.cover {
+    min-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    min-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    width: 100%;
+    height: 75%;
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    @extend %clearfix;
+}
+
+/**
+ * Circle image
+ */
+.circle-img {
+    width: 80%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    margin-right:  $spacing-unit;
+    margin-left:   $spacing-unit;
+}
 
 
 /**
