@@ -9,20 +9,11 @@
     {% include cover.html %}
     <div class="page-content">
       <div class="wrapper">
-        <!-- {{ content }} -->
-        {% for post in paginator.posts %}
-            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-            <p class="author">
-                <span class="date">{{ post.date | date: "%B %-d %Y" }}</span>
-            </p>
-            <div class="content preview">
-                {% if post.content contains '<!--more-->' %}
-                    {{ post.content | split:'<!--more-->' | first }}
-                {% else %}
-                    {{ post.content }}
-                {% endif %}
-            </div>
-        {% endfor %}
+            {% if Paginated? %}
+                {% include paginated_contents.html %}
+            {% else %}
+                {% include regular_contents.html %}
+            {% endif %}
       </div>
     </div>
 
