@@ -6,6 +6,8 @@ comments: True
 
 This article is basically a high level summary for a 3 minutes presentation that lead the audience to have a intuition about what Spark is and how it achieve efficient and fault-tolerant in-memory computing.
 
+<!--more-->
+
 ## Intro
 
 UC Berkley proposed a fault tolerant abstraction called Resilient Distributed Datasets for in memory cluster computing. And Spark System is their implementation for this proposal. More resources about this inspiring article could be found [*here*](https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia).

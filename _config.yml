@@ -26,6 +26,13 @@ social:
 # Build settings
 markdown: kramdown
 
+# permalink setting
+permalink: pretty
+
+
+# page pagination setting
+# paginate: 5
+# paginate_path: "/page:num/"
 
 scss:
   sass_dir: _scss
