@@ -4,7 +4,7 @@ title: Reading - Quick Summary of Spark
 comments: True
 ---
 
-This blog is basically a high level summary for a 3 minutes presentation to lead the audience to have a intuition about what Spark is and how it achieve efficient and fault-tolerant in-memory computing.
+This article is basically a high level summary for a 3 minutes presentation that lead the audience to have a intuition about what Spark is and how it achieve efficient and fault-tolerant in-memory computing.
 
 ## Intro
 
