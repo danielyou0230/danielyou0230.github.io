@@ -9,6 +9,9 @@ user:
     email: hexianghu@sfu.ca
     head_pic: images/me.jpg
 
+# config variable for enabling comments
+# comments: true
+
 # this means to ignore newlines until "baseurl:"
 # Write an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
@@ -24,6 +27,6 @@ social:
 markdown: kramdown
 
 
-# scss:
-#   sass_dir: _scss
-#   style: :compressed
+scss:
+  sass_dir: _scss
+  style: :compressed

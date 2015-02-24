@@ -1,3 +1,4 @@
+{% if page.comments == True %}
 <footer class="site-footer">
 
   <div class="wrapper">
@@ -24,3 +25,10 @@
   </div>
 
 </footer>
+{% else%}
+<footer class="site-footer">
+    <div class="wrapper">
+        <h2 class="footer-heading"> {{ site.title }}</h2>
+    </div>
+</footer>
+{% endif %}

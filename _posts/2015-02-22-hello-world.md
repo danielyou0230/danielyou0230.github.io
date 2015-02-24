@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World
-
+comments: True
 ---
 
 ## This is the first post from Hexiang in Feb 2015
