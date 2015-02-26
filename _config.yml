@@ -31,8 +31,8 @@ permalink: pretty
 
 
 # page pagination setting
-Paginated?: False
-# paginate: 5
+# Paginated?: True
+# paginate: 1
 # paginate_path: "/page:num/"
 
 scss:

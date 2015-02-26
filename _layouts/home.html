@@ -9,11 +9,7 @@
     {% include cover.html %}
     <div class="page-content">
       <div class="wrapper">
-            {% if Paginated? %}
-                {% include paginated_contents.html %}
-            {% else %}
-                {% include regular_contents.html %}
-            {% endif %}
+            {% include regular_contents.html %}
       </div>
     </div>
 
