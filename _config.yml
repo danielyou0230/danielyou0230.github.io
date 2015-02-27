@@ -6,7 +6,7 @@ background: images/background-cube.jpg
 user:
     name: Hexiang Hu
     title: Undergraduate at Simon Fraser University
-    email: hexianghu@sfu.ca
+    email: hexiang_hu@sfu.ca
     head_pic: images/me.jpg
 
 # config variable for enabling comments
