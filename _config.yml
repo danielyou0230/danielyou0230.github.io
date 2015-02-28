@@ -17,7 +17,7 @@ user:
 # line in _config.yml. It will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://Hex-iang.github.io" # the base hostname & protocol for your site
+url: "https://hex-iang.github.io" # the base hostname & protocol for your site
 social:
     twitter: Hexiang_Hu
     github:  Hex-iang
