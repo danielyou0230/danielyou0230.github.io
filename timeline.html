@@ -2,4 +2,29 @@
 layout: home
 title: Timeline
 permalink: /timeline/
+items:
+    - date:  Summer 2014
+      title: Anti-virus Research Intern @ Microsoft
+      desc: Research on .NET Malware Inspectation
+    - date:  2013 -
+      title: Undergraduate @ Simon Fraser University
+      desc: Bachler of Science in Computing Science (with special concentration on Artificial Intelligence and System) - ZU/SFU Dual Degree Program
+    - date:  2011 - 2013
+      title: Undergraduate @ Zhejiang University
+      desc:  Bachler of Engineering in Computer Science and Technology - ZU/SFU Dual Degree Program
 ---
+<div class="timeline">
+    {% for item in page.items %}
+    <div class="timeline-item">
+        <div class="timeline-date">
+            {{ item.date }}
+        </div>
+        <div class="timeline-title">
+            {{ item.title }}
+        </div>
+        <div class="timeline-desc">
+            {{ item.desc }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
