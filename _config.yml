@@ -1,39 +1,44 @@
 # Site settings
 title: Ape's Banana Tree
 description: A simple site for Hexiang's public announcements, tech/non-tech posts and personal updates
-background: images/background-cube.jpg
+background: /images/background-cube.jpg
 
+# Site user settings
 user:
-    name: Hexiang Hu
-    title: Undergraduate at Simon Fraser University
-    email: hexiang_hu@sfu.ca
-    head_pic: images/me.jpg
+    name:       Hexiang Hu
+    title:      Undergraduate at Simon Fraser University
+    email:      hexiang_hu@sfu.ca
+    head_pic:   /images/me.jpg
 
-# config variable for enabling comments
-# comments: true
 
-# this means to ignore newlines until "baseurl:"
-# Write an awesome description for your new site here. You can edit this
-# line in _config.yml. It will appear in your document head meta (for
-# Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://hex-iang.github.io" # the base hostname & protocol for your site
+baseurl: ""
+# the subpath of your site, e.g. /blog/
+url: "https://hex-iang.github.io"
+# the base hostname & protocol for your sit
+
+# Pagination
+paginate: 5
+paginate_path: "/page_:num/"
+
+# Social media link for the site
 social:
-    twitter: Hexiang_Hu
-    github:  Hex-iang
-    facebook: Hu.Hexiang
-    linkedin: hexianghu
+    twitter:    Hexiang_Hu
+    github:     Hex-iang
+    facebook:   Hu.Hexiang
+    linkedin:   hexianghu
+    rss:        /feed.xml
+
+
 # Build settings
 markdown: kramdown
 
 # permalink setting
 permalink: pretty
 
-
-# page pagination setting
-# Paginated?: True
-# paginate: 1
-# paginate_path: "/page:num/"
+# customized document resources
+collections:
+    toys:
+        output: true
 
 scss:
   sass_dir: _scss
