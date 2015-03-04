@@ -1,0 +1,3 @@
+[submodule "toys"]
+	path = toys
+	url = git@github.com:Hex-iang/toys.git
