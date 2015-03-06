@@ -1,3 +1,4 @@
+
 .toy-list {
     margin-left: 0;
     list-style: none;
@@ -65,5 +66,40 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+.toys {
+    text-align: center;
+    height:  60%;
+}
+
+.count-down-digit {
+    font-size: 28px;
+
+    @include media-query($on-laptop) {
+        font-size: 20px;
+    }
+}
+
+.count-down-heading{
+    font-size: 50px;
+    @include media-query($on-laptop) {
+        font-size: 30px;
+    }
+}
+
+.count-down {
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    font-size: 20px;
+    height: 250px;
+    @include media-query($on-laptop) {
+        height: 200px;
+    }
+
+    @include media-query($on-palm) {
+        height: 200px;
     }
 }

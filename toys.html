@@ -17,6 +17,21 @@ permalink: /toys/
     </ul>
 </div> -->
 
-<div class="toys" style="text-align:center; height:320px; width: 100%;">
-    <h1>PAGE UNDER CONSTRUCTION</h1>
+<div class="toys">
+    <h1 class="count-down-heading">Comming Soom...</h1>
+    <div class="count-down" id="count-down">
+    </div>
 </div>
+
+<script src="/js/jquery.countdown.min.js" charset="utf-8">
+</script>
+<script charset="utf-8">
+$('#count-down').countdown('2015/4/1', function(event) {
+   $(this).html(event.strftime(
+      '<span class="count-down-digit">%D</span> days '
+    + '<span class="count-down-digit">%H</span> hr '
+    + '<span class="count-down-digit">%M</span> min '
+    + '<span class="count-down-digit">%S</span> sec'
+    ));
+});
+</script>
