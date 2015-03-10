@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Summary - Spark : Resilient Distributed Dataset"
+title: "Summary - Spark : Resilient Distributed Dataset for efficient in memory computing"
 comment: True
 ---
 
