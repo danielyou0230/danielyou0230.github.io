@@ -19,9 +19,9 @@ Dynamo is a highly available key-value storage system built by Amazon. It sacrif
 * Weak ACID
   * => For the purpose of higher available, relaxed Consistency + no isolation guarantee is acceptable
 ## Three Major Design Decisions
-* 1. Sacrifice Strong Consistency for High availability.
-* 2. Resolve replication conflict during read instead of write. => “Always writable” System
-* 3. Decentralized Server Architecture => “Peer to peer” Fashioned System
+1. Sacrifice Strong Consistency for High availability.
+2. Resolve replication conflict during read instead of write. => “Always writable” System
+3. Decentralized Server Architecture => “Peer to peer” Fashioned System
 ## General Architecture Design
 * Date Partition - Suit the incremental scalability requirements
   * Use Consistent Hash to partition keys and organize its position, treat output ranges as a circular “ring”.
