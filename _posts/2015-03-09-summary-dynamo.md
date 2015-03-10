@@ -3,7 +3,8 @@ layout: post
 title: "Summary - Dynamo: Amazon's Highly Available Key value Store"
 comment: True
 ---
-* Dynamo is a highly available key-value storage system built by Amazon. It sacrifices a consistency under certain failure scenarios, makes extensive use of object versioning and application-assisted conflict resolution in a manner that provides a novel interface for developers to use.
+
+Dynamo is a highly available key-value storage system built by Amazon. It sacrifices a consistency under certain failure scenarios, makes extensive use of object versioning and application-assisted conflict resolution in a manner that provides a novel interface for developers to use.
 
 <!--more-->
 
