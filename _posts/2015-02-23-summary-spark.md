@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reading - Quick Summary of Spark
+title: Summary - Spark
 comments: True
 ---
 

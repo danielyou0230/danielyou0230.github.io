@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Reading - Delay Scheduling
+title: Summary - Delay Scheduling
+comment: True
 ---
 
 This is a paper motivated by the scheduling problem raised in traditional FIFO strategy in data-intensive cluster computing system.
