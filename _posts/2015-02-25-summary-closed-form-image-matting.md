@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reading - A Closed-From Solution to Natural Image Matting
+title: Summary - A Closed-From Solution to Natural Image Matting
 comments: True
 ---
 

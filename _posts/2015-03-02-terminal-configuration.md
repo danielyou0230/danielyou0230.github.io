@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Configuration Files
+title: Terminal Configuration
 ---
 
 This Post is just used for keeping personal configuration files online
