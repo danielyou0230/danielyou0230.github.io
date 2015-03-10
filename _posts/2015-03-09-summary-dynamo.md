@@ -53,4 +53,4 @@ Dynamo is a highly available key-value storage system built by Amazon. It sacrif
     * => to get eventual consistency.
 
 ## References
-[**1**](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)Dynamo: Amazon’s Highly Available Key-value Store
+[**[1]**](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)Dynamo: Amazon’s Highly Available Key-value Store

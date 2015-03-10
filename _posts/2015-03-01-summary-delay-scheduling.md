@@ -157,5 +157,5 @@ $$
 * A factor that __bandwidth per node within a rack is much higher than bandwidth per node between racks__ makes it valuable to preserve rack locality
   * This can be accomplished by extending Algorithm 2 to give each job two waiting periods
 
-[**1**](http://www.cs.berkeley.edu/~matei/papers/2010/eurosys_delay_scheduling.pdf)Delay Scheduling: A Simple Technique for Achieving
+[**[1]**](http://www.cs.berkeley.edu/~matei/papers/2010/eurosys_delay_scheduling.pdf)Delay Scheduling: A Simple Technique for Achieving
 Locality and Fairness in Cluster Scheduling
