@@ -21,45 +21,45 @@ The proposed methodology is designed to get a good tradeoff point between the co
 ### HFS (Hadoop Fair Scheduler)
 
 * To solve the above raised problem, HFS is designed for two main goals:
-    * __Fair Sharing__
-        * Divide resources using max-min fiar shaing to achieve statistical multiplexing
-    * __Data Locality__
-        * Place computations near their input data, to maximize system throughput
+  * __Fair Sharing__
+    * Divide resources using max-min fiar shaing to achieve statistical multiplexing
+  * __Data Locality__
+    * Place computations near their input data, to maximize system throughput
 
 
-    * To achieve the first goal, a scheduler must reallocate resources between jobs when the number of jobs changes
-    * A key design question is what to do with tasks from running jobs when a new job is submitted, in order to gie resources to the new job
+  * To achieve the first goal, a scheduler must reallocate resources between jobs when the number of jobs changes
+  * A key design question is what to do with tasks from running jobs when a new job is submitted, in order to gie resources to the new job
 
 
-    * At high level, two approaches can be taken
-        1. __Kill__ running tasks to make room for the new job
-            * Killing reallocates resources instantly, gives control over locality for new job
-            * But have drawback for wasting the work of killed tasks
-        2. __Wait__ for running tasks to finish
-            * Waiting doesn't waste work from killed tasks
-            * But can negatively impact fairness
+  * At high level, two approaches can be taken
+    1. __Kill__ running tasks to make room for the new job
+      * Killing reallocates resources instantly, gives control over locality for new job
+      * But have drawback for wasting the work of killed tasks
+    2. __Wait__ for running tasks to finish
+      * Waiting doesn't waste work from killed tasks
+      * But can negatively impact fairness
 
 
 * __The Principal result__ in this paper
-    * An algorithm based on waiting can achieve both high fairness and high data locality
-    * First, in large clusters, tasks finish at __such a high rate__ that resources can be reassigned to new jobs on a timescale much   smaller than job durations
-    * However, a strict implementation of fair sharing compromises locality
-    * Because the job to be scheduled next according to fairness might not have data on the nodes that are currently free
+  * An algorithm based on waiting can achieve both high fairness and high data locality
+  * First, in large clusters, tasks finish at __such a high rate__ that resources can be reassigned to new jobs on a timescale much   smaller than job durations
+  * However, a strict implementation of fair sharing compromises locality
+  * Because the job to be scheduled next according to fairness might not have data on the nodes that are currently free
 
 * To resolve it, the fairness is relaxed slightly through __delay scheduling__
-    * A job waits for a ilmited amount of time for a scheduling opportunity on a node that has data for it
-    * A very small amount of waiting is enough to bring locality close to 100%
-    * Delay scheduling only asks that we sometimes give resources to jobs out of order to improve data locality
+  * A job waits for a ilmited amount of time for a scheduling opportunity on a node that has data for it
+  * A very small amount of waiting is enough to bring locality close to 100%
+  * Delay scheduling only asks that we sometimes give resources to jobs out of order to improve data locality
 
 ## Background
 
 ### Hadoop Distributed File System
 
 * __Job scheduling__ at Master
-    * Default Scheduler runs jobs in FIFO order, with five priority levels
-    * When the scheduler receives a heartbeat indicating that a map or reduce slot is free, it scans through jobs in order of priority and submit time to find one with a task of the required type
+  * Default Scheduler runs jobs in FIFO order, with five priority levels
+  * When the scheduler receives a heartbeat indicating that a map or reduce slot is free, it scans through jobs in order of priority and submit time to find one with a task of the required type
 * __Locality Optimization for Map operation__
-    * After selecting a job, the scheduler greedily picks the map task in the job with data closest to the slave
+  * After selecting a job, the scheduler greedily picks the map task in the job with data closest to the slave
 
 
 ## Delay Scheduling  
@@ -67,7 +67,7 @@ The proposed methodology is designed to get a good tradeoff point between the co
 ### Naive Fair Sharing Algorithm
 
 * A straight forward strategy is to assign free slots to the job with fewest running tasks
-    * As long as slots become free quickly enough, the resulting allocation will satisfy max-min fairness
+  * As long as slots become free quickly enough, the resulting allocation will satisfy max-min fairness
 * __Algorithm 1: Naive Fair Sharing__
 
 {% highlight python %}
@@ -84,13 +84,13 @@ def scheduler(...):
 
 
 * Waiting will not have significant impact on job response time if at least one of the following conditions holds:
-    1. Many jobs
-    2. Small jobs
-    3. Long jobs
+  1. Many jobs
+  2. Small jobs
+  3. Long jobs
 
 * Data locality problems with Naive Method
-    * Head-of-line Scheduling
-    * Sticky Slot
+  * Head-of-line Scheduling
+  * Sticky Slot
 
 
 ### Delay scheduling
@@ -118,27 +118,27 @@ def delay_scheduler(...):
 ### Analysis of Delay Scheduling
 
 * __Two interesting observations to the key questions__:
-    1. How much locality improves depending on D?
-        * Non-locality __decreases exponentially__ with D
+  1. How much locality improves depending on D?
+    * Non-locality __decreases exponentially__ with D
 
-    2. How long a job waits below its fair share to launch a local task?
-        * The amount of waiting required to achieve a given level of locality is __a fraction of the average task length and decreases linearly with the number of slots per node L__
+  2. How long a job waits below its fair share to launch a local task?
+    * The amount of waiting required to achieve a given level of locality is __a fraction of the average task length and decreases linearly with the number of slots per node L__
 
 * Observation 1:
-    * The probability that a job finds at least one local task with __skipCount threshold D__ is:
+  * The probability that a job finds at least one local task with __skipCount threshold D__ is:
 $$
 \begin{equation}
     Prob = 1 - (1 - p_j)^D
 \end{equation}
 $$
-        * Where $p_j = \frac{\mid P_j \mid}{M}$, $P_j$ is the set of nodes that job j has local data left on it, and $M$ is the total number of nodes in the cluster
+    * Where $p_j = \frac{\mid P_j \mid}{M}$, $P_j$ is the set of nodes that job j has local data left on it, and $M$ is the total number of nodes in the cluster
 
 * As we can find that the probability decrease exponentially.
-       * For example, when $p_j = 0.1$, and $D=10$, we have $prob = 0.65$ => when $D=40$, we have $prob = 0.99$
+   * For example, when $p_j = 0.1$, and $D=10$, we have $prob = 0.65$ => when $D=40$, we have $prob = 0.99$
 
 * Observation 2:
-    * Once a job j reaches the head of the queue, it will wait at most $\frac{D}{S} \cdot T$ seconds before being allowed to launch non-local tasks.
-        * Local tasks run faster than non-local tasks up to 2x
+  * Once a job j reaches the head of the queue, it will wait at most $\frac{D}{S} \cdot T$ seconds before being allowed to launch non-local tasks.
+    * Local tasks run faster than non-local tasks up to 2x
 
 
 ### How to set D
@@ -154,4 +154,7 @@ $$
 ### Rack Locality
 
 * A factor that __bandwidth per node within a rack is much higher than bandwidth per node between racks__ makes it valuable to preserve rack locality
-    * This can be accomplished by extending Algorithm 2 to give each job two waiting periods
+  * This can be accomplished by extending Algorithm 2 to give each job two waiting periods
+
+[**1**](http://www.cs.berkeley.edu/~matei/papers/2010/eurosys_delay_scheduling.pdf)Delay Scheduling: A Simple Technique for Achieving
+Locality and Fairness in Cluster Scheduling

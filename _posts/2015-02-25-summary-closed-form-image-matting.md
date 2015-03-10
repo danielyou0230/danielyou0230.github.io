@@ -15,7 +15,7 @@ This article is a summary for PAMI 2013 paper - A closed-form solution to natura
 
 ### Challenges
 * The problem is ill-posed
-    * At each pixel we must estimate the foreground and the background colors, as well as the foreground opacity from a single color measurement.
+  * At each pixel we must estimate the foreground and the background colors, as well as the foreground opacity from a single color measurement.
 
 ### The Matting Equation
 * For an input image I, it is assumed to be composited of foreground F and background B. The color of i-th pixel is assumed to be a linear combination of the corresponding foreground and background colors:
@@ -33,7 +33,7 @@ $$
 ### 1. Derivation
 
 * __Local Smoothness Assumption__
-    * The matting problem is severely underconstrained, so in this paper the author made an assumption taht both __F and B are approximately constant__ oevr __a small window around each pixel__, in order to derive their solution for the gray-scale case
+  * The matting problem is severely underconstrained, so in this paper the author made an assumption taht both __F and B are approximately constant__ oevr __a small window around each pixel__, in order to derive their solution for the gray-scale case
 
 #### 1.1 Start from grey image
 
@@ -60,9 +60,9 @@ $$
 
 * **Theorem 1** [ *which eliminaets constant a and b* ]
 
-    * Define J($\alpha$) as $J(\alpha) = min_{a,b} J(\alpha, a, b)$
-    * Then, $J(\alpha) = \alpha^{T} \cdot L \cdot \alpha$
-    * Where the laplacian matrix L is an N x N matrix, whose (i, j)th entry is:
+  * Define J($\alpha$) as $J(\alpha) = min_{a,b} J(\alpha, a, b)$
+  * Then, $J(\alpha) = \alpha^{T} \cdot L \cdot \alpha$
+  * Where the laplacian matrix L is an N x N matrix, whose (i, j)th entry is:
 
 $$
 \begin{equation}
@@ -86,7 +86,7 @@ $$
 
 * This model relaxes the previous assumption that F and B are constant over each window. Instead, it assumes that in a small window each of F and B is a linear mixture of two colors.
 
-    * In other words,  $F_i = \beta_i^F \cdot F_1 + (1 - \beta_i^F) \cdot F_2$, and $B_i = \beta_i^B \cdot B_1 + (1 - \beta_i^B) \cdot B_2$
+  * In other words,  $F_i = \beta_i^F \cdot F_1 + (1 - \beta_i^F) \cdot F_2$, and $B_i = \beta_i^B \cdot B_1 + (1 - \beta_i^B) \cdot B_2$
 
 
 * And similarly to grey-scale case, we could define the cost function as following:
@@ -111,7 +111,7 @@ $$
 #### Matting Laplacian
 
 * The matrix L in previous section is refered as a matting laplacian.
-    * Elements in each row of L sum to zero, therefore **the null space of L includes the constant vector?(Not quite understand)**
+  * Elements in each row of L sum to zero, therefore **the null space of L includes the constant vector?(Not quite understand)**
 
 * Since the edge contrasts in the different color channels are different, by scaling the color channels appropriately, **this model is able to actually cancel the background edge?(Not quite understand)**
 
@@ -141,13 +141,13 @@ $$
 #### 3. Optimization
 
 * In order to solve the sparse linear system efficiently, they proposed a coarse-to-fine scheme.
-    1. They dowmsample the image and the constraints, then solve it at a lower resolution
-    2. The recovered alpha matte is then interpolated to the finer resolution
-        2.1 Alpha values are thresholded and pixels with alpha close to zero or one are clamped and considered as contrained in the finer resolution
-        2.2 Constrained pixels may be eliminated from the system, reducing the system size.[so there is no need to enforce local linear modes in constrained areas]
-    3. When computing the matting laplacian matrix, sum only windows w_k that contain at least one unconstrained pixel
-    4. **Clamping alpha values to zero or one is also useful in avoiding oversmoothed alpha mattes?(Not quite understand)**
-    5. Side-effect: Long-thin structures may be lost
+  1. They dowmsample the image and the constraints, then solve it at a lower resolution
+  2. The recovered alpha matte is then interpolated to the finer resolution
+    2.1 Alpha values are thresholded and pixels with alpha close to zero or one are clamped and considered as contrained in the finer resolution
+    2.2 Constrained pixels may be eliminated from the system, reducing the system size.[so there is no need to enforce local linear modes in constrained areas]
+  3. When computing the matting laplacian matrix, sum only windows w_k that contain at least one unconstrained pixel
+  4. **Clamping alpha values to zero or one is also useful in avoiding oversmoothed alpha mattes?(Not quite understand)**
+  5. Side-effect: Long-thin structures may be lost
 
 #### 4.Reconstrctuing F and B
 
@@ -177,8 +177,8 @@ $$
 #### 1.1 Effect of regularization weight
 
 * $\epsilon$ is the weight of the regularization term on a in cost function. There are two reasons for having it:
-    * Numerical stability
-    * Minimizing the norm of a biases the solution toward smoother alpha mattes
+  * Numerical stability
+  * Minimizing the norm of a biases the solution toward smoother alpha mattes
 
 
 * Use small $\epsilon$ value so that the sharpness of recovered matte matches the profile of the edge in the input image, but the matte also captures the image noise
