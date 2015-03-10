@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Summary - Delay Scheduling
+title: "Summary - Delay Scheduling: A Simple Technique for Achieving
+Locality and Fairness in Cluster Scheduling"
 comment: True
 ---
 

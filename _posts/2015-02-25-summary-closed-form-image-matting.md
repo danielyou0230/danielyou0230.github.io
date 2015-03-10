@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summary - A Closed-From Solution to Natural Image Matting
-comments: True
+title: "Summary - A Closed-From Solution to Natural Image Matting"
+comment: True
 ---
 
 This article is a summary for PAMI 2013 paper - A closed-form solution to natural image matting.
