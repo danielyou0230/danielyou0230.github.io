@@ -5,94 +5,128 @@
 $timeline-padding: 20px;
 
 .timeline {
-    font-family: 'Roboto',sans-serif, Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    @extend %clearfix;
+  font-family: 'Roboto',sans-serif, Helvetica;
+  font-size: 20px;
+  font-weight: 300;
+  @extend %clearfix;
 }
 
 .timeline-body {
-    padding:    0;
+  padding:    0;
 }
 
 .timeline-start {
-    width:       -webkit-calc(100% - 2 * (#{$timeline-padding}) );
-    width:       calc(100% - 2 * (#{$timeline-padding}) );
+  width:       -webkit-calc(100% - 2 * (#{$timeline-padding}) );
+  width:       calc(100% - 2 * (#{$timeline-padding}) );
 
-    text-align: center;
-    padding:    $timeline-padding;
+  text-align: center;
+  padding:    $timeline-padding;
 }
 
 .timeline-item:before {
-    width:          11px;
-    height:         11px;
-    background:     #333;
-    content:        "";
-    display:        block;
-    position:       absolute;
-    border-radius:  5px;
+  width:          11px;
+  height:         11px;
+  background:     #333;
+  content:        "";
+  display:        block;
+  position:       absolute;
+  border-radius:  5px;
 }
 
 .timeline-item {
-    width:       -webkit-calc(50% - (#{$timeline-padding}) );
-    width:       calc(50% -  (#{$timeline-padding}) );
+  width:       -webkit-calc(50% - (#{$timeline-padding}) );
+  width:       calc(50% -  (#{$timeline-padding}) );
 
-    position: relative;
+  position: relative;
 }
 
 .timeline-item:nth-child(odd):before {
-    left: -8px;
+  left: -8px;
 }
 
 .timeline-item:nth-child(odd):after {
-    left: -8px;
-    bottom: 0;
+  left: -8px;
+  bottom: 0;
 }
 
 .timeline-item:nth-child(odd) {
-    margin-left:        50%;
-    padding-left:       $timeline-padding;
-    border-left:        5px solid #333;
-    text-align:         left;
+  margin-left:        50%;
+  padding-left:       $timeline-padding;
+  border-left:        5px solid #333;
+  text-align:         left;
 }
 
 .timeline-item:nth-child(even) {
-    margin-right:       -webkit-calc(50% + (#{$timeline-padding}) );
-    margin-right:       calc(50% + (#{$timeline-padding}) );
+  margin-right:       -webkit-calc(50% + (#{$timeline-padding}) );
+  margin-right:       calc(50% + (#{$timeline-padding}) );
 
-    padding-right:  $timeline-padding;
-    border-right:   5px solid #333;
-    text-align:     right;
+  padding-right:  $timeline-padding;
+  border-right:   5px solid #333;
+  text-align:     right;
 }
 
 .timeline-item:nth-child(even):before {
-    right: -8px;
+  right: -8px;
 }
 
 .timeline-item:nth-child(even):after {
-    right: -8px;
+  right: -8px;
 }
 
 .timeline-date {
-    font-size:      16px;
-    font-weight:    400;
-    color:          #a00000;
+  font-size:      16px;
+  font-weight:    400;
+  color:          #a00000;
 }
 
 .timeline-title {
-    font-size:      20px;
-    font-weight:    500;
-    font-family:    'Roboto', sans-serif;
+  font-size:      20px;
+  font-weight:    500;
+  font-family:    'Roboto', sans-serif;
 }
 
 .timeline-desc {
-    font-size:      16px;
-    font-weight:    200;
+  font-size:      16px;
+  font-weight:    200;
 }
 
 .timeline-item:last-child:after
 {
-    bottom:         0;
+  bottom:         0;
+  width:          11px;
+  height:         11px;
+  background:     #333;
+  content:        "";
+  display:        block;
+  position:       absolute;
+  border-radius:  5px;
+}
+
+.timeline-item:last-child:nth-child(even){
+  vertical-align:     middle;
+  min-height:         200px;
+  border-right:       5px dashed #333;
+}
+
+.timeline-item:last-child:nth-child(odd){
+  vertical-align:     middle;
+  min-height:         200px;
+  border-left:       5px dashed #333;
+}
+
+@include media-query($on-palm) {
+  .timeline-start {
+    min-height:         50px;
+    padding:            0 0 0 5px;
+    text-align:         left;
+    border-left:        5px dashed #333;
+    width:              100%;
+    padding-left:       5px;
+    margin-left:        5px;
+  }
+
+  .timeline-start:after {
+    left:           17px;
     width:          11px;
     height:         11px;
     background:     #333;
@@ -100,73 +134,39 @@ $timeline-padding: 20px;
     display:        block;
     position:       absolute;
     border-radius:  5px;
-}
+  }
 
-.timeline-item:last-child:nth-child(even){
-    vertical-align:     middle;
-    min-height:         200px;
-    border-right:       5px dashed #333;
-}
+  .timeline-item,
+  .timeline-item:last-child:nth-child(odd),
+  .timeline-item:last-child:nth-child(even),
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    min-height:         0;
+    text-align:         left;
+    border-left:        5px solid #333;
+    border-right:       0px;
+    width:              100%;
+    padding-left:       5px;
+    margin-left:        5px;
+  }
 
-.timeline-item:last-child:nth-child(odd){
-    vertical-align:     middle;
-    min-height:         200px;
-    border-left:       5px dashed #333;
-}
+  .timeline-item:before {
+      left: -8px;
+  }
 
-@include media-query($on-palm) {
-    .timeline-start {
-        min-height:         50px;
-        padding:            0 0 0 5px;
-        text-align:         left;
-        border-left:        5px dashed #333;
-        width:              100%;
-        padding-left:       5px;
-        margin-left:        5px;
-    }
+  .timeline-item:after {
+      left: -8px;
+  }
 
-    .timeline-start:after {
-        left:           17px;
-        width:          11px;
-        height:         11px;
-        background:     #333;
-        content:        "";
-        display:        block;
-        position:       absolute;
-        border-radius:  5px;
-    }
+  .timeline-date {
+      font-size: 14px;
+  }
 
-    .timeline-item,
-    .timeline-item:last-child:nth-child(odd),
-    .timeline-item:last-child:nth-child(even),
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even) {
-        min-height:         0;
-        text-align:         left;
-        border-left:        5px solid #333;
-        border-right:       0px;
-        width:              100%;
-        padding-left:       5px;
-        margin-left:        5px;
-    }
+  .timeline-title {
+      font-size: 16px;
+  }
 
-    .timeline-item:before {
-        left: -8px;
-    }
-
-    .timeline-item:after {
-        left: -8px;
-    }
-
-    .timeline-date {
-        font-size: 14px;
-    }
-
-    .timeline-title {
-        font-size: 16px;
-    }
-
-    .timeline-desc {
-        font-size: 12px;
-    }
+  .timeline-desc {
+      font-size: 12px;
+  }
 }

@@ -1,5 +1,5 @@
 /**
- * Icon
+* Icon
 */
 
 .social-icon {
@@ -11,26 +11,26 @@
 
 
 /**
- * Cover
+* Cover
 */
 .cover {
-   max-width: 100%;
-   height: 480px;
-   z-index:initial;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
-   margin-right: auto;
-   margin-left: auto;
-   padding-right: 0px;
-   padding-left: 0px;
-   @extend %clearfix;
-   @include media-query($on-laptop) {
-       max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-       max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-       padding-right:  $spacing-unit / 2;
-       padding-left:   $spacing-unit / 2;
-   }
+  max-width: 100%;
+  height: 480px;
+  z-index:initial;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  @extend %clearfix;
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right:  $spacing-unit / 2;
+    padding-left:   $spacing-unit / 2;
+  }
 }
 
 /**
@@ -38,100 +38,100 @@
 */
 
 .profile-wrapper {
-    background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 25px;
+  position: relative;
+  top:40%;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', Helvetica,Arial,sans-serif;
+  @extend %clearfix;
+
+  @include media-query($on-palm) {
+    font-family: 'Roboto', Helvetica,Arial,sans-serif;
+    top:15%;
     border-radius: 25px;
-    position: relative;
-    top:40%;
-    width: 600px;
+    position:relative;
+    width: -webkit-calc(90% - (#{$spacing-unit} / 2));
+    width: calc(90% - (#{$spacing-unit} / 2));
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Roboto', Helvetica,Arial,sans-serif;
-    @extend %clearfix;
-
-    @include media-query($on-palm) {
-        font-family: 'Roboto', Helvetica,Arial,sans-serif;
-        top:15%;
-        border-radius: 25px;
-        position:relative;
-        width: -webkit-calc(90% - (#{$spacing-unit} / 2));
-        width: calc(90% - (#{$spacing-unit} / 2));
-        margin-left: auto;
-        margin-right: auto;
-    }
+  }
 }
 
 .profile-col {
-    float: left !important;
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  float: left !important;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .profile-col-1 {
-    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
-    width:         calc(40% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+  width:         calc(40% - (#{$spacing-unit} / 2));
 }
 
 .profile-col-2 {
-    width: -webkit-calc(60% - (#{$spacing-unit} / 2));
-    width:         calc(60% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+  width:         calc(60% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
-    .profile-col-1,
-    .profile-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
+  .profile-col-1,
+  .profile-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+  }
 }
 
 @include media-query($on-palm) {
-    .profile-col {
-        position: relative;
-        margin: 10px auto;
-        float: none;
-        // width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        // width:         calc(100% - (#{$spacing-unit} / 2));
-        width: -webkit-calc( 100% );
-        width:         calc( 100% );
-    }
+  .profile-col {
+    position: relative;
+    margin: 10px auto;
+    float: none;
+    // width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    // width:         calc(100% - (#{$spacing-unit} / 2));
+    width: -webkit-calc( 100% );
+    width:         calc( 100% );
+  }
 }
 
 .circle-img {
-    margin: 0px auto;
-    width: 168px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 50%;
+  margin: 0px auto;
+  width: 168px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
 }
 
 #my-name {
-    font-size: 40px;
-    color: gray;
+  font-size: 40px;
+  color: gray;
 }
 
 #my-title {
-    font: 20px Serif;
-    color: gray;
-    font-weight: 200;
+  font: 20px Serif;
+  color: gray;
+  font-weight: 200;
 }
 
 #my-email {
-    font: 16px Serif;
-    color: gray;
-    font-weight: 160;
+  font: 16px Serif;
+  color: gray;
+  font-weight: 160;
 }
 
 @include media-query($on-palm) {
-    #my-title {
-        display: none;
-    }
+  #my-title {
+      display: none;
+  }
 }
 
 .preview {
-    text-overflow:ellipsis;
-    overflow: hidden;
+  text-overflow:ellipsis;
+  overflow: hidden;
 }
