@@ -1,14 +1,14 @@
 # Site settings
 title: Ape's Banana Tree
 description: A simple site for Hexiang's public announcements, tech/non-tech posts and personal updates
-background: /images/background-cube.jpg
+background: /images/background/background-cube.jpg
 
 # Site user settings
 user:
     name:       Hexiang Hu
     title:      Undergraduate at Simon Fraser University
     email:      hexiang_hu@sfu.ca
-    head_pic:   /images/me.jpg
+    head_pic:   /images/self-portrait/me.jpg
 
 
 baseurl: ""
