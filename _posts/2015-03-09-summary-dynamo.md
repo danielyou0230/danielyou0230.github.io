@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Summary - Dynamo: Amazon's Highly Available Key value Store"
-comment: True
+comments: True
 ---
 
 Dynamo is a highly available key-value storage system built by Amazon. It sacrifices a consistency under certain failure scenarios, makes extensive use of object versioning and application-assisted conflict resolution in a manner that provides a novel interface for developers to use.
@@ -32,7 +32,7 @@ Dynamo is a highly available key-value storage system built by Amazon. It sacrif
   * Use Consistent Hash to partition keys and organize its position, treat output ranges as a circular “ring”.
     * So that there is no need to "rehash" all the keys when the system is scaled up
   * Use Virtual Nodes to make physical nodes have multiple virtual nodes.
-    1. Spread data evenly across the system. 
+    1. Spread data evenly across the system.
     2. Balance the load.
   * Replicated Keys in N nodes. Keep a “Preference list” for keys, which is the server that responsible
 * Data Versioning

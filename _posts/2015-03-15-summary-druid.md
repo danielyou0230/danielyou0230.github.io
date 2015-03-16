@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Summary - Druid: A Real-time Analytical Data Store"
-comment: True
+comments: True
 ---
 
 Druid is an open source data store designed for real-time exploratory analytics on large data sets. The system combines a column-oriented storage layout, a distributed, shared-nothing architecture, and an advanced indexing structure to allow for the arbitrary exploration of billion-row tables with sub-second latencies.

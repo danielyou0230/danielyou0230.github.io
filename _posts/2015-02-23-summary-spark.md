@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Summary - Spark : Resilient Distributed Dataset for efficient in memory computing"
-comment: True
+comments: True
 ---
 
 This article is basically a high level summary for a 3 minutes presentation that lead the audience to have a intuition about what Spark is and how it achieve efficient and fault-tolerant in-memory computing.
