@@ -11,15 +11,15 @@ The proposed methodology is designed to get a good tradeoff point between the co
 
 <!--more-->
 
-## Introduction
+### Introduction
 
-### Problem with Hadoop
+#### Problem with Hadoop
 
 * Data consolidation provided by a shared cluster is highly beneficial
 
 * When enough groups began using Hadoop, job response times started to suffer due to Hadoop's FIFO scheduler
 
-### HFS (Hadoop Fair Scheduler)
+#### HFS (Hadoop Fair Scheduler)
 
 * To solve the above raised problem, HFS is designed for two main goals:
   * __Fair Sharing__
@@ -52,9 +52,9 @@ The proposed methodology is designed to get a good tradeoff point between the co
   * A very small amount of waiting is enough to bring locality close to 100%
   * Delay scheduling only asks that we sometimes give resources to jobs out of order to improve data locality
 
-## Background
+### Background
 
-### Hadoop Distributed File System
+#### Hadoop Distributed File System
 
 * __Job scheduling__ at Master
   * Default Scheduler runs jobs in FIFO order, with five priority levels
@@ -63,9 +63,9 @@ The proposed methodology is designed to get a good tradeoff point between the co
   * After selecting a job, the scheduler greedily picks the map task in the job with data closest to the slave
 
 
-## Delay Scheduling  
+### Delay Scheduling  
 
-### Naive Fair Sharing Algorithm
+#### Naive Fair Sharing Algorithm
 
 * A straight forward strategy is to assign free slots to the job with fewest running tasks
   * As long as slots become free quickly enough, the resulting allocation will satisfy max-min fairness
@@ -94,7 +94,7 @@ def scheduler(...):
   * Sticky Slot
 
 
-### Delay scheduling
+#### Delay scheduling
 * __Algorithm 2: Fair sharing with Delay Scheduling__
 
 {% highlight python %}
@@ -116,7 +116,7 @@ def delay_scheduler(...):
 
 * __Note__: Once a job has been skipped D tiems, we let it launch arbitrarily many __non-local tasks without resetting the skipcount__. When if manages to launch a local task again, we set its skipcount back to 0.
 
-### Analysis of Delay Scheduling
+#### Analysis of Delay Scheduling
 
 * __Two interesting observations to the key questions__:
   1. How much locality improves depending on D?
@@ -142,7 +142,7 @@ $$
     * Local tasks run faster than non-local tasks up to 2x
 
 
-### How to set D
+#### How to set D
 
 * Suppose we wish to achieve locality greater than $\lambda$ for jobs with N tasks on a cluster with M nodes, L slots per node and replication factor R.
 
@@ -152,7 +152,7 @@ $$
 \end{equation}
 $$
 
-### Rack Locality
+#### Rack Locality
 
 * A factor that __bandwidth per node within a rack is much higher than bandwidth per node between racks__ makes it valuable to preserve rack locality
   * This can be accomplished by extending Algorithm 2 to give each job two waiting periods

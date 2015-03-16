@@ -8,19 +8,19 @@ Druid is an open source data store designed for real-time exploratory analytics 
 
 <!--more-->
 
-* Problem and motivation
+### Problem and motivation
   * The goal is to provide a multi-tenant, __highly available__ system which serves the functionality of __low latency data ingestion and interactive query platform__. [main novelty]
 
-* Design Decision
+### Design Decision
   * __Low latency__
     * Specialize node servers to process real-time information with Message bus for parallelism  
   * __High Availability__
     * Make node servers query-able when external failure happened
 
-* Overall Architecture
+### Overall Architecture
   ![alt text](/images/posts/03-15-2015-druid-1.png)
 
-* System Architecture
+### System Architecture
   * Real-time node
     * Only concerned with events for __some small time range__
     * Persists real-time query data in memory and on disk
@@ -55,6 +55,9 @@ Druid is an open source data store designed for real-time exploratory analytics 
     * Functions as a load balancer , segments replication manager for historical node.
     * Unable to work when Zookeeper down, but not affect data availability
 
-* Storage format
+### Storage format
   * Data tables in Druid are collections of __timestamped(required)__ events and partitioned into a set of segments
   * Stored in a column orientation for __CPU efficiency__, associate with different compression methods
+
+### References
+[**[1]**](http://static.druid.io/docs/druid.pdf)Druid: A Real-time Analytical Data Store

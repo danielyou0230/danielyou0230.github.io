@@ -8,10 +8,10 @@ Dynamo is a highly available key-value storage system built by Amazon. It sacrif
 
 <!--more-->
 
-## Motivation For building up Dynamo
+### Motivation For building up Dynamo
 * To provide a distributed key-value storage system with good scalability, high availability, and also satisfy their Service Level Agreement, which guarantees a majority of requests can be done in a certain time bound.
 
-## System Assumption and Requirements
+### System Assumption and Requirements
 * Query Model
   * => They assume that only simple Read / Write operation to data item identified by a uniquely key.
 * Crucial Efficiency requirement for low latency
@@ -19,7 +19,7 @@ Dynamo is a highly available key-value storage system built by Amazon. It sacrif
 * Weak ACID
   * => For the purpose of higher available, relaxed Consistency + no isolation guarantee is acceptable
 
-## Three Major Design Decisions
+### Three Major Design Decisions
 
 1. Sacrifice Strong Consistency for High availability.
 2. Resolve replication conflict during read instead of write.
@@ -27,7 +27,7 @@ Dynamo is a highly available key-value storage system built by Amazon. It sacrif
 3. Decentralized Server Architecture
   * => “Peer to peer” Fashioned System
 
-## General Architecture Design
+### General Architecture Design
 * Date Partition - Suit the incremental scalability requirements
   * Use Consistent Hash to partition keys and organize its position, treat output ranges as a circular “ring”.
     * So that there is no need to "rehash" all the keys when the system is scaled up
@@ -58,5 +58,5 @@ Dynamo is a highly available key-value storage system built by Amazon. It sacrif
   * Use gossip-style protocol to perform decentralized failure detection and to propagate membership changes information
     * => to get eventual consistency.
 
-## References
+### References
 [**[1]**](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)Dynamo: Amazon’s Highly Available Key-value Store

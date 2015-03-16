@@ -8,16 +8,16 @@ This article is a summary for PAMI 2013 paper - A closed-form solution to natura
 
 <!--more-->
 
-## Introduction
+### Introduction
 
-### Targets
+#### Targets
 * Extracting a foreground object from an imaeg based on limited input.
 
-### Challenges
+#### Challenges
 * The problem is ill-posed
   * At each pixel we must estimate the foreground and the background colors, as well as the foreground opacity from a single color measurement.
 
-### The Matting Equation
+#### The Matting Equation
 * For an input image I, it is assumed to be composited of foreground F and background B. The color of i-th pixel is assumed to be a linear combination of the corresponding foreground and background colors:
 
 $$
@@ -28,14 +28,14 @@ $$
 
 * The variables on the right hand side are unknown in the image, so considering about the total 3 color channels, the total number of unknowns here would be 7.
 
-## Overview of this paper's method
+### Overview of this paper's method
 
-### 1. Derivation
+#### 1. Derivation
 
 * __Local Smoothness Assumption__
   * The matting problem is severely underconstrained, so in this paper the author made an assumption taht both __F and B are approximately constant__ oevr __a small window around each pixel__, in order to derive their solution for the gray-scale case
 
-#### 1.1 Start from grey image
+###### 1.1 Start from grey image
 
 * As a result of the local smoothness assumption goes, we can express $\alpha$ as a linear function of the iamge I:
 
@@ -74,7 +74,7 @@ $$
 
 * **Proof of theorem 1?(Not quite understand)**
 
-#### 1.2 Extend to color image
+###### 1.2 Extend to color image
 
 * To extend this method into color image, they simply replace the linear model with a 4D linear model
 
@@ -108,14 +108,14 @@ $$
 
 * where $\Sigma_k$ is a 3 x 3 covariance matrix, $\mu_k$ is a 3 x 1 mean vector of the colors in a window $w_k$, and I_3 is the 3 x 3 identity matrix
 
-#### Matting Laplacian
+###### Matting Laplacian
 
 * The matrix L in previous section is refered as a matting laplacian.
   * Elements in each row of L sum to zero, therefore **the null space of L includes the constant vector?(Not quite understand)**
 
 * Since the edge contrasts in the different color channels are different, by scaling the color channels appropriately, **this model is able to actually cancel the background edge?(Not quite understand)**
 
-### 2. User Interaction & Constraint
+#### 2. User Interaction & Constraint
 
 * User-supplied constraint on the matte may be provided via a scribble-based GUI or a trimap
 
@@ -138,7 +138,7 @@ $$
 \end{align}
 $$
 
-#### 3. Optimization
+###### 3. Optimization
 
 * In order to solve the sparse linear system efficiently, they proposed a coarse-to-fine scheme.
   1. They dowmsample the image and the constraints, then solve it at a lower resolution
@@ -149,7 +149,7 @@ $$
   4. **Clamping alpha values to zero or one is also useful in avoiding oversmoothed alpha mattes?(Not quite understand)**
   5. Side-effect: Long-thin structures may be lost
 
-#### 4.Reconstrctuing F and B
+###### 4.Reconstrctuing F and B
 
 * One approach for recontructing F and B is to solve $\alpha_i \approx \sum_c{\alpha^c \cdot I_i^c + b}$, with the optimal a and b given $\alpha$ using least squares.
 * In order to extract F and B from a and b, there is an additional matting parameter taht should be recovered ($\beta$ )
@@ -168,13 +168,13 @@ $$
 
 * For a fixed $\alpha$, the cost function is quadratic, and its minimum may be found by solving a sparse set of linear equations
 
-## Analysis
+### Analysis
 
-### 1. Parameter Analysis
+#### 1. Parameter Analysis
 
 * In this section we will mainly discuss the effects of regularization term and the window size
 
-#### 1.1 Effect of regularization weight
+###### 1.1 Effect of regularization weight
 
 * $\epsilon$ is the weight of the regularization term on a in cost function. There are two reasons for having it:
   * Numerical stability
@@ -184,13 +184,13 @@ $$
 * Use small $\epsilon$ value so that the sharpness of recovered matte matches the profile of the edge in the input image, but the matte also captures the image noise
 
 
-#### 1.2 Effect of window size
+###### 1.2 Effect of window size
 * Using wider windows is more stable when the color line model holds, but the chance of encountering windows that deviate from the color line model grows when the windows are larger
 
 * Increase computation time since the resulting system is less sparse
 
 
-## Reference
+### Reference
 [**[1]**](http://www.wisdom.weizmann.ac.il/~levina/papers/Matting-Levin-Lischinski-Weiss-PAMI.pdf)  A Closed-Form Solution to Natural Image Matting, Anat Levin, Dani Lischinski, and Yair Weiss, MIT, 2013 PAMI
 
 [**[2]**](http://cs.brown.edu/courses/cs129/results/final/valayshah/) Natural Image Matting - Brown University CS129 Final Project

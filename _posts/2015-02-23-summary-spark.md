@@ -8,17 +8,17 @@ This article is basically a high level summary for a 3 minutes presentation that
 
 <!--more-->
 
-## Intro
+### Intro
 
 UC Berkley proposed a fault tolerant abstraction called Resilient Distributed Datasets for in memory cluster computing. And Spark System is their implementation for this proposal. More resources about this inspiring article could be found [*here*](https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia).
 
-## Problem & Motivation
+### Problem & Motivation
 * Problem:
   * As big data analysis becomes more and more popular nowadays, the demand for some particular iterative algorithms (Page Rank, Logistic Regression ...) to have efficient computing framework for data sharing and reusing exploits.  
 * Motivation:
   * Keep intermediate data structure persistent in memory so as to reuse it along the way of cluster computing procedure
 
-## Design Decision
+### Design Decision
 * Key Features
 1. Data sharing efficiency
 2. Fault-tolerance
@@ -42,13 +42,13 @@ UC Berkley proposed a fault tolerant abstraction called Resilient Distributed Da
   * Another contribution besides is the **Generality of Spark**
     * Can express many existing parallel model (Those naturally apply the same operation to many items such as MapReduce, Iterative MapReduce, DryadLING, Pregel, SQL)
     * Enables app to efficiently intermix these models
-## Performance Benchmark
+### Performance Benchmark
 * Data mining (such as Page Rank) tasks: 40x faster than Hadoop
 * Machine learning (such as Logistic Regression) tasks: 20x faster than Hadoop
 
-## Conclusion
+### Conclusion
 * RDD offer a simple and efficient programming model for a broad range of applications
 * Leverage the coarse-grained nature of many parallel algorithms for low-overhead recovery
 
-## Reference
+### Reference
 [ **[1]** ](https://www.cs.berkeley.edu/~matei/papers/2012/nsdi_spark.pdf) Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing
