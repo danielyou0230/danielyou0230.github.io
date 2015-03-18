@@ -7,49 +7,51 @@ layout: home
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li class="post-item">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  {% for post in paginator.posts %}
+    <li class="post-item">
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <div class="content preview">
-            {% if post.content contains '<!--more-->' %}
-                {{ post.content | split:'<!--more-->' | first }}
-            {% else %}
-                {{ post.content }}
-            {% endif %}
-        </div>
-      </li>
-    {% endfor %}
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <div class="content preview">
+        {% if post.content contains '<!--more-->' %}
+          {{ post.content | split:'<!--more-->' | first }}
+        {% else %}
+          {{ post.content }}
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
   </ul>
 
-    <!-- Pagination links -->
-    {% if paginator.total_pages > 1 %}
-        <div class="pagination">
-    {% if paginator.previous_page %}
-        <a class="page gradient" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-    {% else %}
-        <span class="page deactive">&laquo; Prev</span>
-    {% endif %}
+  <!-- Pagination links -->
+  {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      <a class="page gradient" href="{{ /index.html | prepend: site.baseurl | replace: '//', '/' }}"> First </a>
+      {% if paginator.previous_page %}
+        <a class="page gradient" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &laquo; </a>
+      {% else %}
+        <span class="page deactive"> &laquo; </span>
+      {% endif %}
 
-    {% for page in (1..paginator.total_pages) %}
+      {% for page in (1..paginator.total_pages) %}
         {% if page == paginator.page %}
-            <em class="page active">{{ page }}</em>
-        {% elsif page == 1 %}
-            <a class="page gradient" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+          <em class="page active">{{ page }}</em>
+        {% elsif  page == 1 %}
+          <a class="page gradient" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
         {% else %}
-            <a class="page gradient" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          <a class="page gradient" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
         {% endif %}
-    {% endfor %}
+      {% endfor %}
 
-    {% if paginator.next_page %}
-        <a class="page gradient" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-    {% else %}
-        <span class="page deactive" >Next &raquo;</span>
-    {% endif %}
-        </div>
-    {% endif %}
+      {% if paginator.next_page %}
+        <a class="page gradient" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &raquo; </a>
+      {% else %}
+        <span class="page deactive" > &raquo; </span>
+      {% endif %}
+      <a class="page gradient" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages }}"> Last </a>
+    </div>
+  {% endif %}
 
 </div>
