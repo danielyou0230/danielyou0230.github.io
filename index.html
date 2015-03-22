@@ -27,10 +27,10 @@ layout: home
 
   <!-- Pagination links -->
   {% if paginator.total_pages > 1 %}
-    <div class="pagination">
-      <a class="page gradient" href="{{ /index.html | prepend: site.baseurl | replace: '//', '/' }}"> First </a>
+    <div id="paginator" class="pagination">
+      <a class="page " href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"> First </a>
       {% if paginator.previous_page %}
-        <a class="page gradient" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &laquo; </a>
+        <a class="page " href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"> &laquo; </a>
       {% else %}
         <span class="page deactive"> &laquo; </span>
       {% endif %}
@@ -39,18 +39,18 @@ layout: home
         {% if page == paginator.page %}
           <em class="page active">{{ page }}</em>
         {% elsif  page == 1 %}
-          <a class="page gradient" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+          <a class="page " href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}">{{ page }}</a>
         {% else %}
-          <a class="page gradient" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          <a class="page " href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page | append: '#paginator' }}">{{ page }}</a>
         {% endif %}
       {% endfor %}
 
       {% if paginator.next_page %}
-        <a class="page gradient" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &raquo; </a>
+        <a class="page " href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"> &raquo; </a>
       {% else %}
         <span class="page deactive" > &raquo; </span>
       {% endif %}
-      <a class="page gradient" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages }}"> Last </a>
+      <a class="page " href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages | append: '#paginator' }} "> Last </a>
     </div>
   {% endif %}
 

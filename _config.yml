@@ -17,8 +17,8 @@ url: "https://hex-iang.github.io"
 # the base hostname & protocol for your sit
 
 # Pagination
-paginate: 4
-paginate_path: "/page_:num/"
+paginate: 6
+paginate_path: "/page:num/"
 
 # Social media link for the site
 social:
