@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Summary - Druid: A Real-time Analytical Data Store"
+date: 2015-03-15
 comments: True
 categories: "big-data"
 ---
@@ -19,7 +20,7 @@ Druid is an open source data store designed for real-time exploratory analytics 
     * Make node servers query-able when external failure happened
 
 ### Overall Architecture
-  ![alt text](/images/posts/03-15-2015-druid-1.png)
+  ![alt text](/images/posts/2015-03-15-druid-1.png)
 
 ### System Architecture
   * Real-time node
@@ -29,7 +30,7 @@ Druid is an open source data store designed for real-time exploratory analytics 
 
   * Message Bus such as Kafka
 
-    ![alt text](/images/posts/03-15-2015-druid-2.png)
+    ![alt text](/images/posts/2015-03-15-druid-2.png)
 
     * Collaborated with real-time node and serve as a producer for event stream.
     * Functionality

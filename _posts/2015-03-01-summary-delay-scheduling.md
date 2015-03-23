@@ -2,6 +2,7 @@
 layout: post
 title: "Summary - Delay Scheduling: A Simple Technique for Achieving
 Locality and Fairness in Cluster Scheduling"
+date: 2015-03-01
 comments: True
 categories: "big-data"
 ---

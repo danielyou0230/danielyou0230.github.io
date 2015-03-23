@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Summary - Dynamo: Amazon's Highly Available Key value Store"
+date: 2015-03-09
 comments: True
 categories: "big-data"
 ---

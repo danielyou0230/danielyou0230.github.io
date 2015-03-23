@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Terminal Configuration
+date: 2015-03-02
 ---
 
 This Post is just used for keeping personal configuration files online

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Summary - A Closed-From Solution to Natural Image Matting"
+date: 2015-02-25
 comments: True
 categories: "vision"
 ---
