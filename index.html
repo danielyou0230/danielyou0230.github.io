@@ -32,12 +32,18 @@ layout: home
 
         <ul>
           {% if paginator.previous_page %}
-            <li>
+            <li class="float-left">
+              <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"></a>
+            </li>
+            <li class="float-left">
               <a  href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"></a>
             </li>
           {% else %}
-            <li class="deactive">
-              <a href="#paginator"> </a>
+            <li class="deactive float-left">
+              <a href="#paginator"></a>
+            </li>
+            <li class="deactive float-left">
+              <a href="#paginator"></a>
             </li>
           {% endif %}
 
@@ -46,25 +52,31 @@ layout: home
 
             {% if page == paginator.page %}
               <li class="active">
-                <a href="#paginator"></a>
+                <a href="#paginator">{{page}}</a>
               </li>
             {% elsif  page == 1 %}
               <li>
-                <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"></a>
+                <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}">{{page}}</a>
               </li>
             {% else %}
               <li>
-                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page | append: '#paginator' }}"></a>
+                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page | append: '#paginator' }}">{{page}}</a>
               </li>
             {% endif %}
           {% endfor %}
 
           {% if paginator.next_page %}
-            <li>
+            <li class="float-right">
+              <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages | append: '#paginator' }} "></a>
+            </li>
+            <li class="float-right">
               <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"></a>
             </li>
           {% else %}
-            <li class="deactive">
+            <li class="deactive float-right">
+              <a href="#paginator"></a>
+            </li>
+            <li class="deactive float-right">
               <a href="#paginator"></a>
             </li>
           {% endif %}

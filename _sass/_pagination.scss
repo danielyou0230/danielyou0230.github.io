@@ -10,19 +10,24 @@
    }
 }
 
+li.float-right{
+  float:right;
+}
+
+li.float-left {
+  float:left;
+}
+
 div.paginate-container {
-  background: lighten($background-color, 5%);
-  width: -webkit-calc(100% - 1rem);
-  padding: 1rem;
-  margin-top: 3rem;
-  border-radius: 0.2rem;
-  counter-reset: pagination;
-  text-align: center;
-  &:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
+  background:     lighten($background-color, 3%);
+  padding:        1rem;
+  margin-top:     3rem;
+  border-radius:  0.2rem;
+  text-align:     center;
+
+  width:          -webkit-calc(100% - 2rem);
+  width:          calc(100% - 2rem);
+
   ul {
     width: 100%;
     margin: 0px;
@@ -38,7 +43,6 @@ div.paginate-container {
 }
 
 .pagination > ul > li {
-  counter-increment: pagination;
   &:hover {
     a {
       color: lighten($background-color, 5%);
@@ -56,42 +60,17 @@ div.paginate-container {
   &.deactive {
     a {
       background-color: $grey-color-light;
-      border: solid 1px $grey-color-light;
-    }
-  }
-  &:first-child {
-    float: left;
-    a {
-      &:after {
-        content: "Previous";
-      }
-    }
-  }
-  &:nth-child(2) {
-    counter-reset: pagination;
-  }
-  &:last-child {
-    float: right;
-    a {
-      &:after {
-        content: "Next";
-      }
+      border: solid 1px $white-color-dark;
     }
   }
   a {
     border: solid 1px darken($background-color, 10%);
     border-radius: 0.2rem;
     color: darken($background-color, 45%);
-    text-decoration: none;
-    text-transform: uppercase;
     display: inline-block;
     text-align: center;
     padding: 0.5rem 0.9rem;
   }
-  a:after {
-    content: " " counter(pagination) " ";
-  }
-
 
 }
 
@@ -99,52 +78,94 @@ div.paginate-container {
 div.paginate-container {
 
   li {
-    a {
-      display: none;
-    }
     &:first-child {
       a {
         display: inline-block;
       }
       a:after {
-        content: "Previous";
+        content: "First page";
       }
     }
-    @include display-child(8);
+    @include display-child(12);
+    &:nth-child(2) {
+      a {
+        display: inline-block;
+      }
+      a:after {
+        content: "<";
+      }
+    }
     &:last-child {
       a {
         display: inline-block;
       }
       a:after {
-        content: "Next";
+        content: ">";
       }
     }
     &:nth-last-child(2) {
       a {
         display: inline-block;
       }
-    }
-    &:nth-last-child(3) {
-      display: inline-block;
-      &:after {
-        padding: 0 1rem;
-        content: "...";
+      a:after {
+        content: "Last page";
       }
     }
   }
 
+  @include media-query($on-laptop) {
+    li {
+      &:first-child {
+        display: inline-block;
+        a:after {
+          content: "First";
+        }
+      }
+      &:nth-child(2) {
+        display: inline-block;
+        a:after {
+          content: "<";
+        }
+      }
+      &:last-child {
+        display: inline-block;
+        a:after {
+          content: ">";
+        }
+      }
+      &:nth-last-child(2) {
+        display: inline-block;
+        a:after {
+          content: "Last";
+        }
+      }
+    }
+  }
 
   @include media-query($on-palm) {
     li {
       display: none;
+      @include display-child(5);
       &.active {
         display: inline;
       }
       &:first-child {
         display: inline;
         a:after {
-          content: "<";
+          content: "First";
          }
+      }
+      &:nth-last-child(2) {
+        display: inline;
+        a:after {
+          content: "Last";
+        }
+      }
+      &:nth-child(2) {
+        display: inline;
+        a:after {
+          content: "<";
+        }
       }
       &:last-child {
         display: inline;
