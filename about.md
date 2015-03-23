@@ -52,7 +52,7 @@ Idea comes and goes, I catch some and put them here..
 
   <div class="text-right">
     <strong>
-      - Pulled from my <a herf="http://www.linkedin.com/in/hexianghu">linkedin</a>
+      - Pulled from my <a href="http://www.linkedin.com/in/hexianghu">linkedin</a>
     </strong>
   </div>
 </div>
