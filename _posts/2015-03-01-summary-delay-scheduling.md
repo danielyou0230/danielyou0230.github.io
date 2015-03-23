@@ -3,6 +3,7 @@ layout: post
 title: "Summary - Delay Scheduling: A Simple Technique for Achieving
 Locality and Fairness in Cluster Scheduling"
 comments: True
+categories: "big-data"
 ---
 
 This is a paper motivated by the scheduling problem raised in traditional FIFO strategy in data-intensive cluster computing system.

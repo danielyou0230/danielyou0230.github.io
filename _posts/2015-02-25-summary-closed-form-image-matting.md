@@ -2,6 +2,7 @@
 layout: post
 title: "Summary - A Closed-From Solution to Natural Image Matting"
 comments: True
+categories: "vision"
 ---
 
 This article is a summary for PAMI 2013 paper - A closed-form solution to natural image matting.
@@ -174,20 +175,19 @@ $$
 
 * In this section we will mainly discuss the effects of regularization term and the window size
 
-###### 1.1 Effect of regularization weight
+* __1.1 Effect of regularization weight__
 
-* $\epsilon$ is the weight of the regularization term on a in cost function. There are two reasons for having it:
-  * Numerical stability
-  * Minimizing the norm of a biases the solution toward smoother alpha mattes
-
-
-* Use small $\epsilon$ value so that the sharpness of recovered matte matches the profile of the edge in the input image, but the matte also captures the image noise
+  * $\epsilon$ is the weight of the regularization term on a in cost function. There are two reasons for having it:
+    * Numerical stability
+    * Minimizing the norm of a biases the solution toward smoother alpha mattes
 
 
-###### 1.2 Effect of window size
-* Using wider windows is more stable when the color line model holds, but the chance of encountering windows that deviate from the color line model grows when the windows are larger
+  * Use small $\epsilon$ value so that the sharpness of recovered matte matches the profile of the edge in the input image, but the matte also captures the image noise
 
-* Increase computation time since the resulting system is less sparse
+* __1.2 Effect of window size__
+  * Using wider windows is more stable when the color line model holds, but the chance of encountering windows that deviate from the color line model grows when the windows are larger
+
+  * Increase computation time since the resulting system is less sparse
 
 
 ### Reference

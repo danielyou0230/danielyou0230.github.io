@@ -2,6 +2,7 @@
 layout: post
 title: "Summary - Dynamo: Amazon's Highly Available Key value Store"
 comments: True
+categories: "big-data"
 ---
 
 Dynamo is a highly available key-value storage system built by Amazon. It sacrifices a consistency under certain failure scenarios, makes extensive use of object versioning and application-assisted conflict resolution in a manner that provides a novel interface for developers to use.
@@ -14,8 +15,10 @@ Dynamo is a highly available key-value storage system built by Amazon. It sacrif
 ### System Assumption and Requirements
 * Query Model
   * => They assume that only simple Read / Write operation to data item identified by a uniquely key.
+
 * Crucial Efficiency requirement for low latency
   * => In the 99.9% of the distribution, there should be really tight response time
+
 * Weak ACID
   * => For the purpose of higher available, relaxed Consistency + no isolation guarantee is acceptable
 
@@ -28,6 +31,7 @@ Dynamo is a highly available key-value storage system built by Amazon. It sacrif
   * => “Peer to peer” Fashioned System
 
 ### General Architecture Design
+
 * Date Partition - Suit the incremental scalability requirements
   * Use Consistent Hash to partition keys and organize its position, treat output ranges as a circular “ring”.
     * So that there is no need to "rehash" all the keys when the system is scaled up
@@ -35,25 +39,30 @@ Dynamo is a highly available key-value storage system built by Amazon. It sacrif
     1. Spread data evenly across the system.
     2. Balance the load.
   * Replicated Keys in N nodes. Keep a “Preference list” for keys, which is the server that responsible
+
 * Data Versioning
   * => keep a list of \<node, counter\>(vector clock) for data merge in read
     * For causual results, merge the records with the latest result
     * For non-causual results, keep conflicts and sent results to client
+
 * Read / Write Execution : "Sloppy Quorum" to keep replica consistency
   * Requires a number R/W of nodes must participate in a successful read/write operation.(R + W > N, R or W < N)
     * Majority vote mechanism for select successful operation
   * All read/write operations are performed on first N healthy nodes from the preference list
     * So it is "sloppy", rather than strict
+
 * To handle Temporary Node/Network Failure: __Hinted Handoff Mechanism__
   * Basic Idea
       * Select another node temporary replacing the failure node and receive replicas.
       * Those replicas will be labeled with a hint, and stored in a separate local database that is scanned periodically.
       * Send replicas back when node failure is resolved
   * => to keep “always writable”
+
 * Permanent Failure Handling
   * To handle the Replica synchronization problem with Permanent Failure ( such as replica lost ) :
     * Use __Merkle Tree__, which is a tree that keeps individual key hash value as leaves and keeps the hash value of children node in parent node
     * => to __efficiently__ detect inconsistency and minimize transferred data
+
 * To achieve Node Failure detection
   * Use gossip-style protocol to perform decentralized failure detection and to propagate membership changes information
     * => to get eventual consistency.

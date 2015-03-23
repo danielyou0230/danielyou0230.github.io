@@ -2,8 +2,8 @@
 * Site header
 */
 .site-header {
-  border-top: 5px solid $blue-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  border-top: 5px solid $red-color-dark;
+  border-bottom: 1px solid $red-color-dark;
   min-height: 56px;
 
   // Positioning context for the mobile navigation icon
@@ -19,7 +19,7 @@
 
   &,
   &:visited {
-      color: $grey-color-dark;
+      color: $blue-color-dark;
   }
 }
 
@@ -48,7 +48,7 @@
     top: 9px;
     right: 30px;
     background-color: $background-color;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $red-color-light;
     border-radius: 5px;
     text-align: right;
 
@@ -66,7 +66,7 @@
         height: 15px;
 
         path {
-            fill: $grey-color-dark;
+            fill: $red-color-dark;
         }
       }
     }
@@ -93,7 +93,7 @@
 * Site footer
 */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 1px solid $red-color-dark;
   padding: $spacing-unit 0;
 }
 
