@@ -1,27 +1,157 @@
-.pagination {
-  padding: 10px 0px 10px 0px;
-  margin-bottom: 20px;
+
+// Counter
+@mixin display-child($n) {
+   @for $i from 2 through $n {
+     &:nth-child(#{$i}) {
+       a {
+         display: inline-block;
+       }
+     }
+   }
 }
 
-.page {
+div.paginate-container {
+  background: lighten($background-color, 5%);
+  width: -webkit-calc(100% - 1rem);
+  padding: 1rem;
+  margin-top: 3rem;
+  border-radius: 0.2rem;
+  counter-reset: pagination;
+  text-align: center;
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  ul {
+    width: 100%;
+    margin: 0px;
+    padding-left: 0px;
+  }
+}
+
+.pagination > ul,
+.pagination > ul > li {
+  list-style: none;
   display: inline-block;
-  padding: 8px 12px 8px 12px;
-  margin-right: 4px;
-  border-radius: 3px;
-  border: solid 1px #c0c0c0;
-  background: $white-color-dark;
-  font-size: .875em;
-  font-weight: bold;
-  text-decoration: none;
-  color: $grey-color;
+  padding-left: 0px;
 }
 
-.page:hover {
-  background: #fefefe;
+.pagination > ul > li {
+  counter-increment: pagination;
+  &:hover {
+    a {
+      color: lighten($background-color, 5%);
+      background-color: $grey-color-dark;
+      border: solid 1px $grey-color-dark;
+    }
+  }
+  &.active {
+    a {
+      color: lighten($background-color, 5%);
+      background-color: $grey-color-dark;
+      border: solid 1px $grey-color-dark;
+    }
+  }
+  &.deactive {
+    a {
+      background-color: $grey-color-light;
+      border: solid 1px $grey-color-light;
+    }
+  }
+  &:first-child {
+    float: left;
+    a {
+      &:after {
+        content: "Previous";
+      }
+    }
+  }
+  &:nth-child(2) {
+    counter-reset: pagination;
+  }
+  &:last-child {
+    float: right;
+    a {
+      &:after {
+        content: "Next";
+      }
+    }
+  }
+  a {
+    border: solid 1px darken($background-color, 10%);
+    border-radius: 0.2rem;
+    color: darken($background-color, 45%);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 0.9rem;
+  }
+  a:after {
+    content: " " counter(pagination) " ";
+  }
+
+
 }
 
-.page.active {
-  border: none;
-  background: $grey-color-dark;
-  color: #f0f0f0;
+
+div.paginate-container {
+
+  li {
+    a {
+      display: none;
+    }
+    &:first-child {
+      a {
+        display: inline-block;
+      }
+      a:after {
+        content: "Previous";
+      }
+    }
+    @include display-child(8);
+    &:last-child {
+      a {
+        display: inline-block;
+      }
+      a:after {
+        content: "Next";
+      }
+    }
+    &:nth-last-child(2) {
+      a {
+        display: inline-block;
+      }
+    }
+    &:nth-last-child(3) {
+      display: inline-block;
+      &:after {
+        padding: 0 1rem;
+        content: "...";
+      }
+    }
+  }
+
+
+  @include media-query($on-palm) {
+    li {
+      display: none;
+      &.active {
+        display: inline;
+      }
+      &:first-child {
+        display: inline;
+        a:after {
+          content: "<";
+         }
+      }
+      &:last-child {
+        display: inline;
+        a:after {
+          content: ">";
+        }
+      }
+    }
+  }
 }

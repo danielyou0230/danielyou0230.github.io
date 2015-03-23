@@ -27,30 +27,51 @@ layout: home
 
   <!-- Pagination links -->
   {% if paginator.total_pages > 1 %}
-    <div id="paginator" class="pagination">
-      <a class="page " href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"> First </a>
-      {% if paginator.previous_page %}
-        <a class="page " href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"> &laquo; </a>
-      {% else %}
-        <span class="page deactive"> &laquo; </span>
-      {% endif %}
+    <div id="paginator" class="paginate-container flexible-size">
+      <div class="pagination">
 
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <em class="page active">{{ page }}</em>
-        {% elsif  page == 1 %}
-          <a class="page " href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}">{{ page }}</a>
-        {% else %}
-          <a class="page " href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page | append: '#paginator' }}">{{ page }}</a>
-        {% endif %}
-      {% endfor %}
+        <ul>
+          {% if paginator.previous_page %}
+            <li>
+              <a  href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"></a>
+            </li>
+          {% else %}
+            <li class="deactive">
+              <a href="#paginator"> </a>
+            </li>
+          {% endif %}
 
-      {% if paginator.next_page %}
-        <a class="page " href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"> &raquo; </a>
-      {% else %}
-        <span class="page deactive" > &raquo; </span>
-      {% endif %}
-      <a class="page " href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages | append: '#paginator' }} "> Last </a>
+
+          {% for page in (1..paginator.total_pages) %}
+
+            {% if page == paginator.page %}
+              <li class="active">
+                <a href="#paginator"></a>
+              </li>
+            {% elsif  page == 1 %}
+              <li>
+                <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"></a>
+              </li>
+            {% else %}
+              <li>
+                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page | append: '#paginator' }}"></a>
+              </li>
+            {% endif %}
+          {% endfor %}
+
+          {% if paginator.next_page %}
+            <li>
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | append: '#paginator' }}"></a>
+            </li>
+          {% else %}
+            <li class="deactive">
+              <a href="#paginator"></a>
+            </li>
+          {% endif %}
+
+        </ul>
+
+      </div>
     </div>
   {% endif %}
 
