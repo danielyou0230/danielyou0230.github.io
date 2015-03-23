@@ -45,11 +45,9 @@
   width: 600px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Roboto', Helvetica,Arial,sans-serif;
   @extend %clearfix;
 
   @include media-query($on-palm) {
-    font-family: 'Roboto', Helvetica,Arial,sans-serif;
     top:15%;
     border-radius: 25px;
     position:relative;
@@ -149,24 +147,38 @@
   color: $blue-color-dark;
 }
 
-.maxim > strong  {
+.maxim > div > strong,
+.maxim > strong {
   color: $red-color-dark;
 }
 
-.maxim > s {
+.maxim > div > s,
+.maxim >s {
   color: $green-color-dark;
 }
 
+.maxim > div > i,
 .maxim > i {
   color: $blue-color;
   font-weight: 400;
 }
 
+.maxim > div > u,
 .maxim > u {
   color: $magenta-color-dark;
   font-weight: 400;
 }
 
-.float-right {
-  float:right;
+.maxim > div {
+  margin: 5px;
+}
+
+.text-right {
+  text-align:right;
+}
+.text-left {
+  text-align:left;
+}
+.text-center {
+  text-align:center;
 }

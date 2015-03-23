@@ -43,19 +43,34 @@ Idea comes and goes, I catch some and put them here..
 
 ## Me
 
-<h4><s>A <strong>Stale</strong> Definition</s></h4>
+<h4 class="text-center"><s>A <strong>Stale</strong> Definition</s></h4>
 
 <div class="maxim">
-  <i>Hexiang Hu</i> is a Computer Science student from Zhejiang University, who recently exchanged to Simon Fraser University for a Dual Degree Program. He worked as an anti-virus researcher intern in <u>Microsoft Malware Protection Center in Summer 2014</u>. He is interested with and passionate with Machine Learning, Computer Vision, Natural Language Processing, Reverse Engineering, Malware Research.
+  <div>
+    <i>Hexiang Hu</i> is a Computer Science student from Zhejiang University, who recently exchanged to Simon Fraser University for a Dual Degree Program. He worked as an anti-virus researcher intern in <u>Microsoft Malware Protection Center in Summer 2014</u>. He is interested with and passionate with Machine Learning, Computer Vision, Natural Language Processing, Reverse Engineering, Malware Research.
+  </div>
 
-<p class="float-right">
-<strong>
-  - Pulled from my <a herf="http://www.linkedin.com/in/hexianghu">linkedin</a>
-</strong>
-</p>
+  <div class="text-right">
+    <strong>
+      - Pulled from my <a herf="http://www.linkedin.com/in/hexianghu">linkedin</a>
+    </strong>
+  </div>
 </div>
-<h4><strong>An Updated Version</strong></h4>
+
+<h4 class="text-center"><strong>An Updated Version</strong></h4>
 
 <div class="maxim">
-  <i>Hexiang Hu</i> is a person who loves thinking, programming and <strong>LEARNING</strong>. "Technically", he has a special passion in <u>artificial intelligence, big data processing system and computer security</u>. "Non-technically", he enjoys watching basketball game, <s>working out</s> and trying new staff (especially cool geeky thing)
+  <div>
+    <i>Hexiang Hu</i> is a person who loves thinking, programming and <strong>LEARNING</strong>. "Technically", he has a special passion in <u>artificial intelligence, big data processing system and computer security</u>. "Non-technically", he enjoys watching basketball game, <s>working out</s> and trying new staff (especially cool geeky thing)
+  </div>
+
+  <div class="text-right">
+    <strong>
+      - On-going and Unofficial self definition
+    </strong>
+  </div>
 </div>
+
+<h4 class="text-center"><strong>简而言之</strong></h4>
+> 这人就是不折腾不舒服思密达。。。
+{: .text-center}
