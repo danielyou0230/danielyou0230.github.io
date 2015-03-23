@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Summary - Storm @ Twitter"
+title: "Storm @ Twitter"
 comments: True
+categories: "big-data"
 ---
 
 Storm is a real-time fault-tolerant and distributed stream data processing system. It is a current in use system at Twitter for scalable real-time data computation.
@@ -22,7 +23,7 @@ Storm is a real-time fault-tolerant and distributed stream data processing syste
 
   * Extensible
     * Storm can be used for processing messages and updating databases (stream processing), doing a continuous query on data streams and streaming the results into clients (continuous computation), parallelizing an intense query like a search query on the fly (distributed RPC), and more. Storm's small set of primitives satisfy a stunning number of use cases.
-    
+
   * Robust
     * A realtime system must have strong guarantees about data being successfully processed. A system that drops data has a very limited set of use cases. Storm guarantees that every message will be processed, and this is in direct contrast with other systems like S4.
     Extremely robust: Unlike systems like Hadoop, which are notorious for being difficult to manage, Storm clusters just work. It is an explicit goal of the Storm project to make the user experience of managing Storm clusters as painless as possible.

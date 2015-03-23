@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Summary - Spanner: Google's Globally-Distributed Database
+title: Spanner: Google's Globally-Distributed Database
 comment: True
+categories: "big-data"
 ---
 
 * Spanner is Google's scalable, multi-version, globally-distributed, and synchronously-replicated database.
