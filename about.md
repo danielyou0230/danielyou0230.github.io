@@ -65,9 +65,7 @@ Idea comes and goes, I catch some and put them here..
   </div>
 
   <div class="text-right">
-    <strong>
-      - On-going and Unofficial self definition
-    </strong>
+      - from Jan. 2015 to <strong>present</strong>
   </div>
 </div>
 
