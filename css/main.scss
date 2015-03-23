@@ -5,38 +5,46 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family:  Helvetica, Arial, sans-serif;
+$base-font-size:    16px;
+$small-font-size:   $base-font-size * 0.875;
+$base-line-height:  1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:      30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:        #111;
+$background-color:  #fdfdfd;
+$brand-color:       #2a7ae2;
 
-$red-color:       #ee0000;
-$red-color-light: lighten($red-color, 40%);
-$red-color-dark:  darken($red-color, 25%);
+$magenta-color:     #ff00ff;
+$magenta-color-light: lighten($magenta-color, 40%);
+$magenta-color-dark:  darken($magenta-color, 25%);
 
-$blue-color:       #009acd;
-$blue-color-light: lighten($blue-color, 40%);
-$blue-color-dark:  darken($blue-color, 25%);
+$green-color:       #00ee00;
+$green-color-light: lighten($green-color, 40%);
+$green-color-dark:  darken($green-color, 25%);
+
+$red-color:         #ee0000;
+$red-color-light:   lighten($red-color, 40%);
+$red-color-dark:    darken($red-color, 25%);
+
+$blue-color:        #009acd;
+$blue-color-light:  lighten($blue-color, 40%);
+$blue-color-dark:   darken($blue-color, 25%);
 
 $white-color:       #ffffff;
 $white-color-dark:  darken($white-color, 5%);
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:        #828282;
+$grey-color-light:  lighten($grey-color, 40%);
+$grey-color-dark:   darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:     800px;
 
-$on-mobile:        400px;
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-mobile:         400px;
+$on-palm:           600px;
+$on-laptop:         800px;
 
 
 

@@ -135,3 +135,38 @@
   text-overflow:ellipsis;
   overflow: hidden;
 }
+
+
+/*
+* Embeded maxim
+*/
+
+.maxim {
+  background-color: $grey-color-light;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 20px;
+  border-radius: 4px;
+  color: $blue-color-dark;
+}
+
+.maxim > strong  {
+  color: $red-color-dark;
+}
+
+.maxim > s {
+  color: $green-color-dark;
+}
+
+.maxim > i {
+  color: $blue-color;
+  font-weight: 400;
+}
+
+.maxim > u {
+  color: $magenta-color-dark;
+  font-weight: 400;
+}
+
+.float-right {
+  float:right;
+}
