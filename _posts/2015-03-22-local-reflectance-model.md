@@ -32,24 +32,26 @@ Illumination and reflectance over objects makes image looks real, since light-ma
 
 #### 3)  __Splitting Reflection__
 * We can divide reflection into three components
+  ![alt "reflectance geometry graph"](/images/posts/2015-03-22-reflectance-splitting.png){:height="200px"}
+
+<div class="maxim">
 $$
 \begin{align}
 f &= f_{\text{ideal diffuse}} + f_{ \text{directional diffuse} } \\
   &+ f_{ \text{ideal specular}}
 \end{align}
 $$
-
-![alt "reflectance geometry graph"](/images/posts/2015-03-22-reflectance-splitting.png){:height="200px"}
+</div>
 
 * Diffuse/Lambertian reflection (Complete Lambert's Model)
   * Generally the surface appearance
-  * independent of the view vector: intensity remains the same from all viewing angle. => $B \propto \cos{\theta} = \vec{N} \cdot \vec{L}$
+  * independent of the view vector: intensity remains the same from all viewing angle. $B \propto \cos{\theta} = \vec{N} \cdot \vec{L}$
   * As we assume that BRDF is a constant $k_d$, and to further __avoid potential negative value__, we could make $B = I_d \cdot I_d \cdot \max{(\vec{N} \cdot \vec{L}, 0)}$
 * Specular Reflection (Usually approximated by Phone Model)
   * The color of bright highlights
   * _Specular reflection_ - the light is reflected off mostly in a reflection direction
 
-  ![alt "viewer angle calculation"](/images/posts/2015-03-22-reflection-angle.png){:height="200px"}
+    ![alt "viewer angle calculation"](/images/posts/2015-03-22-reflection-angle.png){:height="200px"}
 
   * If the viewer is not looking exactly at R, he will still observe a reduced reflection. (We assume the strength is propotional to the angle between $\vec{V}$ and $\vec{R}$)
     * So in the phone model, to constrol the specularity, we take a power of cosine term.
@@ -95,6 +97,7 @@ $$
   $$
 
   * G(.) is the __geometric attenuation__ to account for the shadowing and masking effects between micro-facets
+
     ![alt "geometrix term"](/images/posts/2015-03-22-geometrix-attenuation.png){:height="200px"}
 
 #### Others
