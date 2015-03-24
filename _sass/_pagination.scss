@@ -71,7 +71,14 @@ div.paginate-container {
     text-align: center;
     padding: 0.5rem 0.9rem;
   }
-
+  em {
+    border: solid 1px darken($background-color, 10%);
+    border-radius: 0.2rem;
+    color: darken($background-color, 45%);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 0.9rem;    
+  }
 }
 
 
