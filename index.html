@@ -90,25 +90,51 @@ layout: home
 
 <script charset="utf-8">
   var pageNum = $(".page").length;
+  // Make different apperance with different screen resolution
+  var onPalm = window.matchMedia( "(min-width: 600px)" );
+  var onLaptop = window.matchMedia( "(min-width: 800px)" );
 
-  if( parseInt(pageNum) >= 7){
-    // Make all pages hidden
-    $(".page").hide();
+  if(onLaptop.matches){
 
-    var activeId = $(".active").attr('id');
-    var startId = Math.max(activeId - 3, 1);
-    var endId = startId + 6;
+    if( parseInt(pageNum) >= 7){
+      // Make all pages hidden
+      $(".page").hide();
 
-    // First append "..." element before the first visible page if it is
-    // greater than 0
-    if ( startId > 1 ){ $('li#1').before("<li><em>...</em></li>"); }
+      var activeId = $(".active").attr('id');
+      var startId = Math.max(activeId - 3, 1);
+      var endId = startId + 6;
 
-    // Append "..." element after the last page
-    $('li#'+endId).after("<li><em>...</em></li>");
+      // First append "..." element before the first visible page if it is
+      // greater than 0
+      if ( startId > 1 ){ $('li#1').before("<li><em>...</em></li>"); }
 
-    // For loop through all visible pages and display them
-    for( var i = startId; i <= endId; i++){ $('li#'+i).show(); }
+      // Append "..." element after the last page
+      $('li#'+endId).after("<li><em>...</em></li>");
 
+      // For loop through all visible pages and display them
+      for( var i = startId; i <= endId; i++){ $('li#'+i).show(); }
+    }
   }
+  else if(onPalm.matches){
+    if( parseInt(pageNum) >= 5){
+      // Make all pages hidden
+      $(".page").hide();
+
+      var activeId = $(".active").attr('id');
+      var startId = Math.max(activeId - 2, 1);
+      var endId = startId + 4;
+
+      // First append "..." element before the first visible page if it is
+      // greater than 0
+      if ( startId > 1 ){ $('li#1').before("<li><em>...</em></li>"); }
+
+      // Append "..." element after the last page
+      $('li#'+endId).after("<li><em>...</em></li>");
+
+      // For loop through all visible pages and display them
+      for( var i = startId; i <= endId; i++){ $('li#'+i).show(); }
+    }
+  }
+
 
 </script>
