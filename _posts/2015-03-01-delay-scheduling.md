@@ -13,6 +13,8 @@ The proposed methodology is designed to get a good tradeoff point between the co
 
 <!--more-->
 
+<hr class="soft"/>
+
 ### Introduction
 
 #### Problem with Hadoop

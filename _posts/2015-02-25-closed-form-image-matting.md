@@ -10,6 +10,8 @@ This article is a summary for PAMI 2013 paper - A closed-form solution to natura
 
 <!--more-->
 
+<hr class="soft"/>
+
 ### Introduction
 
 #### Targets
