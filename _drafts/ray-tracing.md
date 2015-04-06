@@ -6,78 +6,89 @@ date: 2015-03-24
 categories: "graphics"
 ---
 
-Ray tracing is a procedure of object rendering, which differs from Rasterization-based rendering in the whole pipeline. It is pixel by pixel rather than primitive by primitive. And to reflect inter-reflection, a usual method is to allow recursion in this process, so as to get a realism image.
+In this post, I targets to share my understanding towards ray tracing pipeline and will give an intuitive structure for ray tracing program design
 
 <!--more-->
 
-### Overview
-{: .text-center}
+### Introduction
 
-* Basic Idea
-  * trace the ray in a reverse order from the eye to the light source, and determine what color a pixel is from the tracing result.
-  * It works because optical properties ramain the same under path reversal
+As wiki-pdia defines, [*Ray tracing*](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)) is __a procedure of object rendering__, which differs from Rasterization-based rendering in the whole pipeline. It is pixel by pixel rather than primitive by primitive. And to reflect inter-reflection, a usual method is to allow recursion in this process, so as to get a realism image.
 
-* Advantages
-  * Esay to handle complex illumination effects (reflections, refractions, soft shadows, indirect illumination)
-  * Very flexible in handling various shapes
-    * only need an intersection routine
+### Pipeline Overview
 
-* Disadvantages
-  * Performance (due to weak object space coherence)
-  * Typically needs preprocessing to build fast intersection structure
-  * Difficult to handle dynamic scenes
-
-### A simple ray tracing algorithm
+![alt pl](/images/posts/2015-04-06-ray-tracing-pipeline.png){:height="320px"}
 {: .text-center }
 
-{% highlight c++ %}
+In the above graph, different from other computer graphic rendering pipeline, ray tracing is a procedure that __mimics the imaging process in the real world__. It simulates the procedure of catching direct ray from light source, reflected ray from object surface, refracted ray through transparent object, etc, and thus achieves a superior realism effect.
 
-Shape scene_definition(void){
-  // define the primitive objects...
-}
+In the following section, I will introduce the general ray tracing pipeline based on my personal practice, and will give a graph to help you with your [__ray tracer design__](#ray-tracer-design).
 
-Image ray_tracing(int width, int height){
-  Image image = new Image(width, height);
+### Pipeline Details
 
-  for( int i = 0; i < width; i++){
-    for( int j = 0; j < height; j++){
-      // First shoot a single ray at a pixel
-      Ray ray = camera.getCameraRay(i, j);
+#### Start from image plane and camera ray
+{: .text-center}
 
-      // Find the intersection point between ray and the object
-      hit = IntersectScene(ray);
+![alt model](/images/posts/2015-04-06-ray-tracing-model.png){:height="320px"}
+{: .text-center}
 
-      // Calculate specular reflectance, diffuse reflectance, ambient color,
-      // and emmision color
-      image[i][j] = getShadingColor(ray, hit);
+We first define a image plane at a particular space, consists of several pixels. The whole process goes in a __pixel by pixel__ manner. At each pixel, we produce a ray shot from the camera center towards a particular point in current pixel.
 
-    }
-  }
-  return image
-}
+#### Find Ray-Scene intersection
+{: .text-center}
 
-int main(void){
-  ...
+#### Adding local illuminance effect at intersection point
+{: .text-center}
 
-  int im_wid = 400, im_height = 500;
+#### Shadow test
+{: .text-center}
 
-  shapes = scene_definition();
-  Image im = ray_tracing(im_wid, im_height);
+#### Reflection Ray
+{: .text-center}
 
-  render_image(im);
-  save_image(im);
+#### Refraction Ray
+{: .text-center}
 
-  ...
-}
-{% endhighlight %}
+#### Fine-graining scene through __shooting more ray__ at each pixel
+{: .text-center}
+
+### Accelerate the process
+
+#### Direction 1: Fewer Ray
+{: .text-center}
+
+#### Direction 2: Faster Intersection
+{: .text-center}
+
+#### Direction 3: Generalized Ray
+{: .text-center}
 
 
-* __Ray-shape Intersection__
-  * Task: take ray, compute intersection and return hit structure
-* Rays
-  * __t value__
-    * A distance along the ray
-  * Any point along the ray with origin($x_S$, $y_S$, $z_S$) and direction ($x_d$, $y_d$, $z_d$) can be described using t
-    * $x = x_s + t \cdot x_d$
-    * $y = y_s + t \cdot y_d$
-    * $z = z_s + t \cdot z_d$
+### A Sample Ray Tracing Program Structure
+{: #ray-tracer-design}
+
+#### __Program Structure__
+{: .text-center}
+
+![alt struct](/images/posts/2015-04-06-ray-trace-program.png){:height="512px"}
+{: .text-center}
+
+Above graph is a basic structure for a simple ray tracer. The __blue__ part represents the primitive classes and object classes that together form the ray trace scene. The __Red__ part gives the logic for tracing a single pixel's effective color in the scene. You would also need a simple image utility function to deal with image format, so as to store output image to disk.
+
+#### __Output Result__
+{: .text-center}
+
+![alt scene](/images/posts/2015-04-06-traced-scene.png){:height="256px"}
+{: .text-center}
+
+
+Here is an _output image_ from my __ray tracer__.
+{: .maxim .text-center}
+
+
+### References
+
+[1] [**SFU - CMPT 361 Introduction To Computer Graphics by Prof. Ping Tan**](http://www.cs.sfu.ca/~pingtan/)
+
+[2] [**Ray Tracing Acceleration Techniques**](http://www.cs.virginia.edu/~gfx/Courses/2003/ImageSynthesis/scribed_notes/03_acceleration.pdf)
+
+[3] [**Berkley X - Foundation of computer graphics**](https://courses.edx.org/courses/BerkeleyX/CS-184.1x/2013_October/info)
