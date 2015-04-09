@@ -36,6 +36,23 @@ We first define a image plane at a particular space, consists of several pixels.
 #### Find Ray-Scene intersection
 {: .text-center}
 
+As addressed before, in the ray tracing pipeline, one important and determining step is to find the intersection point of our camera ray and the objects in the scene.
+
+An natural and intuitive method is to define lots of object primitives in the scene, call __intersect(ray, scene)__ which iterating through the long list of all primitive objects in the scene and see what is the closest intersection point. So the problem is sub-divided into one that intersect ray and primitive 3D shapes.
+
+In the following part, I would like to address some intersection formula with major shape primitives.
+
+1. __Ray representation__
+
+2. __Sphere intersection__
+
+3. __Plane intersection__
+
+4. __Box intersection__
+
+5. __Triangle intersection__
+
+
 
 #### Adding local illuminance effect at intersection point
 {: .text-center}
