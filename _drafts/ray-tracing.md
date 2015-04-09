@@ -31,10 +31,11 @@ In the following section, I will introduce the general ray tracing pipeline base
 ![alt model](/images/posts/2015-04-06-ray-tracing-model.png){:height="320px"}
 {: .text-center}
 
-We first define a image plane at a particular space, consists of several pixels. The whole process goes in a __pixel by pixel__ manner. At each pixel, we produce a ray shot from the camera center towards a particular point in current pixel.
+We first define a image plane at a particular space, consists of several pixels. The whole process goes in a __pixel by pixel__ manner. At each pixel, we produce a ray shot from the camera center towards a particular point in current pixel. And we trace that ray through calling a recursive function __trace()__, so as to get the result color of this camera ray.
 
 #### Find Ray-Scene intersection
 {: .text-center}
+
 
 #### Adding local illuminance effect at intersection point
 {: .text-center}
@@ -92,3 +93,5 @@ Here is an _output image_ from my __ray tracer__.
 [2] [**Ray Tracing Acceleration Techniques**](http://www.cs.virginia.edu/~gfx/Courses/2003/ImageSynthesis/scribed_notes/03_acceleration.pdf)
 
 [3] [**Berkley X - Foundation of computer graphics**](https://courses.edx.org/courses/BerkeleyX/CS-184.1x/2013_October/info)
+
+[4] [**Scratchpixel - writing a simple raytracer**](http://www.scratchapixel.com/old/lessons/3d-basic-lessons/lesson-1-writing-a-simple-raytracer/)
