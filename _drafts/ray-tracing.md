@@ -42,20 +42,73 @@ An natural and intuitive method is to define lots of object primitives in the sc
 
 In the following part, I would like to address some intersection formula with major shape primitives.
 
-1. __Ray representation__
+__Ray representation__
 
-2. __Sphere intersection__
+To ease the computation with intersection, we use a single ray origin along with ray direction and a variable __t__ stands for distance to represent a ray.
 
-3. __Plane intersection__
+$$
+\begin{align}
+  &ray = ray_{origin} + ray_{direction} \cdot t \\
+  \text{where } &ray_{origin} = (x_{s}, y_{s}, z_{s}), \\
+  \text{and } &ray_{direction} = (x_{d}, y_{d}, z_{d})
+\end{align}
+$$
 
-4. __Box intersection__
+So that finding closest ray-object intersection is equivalent with finding the closest __t__ value from solving ray object intersection equation.
 
-5. __Triangle intersection__
+__Sphere intersection__
+
+For a sphere object, we could represent it by its sphere center and its radius as following:
+
+$$
+(x - x_o)^2 + (y - y_o)^2 + (z - z_o)^2 = r^2
+$$
+
+And thus we can find the intersection point by __solving following equation set__:
+
+$$
+\begin{gather*}
+&(x - x_o)^2 + (y - y_o)^2 + (z - z_o)^2 = r^2 \\
+&x = x_s + t \cdot x_d \\
+&y = y_s + t \cdot y_d \\
+&z = z_s + t \cdot z_d
+\end{gather*}
+$$
+
+This is a typical quadratic equation group, which we can solve by a closed form equation:
+
+$$
+\begin{gather*}
+A = x_d^2 + y_d^2 + z_d^2 \\
+B = 2 \cdot (x_d \cdot (x_s - x_o) + y_d \cdot (y_s - y_o) + z_d \cdot (z_s - z_o)) \\
+C = (x_s - x_o)^2 + (y_s - y_o)^2 + (z_s - z_o)^2 - r^2 \\
+t_1 = \frac{-B - \sqrt{ B^2 - 4 \cdot A \cdot C}}{2 \cdot A} \\
+t_2 = \frac{-B + \sqrt{ B^2 - 4 \cdot A \cdot C}}{2 \cdot A}
+\end{gather*}
+$$
+
+The resulted $t_1$ and $t_2$ will have different value condition according to the sign of $\Delta = B - 4 A C$. We need to __include__ the nearest positive solution and __exclude__ imaginary solutions as well as negative solutions (Since that a ray shooting out will not intersect a point that is behind the ray origin).  
+
+By the way, it is really easy to calculate _normal for a intersection point_ on the sphere since we only need to calculate __$$\vec{N} = p_{intersect} - p_{origin}$$__
+{: .maxim}
+
+__Plane intersection__
+
+To represent a infinite plane, we can use its surface normal $$\vec{N} = (A, B, C)$$, so that we would have $$A \cdot x + B \cdot y + C \cdot z + D = 0$$. And in this case, the solution for a ray surface intersection would be
+
+$$t = - \frac{A \cdot x_s + B \cdot y_s + C \cdot z_s + D}{ A \cdot x_d + B \cdot y_d + C \cdot z_d }$$
+
+
+__Box intersection__
+
+__Triangle intersection__
 
 
 
-#### Adding local illuminance effect at intersection point
+#### Adding __local illuminance effect__ at intersection point
 {: .text-center}
+
+As I wrote in [__another post__](/graphics/2015/03/22/local-reflectance-model/), we could use the phong local reflectance model to simulate the material property of objects in the scene at each pixel. And to do so, we need to calculate the surface normal $\vec{N}$ at the intersection point __p__ , the light source direction vector $$\vec{L} = P_{intersection} - L_{source}$$ , the reflected light direction $\vec{R} = 2 \cdot \vec{N} - \vec{L}$ as well as the view direction $\vec{V} = -\vec{Ray_{direction}}$.
 
 #### Shadow test
 {: .text-center}

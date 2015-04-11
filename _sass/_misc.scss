@@ -161,6 +161,12 @@
   color: $green-color-dark;
 }
 
+.maxim > div > em,
+.maxim > em {
+  color: $blue-color-dark;
+  font-weight: 400;
+}
+
 .maxim > div > i,
 .maxim > i {
   color: $blue-color;
