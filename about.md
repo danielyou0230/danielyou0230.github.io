@@ -68,7 +68,3 @@ Idea comes and goes, I catch some and put them here..
       - from Jan. 2015 to <strong>present</strong>
   </div>
 </div>
-
-<h4 class="text-center"><strong>简而言之</strong></h4>
-> 这人就是不折腾不舒服思密达。。。
-{: .text-center}
