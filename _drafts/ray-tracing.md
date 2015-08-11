@@ -101,7 +101,10 @@ $$t = - \frac{A \cdot x_s + B \cdot y_s + C \cdot z_s + D}{ A \cdot x_d + B \cdo
 
 __Box intersection__
 
+
+
 __Triangle intersection__
+
 
 
 
