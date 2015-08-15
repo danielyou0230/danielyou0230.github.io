@@ -38,6 +38,8 @@ $text-color:        #111;
 $background-color:  #f9f9f9;
 $brand-color:       #2a7ae2;
 
+$boya-light:        #35DACA;
+
 // Width of the content area
 $content-width:     800px;
 
@@ -68,6 +70,7 @@ $on-laptop:         800px;
         "layout",
         "syntax-highlighting",
         "misc",
+        "components",
         "timeline",
         "toy",
         "pagination"
