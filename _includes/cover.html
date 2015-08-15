@@ -1,4 +1,4 @@
-<div id="profile-cover" class="cover img-responsive" style="background-image: url({{ site.background | prepend: site.baseurl }}); ">
+<div id="profile-cover" class="cover img-responsive" style="background-image: url({{ site.background | prepend: site.baseurl }});">
   {{ site.static_files.path }}
   <div id="profile-namecard" class="profile-wrapper">
     <div class="profile-col profile-col-1">
@@ -25,18 +25,20 @@
   {
     $('#profile-avatar').attr('src', '{{ site.user.deep_pic | prepend: site.baseurl }}');
     $('#profile-cover').css("background-image", "url({{ site.deep_background | prepend: site.baseurl }})");
+    $('#profile-cover').fadeIn(1000);
     // console.log('Move in now...');
   }
 
   function moveOut()
   {
     $('#profile-avatar').attr('src', '{{ site.user.head_pic | prepend: site.baseurl }}');
-    $('#profile-cover').css("background-image", "url({{ site.background | prepend: site.baseurl }})");  
+    $('#profile-cover').css("background-image", "url({{ site.background | prepend: site.baseurl }})"); 
+    $('#profile-cover').fadeIn(1000);
     // console.log('Move out now...');
   }
 
   $(function() { 
-    $('#profile-avatar').hover(moveIn, moveOut);
+    $('#profile-namecard').hover(moveIn, moveOut);
   })
 
 </script>
