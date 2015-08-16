@@ -2,7 +2,7 @@
   {{ site.static_files.path }}
   <div id="profile-namecard" class="profile-wrapper wrapper-light">
     <div id="my-pic" class="profile-col profile-col-1">
-      <img id="profile-avatar" src="{{ site.user.head_pic | prepend: site.baseurl }}" alt="Me" class="circle-img"/>
+      <img id="profile-avatar" src="{{ site.user.head_pic | prepend: site.baseurl }}" alt="Me" class="circle-img border-dark"/>
     </div>
     <div id="my-contact" class="profile-col profile-col-2">
       <div id="my-name" class="text-grey-dark">
@@ -15,7 +15,7 @@
         {{ site.user.email }}
       </div>
       <div class="social-media">
-          {% include grey-social.html %}
+          {% include interactive-social.html %}
       </div>
     </div>
     <div id="my-desc" class="profile-col profile-col-2 hide">
@@ -32,7 +32,9 @@
   function deepFeature()
   {
     $('#profile-avatar').attr('src', '{{ site.user.deep_pic | prepend: site.baseurl }}');
-    
+    $('#profile-avatar').removeClass('border-dark');
+    $('#profile-avatar').addClass('border-bright');
+
     $('#profile-cover').removeClass('shallow-bg');
     $('#profile-cover').addClass('deep-bg');
     
@@ -47,6 +49,8 @@
   function shallowFeature()
   {
     $('#profile-avatar').attr('src', '{{ site.user.head_pic | prepend: site.baseurl }}');
+    $('#profile-avatar').removeClass('border-bright');
+    $('#profile-avatar').addClass('border-dark');
 
     $('#profile-cover').removeClass('deep-bg');
     $('#profile-cover').addClass('shallow-bg');
