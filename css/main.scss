@@ -12,20 +12,21 @@ $base-line-height:  1.5;
 $spacing-unit:      30px;
 
 $magenta-color:     #ff00ff;
-$magenta-color-light: lighten($magenta-color, 40%);
+$magenta-color-light: lighten($magenta-color, 25%);
 $magenta-color-dark:  darken($magenta-color, 25%);
 
 $green-color:       #00ee00;
 $green-color-light: lighten($green-color, 40%);
 $green-color-dark:  darken($green-color, 25%);
 
-$red-color:         #ee0000;
+// Same color scheme as google plus
+$red-color:         #d34836;
 $red-color-light:   lighten($red-color, 40%);
 $red-color-dark:    darken($red-color, 25%);
 
-$blue-color:        #009acd;
+$blue-color:        #0077B5;
 $blue-color-light:  lighten($blue-color, 40%);
-$blue-color-dark:   darken($blue-color, 25%);
+$blue-color-dark:   darken($blue-color,  25%);
 
 $white-color:       #ffffff;
 $white-color-dark:  darken($white-color, 5%);
@@ -39,12 +40,20 @@ $text-color:        #111;
 $background-color:  #f9f9f9;
 $brand-color:       #2a7ae2;
 
-$boya-light:        #35DACA;
-
+$boya-color:        #35DACA;
 $linkedin-color:    #0077B5;
 $twitter-color:     #4099ff;
 $facebook-color:    #3B5998;
 $github-color:      #000000;
+
+// Site color scheme[primary and secondary]
+$primary-color:             $blue-color;
+$primary-color-light:       $blue-color-light;
+$primary-color-dark:        $blue-color-dark;
+
+$secondary-color:           $red-color;
+$secondary-color-light:     $red-color-light;
+$secondary-color-dark:      $red-color-dark;
 
 // Width of the content area
 $content-width:     800px;
