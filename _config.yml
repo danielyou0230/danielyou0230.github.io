@@ -12,7 +12,7 @@ user:
   head_pic:   /images/self-portrait/me.jpg
   deep_pic:   /images/self-portrait/deep-me.jpg
   desc:
-    title:    "Deep Hexiang"
+    title:    "In Deep."
     content:  "I am passionte with Machine Learning as well as Computer Vision. And my research topic majorly focuses on <em class='text-grey-bright'>Visual Recognition with Deep Learning</em>."
 
 baseurl: ""
