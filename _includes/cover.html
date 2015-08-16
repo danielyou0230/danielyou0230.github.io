@@ -1,21 +1,29 @@
-<div id="profile-cover" class="cover img-responsive" style="background-image: url({{ site.background | prepend: site.baseurl }});">
+<div id="profile-cover" class="cover img-responsive">
   {{ site.static_files.path }}
-  <div id="profile-namecard" class="profile-wrapper">
+  <div id="profile-namecard" class="profile-wrapper wrapper-light">
     <div class="profile-col profile-col-1">
       <img id="profile-avatar" src="{{ site.user.head_pic | prepend: site.baseurl }}" alt="Me" class="circle-img"/>
     </div>
-    <div class="profile-col profile-col-2">
-      <div id="my-name">
+    <div id="my-contact" class="profile-col profile-col-2">
+      <div id="my-name" class="text-grey-dark">
         {{ site.user.name }}
       </div>
-      <div id="my-title">
+      <div id="my-title" class="text-grey">
         {{ site.user.title }}
       </div>
-      <div id="my-email">
+      <div id="my-email" class="text-grey-light">
         {{ site.user.email }}
       </div>
       <div class="social-media">
           {% include grey-social.html %}
+      </div>
+    </div>
+    <div id="my-desc" class="profile-col profile-col-2 hide">
+      <div id="my-desc-title">
+        {{ site.user.desc.title}}
+      </div>
+      <div id="my-desc-content">
+        {{ site.user.desc.content }}
       </div>
     </div>
   </div>
@@ -24,21 +32,23 @@
   function moveIn()
   {
     $('#profile-avatar').attr('src', '{{ site.user.deep_pic | prepend: site.baseurl }}');
-    $('#profile-cover').css("background-image", "url({{ site.deep_background | prepend: site.baseurl }})");
-    $('#profile-cover').fadeIn(1000);
+    $('#profile-namecard').toggleClass('wrapper-light wrapper-dark');
+    $('#my-desc').removeClass('hide');
+    $('#my-contact').addClass('hide');    
     // console.log('Move in now...');
   }
 
   function moveOut()
   {
     $('#profile-avatar').attr('src', '{{ site.user.head_pic | prepend: site.baseurl }}');
-    $('#profile-cover').css("background-image", "url({{ site.background | prepend: site.baseurl }})"); 
-    $('#profile-cover').fadeIn(1000);
+    $('#profile-namecard').toggleClass('wrapper-dark wrapper-light');
+    $('#my-contact').removeClass('hide');
+    $('#my-desc').addClass('hide');
     // console.log('Move out now...');
   }
 
   $(function() { 
-    $('#profile-namecard').hover(moveIn, moveOut);
+    $('#profile-cover').hover(moveIn, moveOut);
   })
 
 </script>

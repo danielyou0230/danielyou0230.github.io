@@ -3,9 +3,9 @@
 */
 
 .social-icon {
-  width: 40px;
-  height: 40px;
-  display: inline-block;
+  width:    40px;
+  height:   40px;
+  display:  inline-block;
 }
 
 
@@ -20,6 +20,7 @@
   background-size:      cover;
   background-repeat:    no-repeat;
   background-position:  center center;
+  background-image:     url($cover-img);
   margin-right:         auto;
   margin-left:          auto;
   padding-right:        0px;
@@ -33,12 +34,15 @@
   }
 }
 
+.cover:hover {
+  background-image:     url($deep-cover-img);
+}
+
 /**
 * Profile Namecard Related
 */
 
 .profile-wrapper {
-  background-color: rgba(255, 255, 255, .8);
   border-radius:    25px;
   position:         relative;
   top:              40%;
@@ -52,10 +56,18 @@
     border-radius: 25px;
     position:relative;
     width: -webkit-calc(90% - (#{$spacing-unit} / 2));
-    width: calc(90% - (#{$spacing-unit} / 2));
+    width:         calc(90% - (#{$spacing-unit} / 2));
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.wrapper-light {
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.wrapper-dark {
+  background-color: rgba(150, 150, 150, .8);
 }
 
 .profile-col {
@@ -113,15 +125,27 @@
 }
 
 #my-title {
-  font:         20px Serif;
+  font-size:    20px;
   color:        $grey-color-dark;
   font-weight:  200;
 }
 
 #my-email {
-  font:         16px Serif;
+  font-size:    16px;
   color:        $grey-color-dark;
   font-weight:  160;
+}
+
+#my-desc-title {
+  font-size:    28px;
+  color:        $grey-color-bright;
+  font-weight:  bold;
+}
+
+#my-desc-content {
+  font-size:    18px;
+  color:        $grey-color-light;
+  font-weight:  200;
 }
 
 @include media-query($on-palm) {
@@ -133,4 +157,8 @@
 .preview {
   text-overflow:  ellipsis;
   overflow:       hidden;
+}
+
+.hide {
+  display:        none;
 }

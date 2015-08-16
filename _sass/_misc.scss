@@ -10,8 +10,8 @@
   border-radius: 4px;
   color: $blue-color-dark;
   @include media-query($on-palm) {
-      padding: 2px;
-      margin: 2px;
+    padding:  2px;
+    margin:   2px;
   }
 }
 

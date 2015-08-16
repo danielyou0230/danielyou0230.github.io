@@ -6,11 +6,14 @@ deep_background: /images/background/background-deepcube.jpg
 
 # Site user settings
 user:
-    name:       "Hexiang Hu"
-    title:      "[at] Simon Fraser University"
-    email:      "hexiang_hu [at] sfu.ca"
-    head_pic:   /images/self-portrait/me.jpg
-    deep_pic:   /images/self-portrait/deep-me.jpg
+  name:       "Hexiang Hu"
+  title:      "[at] Simon Fraser University"
+  email:      "hexiang_hu [at] sfu.ca"
+  head_pic:   /images/self-portrait/me.jpg
+  deep_pic:   /images/self-portrait/deep-me.jpg
+  desc:
+    title:    "Deep Hexiang"
+    content:  "I am passionte with Machine Learning as well as Computer Vision. And my research topic majorly focuses on <strong>Visual Recognition with Deep Learning</strong>."
 
 baseurl: ""
 # the subpath of your site, e.g. /blog/
@@ -18,16 +21,16 @@ url: "https://hex-iang.github.io"
 # the base hostname & protocol for your sit
 
 # Pagination
-paginate: 4
+paginate: 5
 paginate_path: "/page:num/"
 
 # Social media link for the site
 social:
-    twitter:    Hexiang_Hu
-    github:     Hex-iang
-    facebook:   Hu.Hexiang
-    linkedin:   hexianghu
-    rss:        /feed.xml
+  twitter:    Hexiang_Hu
+  github:     Hex-iang
+  facebook:   Hu.Hexiang
+  linkedin:   hexianghu
+  rss:        /feed.xml
 
 
 # Build settings
@@ -38,8 +41,8 @@ permalink: pretty
 
 # customized document resources
 collections:
-    toys:
-        output: true
+  toys:
+    output: true
 
 scss:
   sass_dir: _scss
