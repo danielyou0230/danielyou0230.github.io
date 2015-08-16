@@ -37,7 +37,10 @@ body {
   -webkit-text-size-adjust:   100%;
 }
 
-
+body:after{
+  display:none;
+  content: url($cover-img) url($deep-cover-img);
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
