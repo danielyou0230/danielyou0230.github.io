@@ -1,4 +1,4 @@
-<div id="profile-cover" class="cover img-responsive">
+<div id="profile-cover" class="cover shallow-bg img-responsive">
   {{ site.static_files.path }}
   <div id="profile-namecard" class="profile-wrapper wrapper-light">
     <div class="profile-col profile-col-1">
@@ -29,26 +29,38 @@
   </div>
 </div>
 <script type="text/javascript">
-  function moveIn()
+  function deepFeature()
   {
     $('#profile-avatar').attr('src', '{{ site.user.deep_pic | prepend: site.baseurl }}');
-    $('#profile-namecard').toggleClass('wrapper-light wrapper-dark');
+    
+    $('#profile-cover').removeClass('shallow-bg');
+    $('#profile-cover').addClass('deep-bg');
+    
+    $('#profile-namecard').removeClass('wrapper-light');
+    $('#profile-namecard').addClass('wrapper-dark');
+    
     $('#my-desc').removeClass('hide');
     $('#my-contact').addClass('hide');    
     // console.log('Move in now...');
   }
 
-  function moveOut()
+  function shallowFeature()
   {
     $('#profile-avatar').attr('src', '{{ site.user.head_pic | prepend: site.baseurl }}');
-    $('#profile-namecard').toggleClass('wrapper-dark wrapper-light');
+
+    $('#profile-cover').removeClass('deep-bg');
+    $('#profile-cover').addClass('shallow-bg');
+    
+    $('#profile-namecard').removeClass('wrapper-dark');
+    $('#profile-namecard').addClass('wrapper-light');
+    
     $('#my-contact').removeClass('hide');
     $('#my-desc').addClass('hide');
     // console.log('Move out now...');
   }
 
   $(function() { 
-    $('#profile-cover').hover(moveIn, moveOut);
+    $('#profile-namecard').hover(deepFeature, shallowFeature);
   })
 
 </script>

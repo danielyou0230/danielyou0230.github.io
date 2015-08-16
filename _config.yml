@@ -13,7 +13,7 @@ user:
   deep_pic:   /images/self-portrait/deep-me.jpg
   desc:
     title:    "Deep Hexiang"
-    content:  "I am passionte with Machine Learning as well as Computer Vision. And my research topic majorly focuses on <strong>Visual Recognition with Deep Learning</strong>."
+    content:  "I am passionte with Machine Learning as well as Computer Vision. And my research topic majorly focuses on <em class='text-grey-bright'>Visual Recognition with Deep Learning</em>."
 
 baseurl: ""
 # the subpath of your site, e.g. /blog/
