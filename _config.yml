@@ -27,7 +27,7 @@ paginate_path: "/page:num/"
 # Social media link for the site
 social:
   twitter:    Hexiang_Hu
-  github:     Hex-iang
+  github:     Hexiang-Hu
   facebook:   Hu.Hexiang
   linkedin:   hexianghu
   rss:        /feed.xml
