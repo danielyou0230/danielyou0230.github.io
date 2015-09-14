@@ -61,7 +61,7 @@ Idea comes and goes, I catch some and put them here..
 
 <div class="maxim">
   <div>
-    <i>Hexiang Hu</i> is a person who loves thinking, programming and <strong>LEARNING</strong>. "Technically", he has a special passion in <u>artificial intelligence, big data processing system and computer security</u>. "Non-technically", he enjoys watching basketball game, <s>working out</s> and trying new staff (especially cool geeky thing)
+    <i>Hexiang Hu</i> is a person who loves thinking, programming and <strong>LEARNING</strong>. "Technically", he has a special passion in <u>artificial intelligence (especially <strong>machine learning</strong>), big data processing system and computer security</u>. "Non-technically", he enjoys watching basketball game, <s>working out</s> and trying new staff.
   </div>
 
   <div class="text-right">

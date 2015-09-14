@@ -1,12 +1,12 @@
 # Site settings
-title: Banana Tree
-description: A simple site for Hexiang's public announcements, tech/non-tech posts and personal updates
+title: Hexiang Hu
+description: "A simple site for Hexiang's public announcements, tech/non-tech posts and personal updates"
 background: /images/background/background-cube.jpg
 deep_background: /images/background/background-deepcube-2.jpg
 
 # Site user settings
 user:
-  name:       "Hexiang Hu"
+  name:       "Hexiang(Frank) Hu"
   title:      "student [at] Simon Fraser University"
   email:      "hexiang_hu [at] sfu.ca"
   head_pic:   /images/self-portrait/me.jpg
