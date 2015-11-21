@@ -13,15 +13,6 @@ url: "https://hexiang-hu.github.io"
 paginate: 10
 paginate_path: "/posts/page/:num/"
 
-# Social media link for the site
-social:
-  twitter:    Hexiang_Hu
-  github:     Hexiang-Hu
-  facebook:   Hu.Hexiang
-  linkedin:   hexianghu
-  rss:        /feed.xml
-
-
 # Build settings
 markdown: kramdown
 
@@ -29,6 +20,14 @@ markdown: kramdown
 permalink: pretty
 # highlighter: rouge
 highlighter: pygments
+
+# Social media link for the site
+social:
+  twitter:    Hexiang_Hu
+  github:     Hexiang-Hu
+  facebook:   Hu.Hexiang
+  linkedin:   hexianghu
+  rss:        /feed.xml
 
 # customized document resources
 collections:
