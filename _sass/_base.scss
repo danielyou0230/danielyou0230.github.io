@@ -217,3 +217,13 @@ pre {
 .text-grey {
   color:    $grey-color;
 }
+
+.index-heading {
+  font-size:    24px;
+  font-color:   $primary-color-dark;
+  font-weight:  400;
+  text-align:   center;
+  @include media-query($on-palm) {
+    text-align: left;
+  }
+}

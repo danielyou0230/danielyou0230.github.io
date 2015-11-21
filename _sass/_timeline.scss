@@ -16,6 +16,9 @@ $timeline-padding: 20px;
   font-color:   $primary-color-dark;
   font-weight:  400;
   text-align:   center;
+  @include media-query($on-palm) {
+    text-align: left;
+  }
 }
 
 .timeline-brief > .more {
@@ -131,7 +134,7 @@ $timeline-padding: 20px;
 .timeline > .timeline-body > .timeline-item:last-child:nth-child(odd){
   vertical-align:     middle;
   min-height:         200px;
-  border-left:       5px dashed #333;
+  border-left:        5px dashed #333;
 }
 
 @include media-query($on-palm) {
@@ -157,8 +160,6 @@ $timeline-padding: 20px;
   }
 
   .timeline-item,
-  .timeline-item:last-child:nth-child(odd),
-  .timeline-item:last-child:nth-child(even),
   .timeline-item:nth-child(odd),
   .timeline-item:nth-child(even) {
     min-height:         0;
@@ -170,7 +171,19 @@ $timeline-padding: 20px;
     margin-left:        5px;
     margin-right:       0px;
     padding-right:      0px;
+  }
 
+  .timeline > .timeline-body > .timeline-item:last-child:nth-child(odd),
+  .timeline > .timeline-body > .timeline-item:last-child:nth-child(even) {
+    min-height:         0;
+    text-align:         left;
+    border-left:        5px solid #333;
+    border-right:       0px;
+    width:              100%;
+    padding-left:       5px;
+    margin-left:        5px;
+    margin-right:       0px;
+    padding-right:      0px;
   }
 
   .timeline-item:before {
