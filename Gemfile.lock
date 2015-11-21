@@ -61,6 +61,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-scholar
   jekyll-sitemap
+  rouge
 
 BUNDLED WITH
    1.10.6

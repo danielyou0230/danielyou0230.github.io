@@ -17,12 +17,12 @@ user:
 
 baseurl: ""
 # the subpath of your site, e.g. /blog/
-url: "https://hex-iang.github.io"
+url: "https://hexiang-hu.github.io"
 # the base hostname & protocol for your sit
 
 # Pagination
-paginate: 5
-paginate_path: "/posts/page:num/"
+paginate: 10
+paginate_path: "/posts/page/:num/"
 
 # Social media link for the site
 social:
@@ -38,6 +38,7 @@ markdown: kramdown
 
 # permalink setting
 permalink: pretty
+highlighter: rouge
 
 # customized document resources
 collections:
@@ -48,4 +49,5 @@ scss:
   sass_dir: _scss
   style: :compressed
 
-gems: [jekyll-paginate]
+gems: 
+  ['jekyll-paginate', 'jekyll/scholar']

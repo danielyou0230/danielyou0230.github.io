@@ -4,11 +4,30 @@
 */
 $timeline-padding: 20px;
 
-.timeline {
+.timeline-brief, .timeline {
   font-family: 'Roboto',sans-serif, Helvetica;
   font-size: 20px;
   font-weight: 300;
   @extend %clearfix;
+}
+
+.timeline-brief > .more > .heading  {
+  font-size:    20px;
+  font-color:   $primary-color-dark;
+  font-weight:  400;
+  text-align:   center;
+}
+
+.timeline-brief > .more {
+  padding:     10px;
+  margin-top:  25px;
+}
+
+.timeline > .heading {
+  font-size:    28px;
+  font-color:   $primary-color-dark;
+  font-weight:  400;
+  text-align:   center;
 }
 
 .timeline-body {
@@ -91,7 +110,7 @@ $timeline-padding: 20px;
   font-weight:    200;
 }
 
-.timeline-item:last-child:after
+.timeline > .timeline-body > .timeline-item:last-child:after
 {
   bottom:         0;
   width:          11px;
@@ -103,13 +122,13 @@ $timeline-padding: 20px;
   border-radius:  5px;
 }
 
-.timeline-item:last-child:nth-child(even){
+.timeline > .timeline-body > .timeline-item:last-child:nth-child(even){
   vertical-align:     middle;
   min-height:         200px;
   border-right:       5px dashed #333;
 }
 
-.timeline-item:last-child:nth-child(odd){
+.timeline > .timeline-body > .timeline-item:last-child:nth-child(odd){
   vertical-align:     middle;
   min-height:         200px;
   border-left:       5px dashed #333;

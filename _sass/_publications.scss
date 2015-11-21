@@ -1,0 +1,90 @@
+
+.publications {
+  max-width:        -webkit-calc(100% - (#{$spacing-unit} / 2));
+  max-width:        calc(100% - (#{$spacing-unit} / 2));
+  margin-top:       #{$spacing-unit};
+  margin-left:      auto;
+  margin-right:     auto;
+  font-family: 'Roboto',sans-serif, Helvetica;
+}
+
+.index-heading {
+  font-size:    24px;
+  font-color:   $primary-color-dark;
+  font-weight:  400;
+  text-align:   center;
+}
+
+.pub {
+  border-top: thin solid #c0c0c0;
+  radius:         15px;
+  float:          left !important;
+  margin-top:     5px;
+  margin-bottom:  5px;
+  margin-left:    auto;
+  margin-right:   auto;
+  padding:        10px;
+  // background-color: rgba(240, 240, 240, .8);
+
+}
+
+.pub-left {
+  float:         left;
+  width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+  width:         calc(40% - (#{$spacing-unit} / 2));
+
+}
+
+.pub-left > .intro-img {
+  width:          360px;
+}
+
+.pub-right {
+  float:         right;
+  width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+  width:         calc(60% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+  .pub-left,
+  .pub-right {
+    float:         none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+@include media-query($on-palm) {
+  .pub {
+    position:   relative;
+    margin:     10px auto;
+    float:      none;
+    width: -webkit-calc( 100% );
+    width:         calc( 100% );
+  }
+
+}
+
+.pub-right > .title {
+  font-weight:  600;
+}
+
+.pub-right > .authors > .author {
+  color:          $blue-color;
+  font-weight:    400;
+}
+
+.pub-right > .tags > .tag {
+  color:          $red-color-dark;
+  font-weight:    500;
+}
+
+.pub-right > .publish {
+  color:          $green-color-dark;
+  font-weight:    400;
+  font-size:      13px;
+}
+
+.pub-right > .tags {
+
+}

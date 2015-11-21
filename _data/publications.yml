@@ -1,0 +1,39 @@
+- title: 'Learning Structured Inference Neural Networks with Label Relations'
+  date:  'Nov. 2015'
+  imgurl: '/images/projects/hexiangh2015sinn.jpg'
+  authors: 
+    - name: H. Hu
+      url:  ''
+    - name: G.-T. Zhou
+      url:  'http://www.cs.sfu.ca/~gza11/personal/'
+    - name: Z. Deng 
+      url:  'http://www.sfu.ca/~zhiweid'
+    - name: Z. Liao
+      url:  'http://web.engr.illinois.edu/~liao17/'
+    - name: G. Mori
+      url:  'https://www.cs.sfu.ca/~mori/'
+  publish:  'IEEE Conference on Computer Vision and Pattern Recognition(CVPR) 2016'
+  status:   'Submitted to'
+  desc: 'We propose a generic structured model that leverages diverse label relations to improve image classification performance. It employs a novel stacked label prediction neural network, capturing both inter-level and intra-level label semantics.'
+  tags:
+    - name: 'arxiv'
+      url:  'http://arxiv.org/abs/1511.05616'
+- title: 'Structure Inference Machines: Recurrent Neural Networks for Analyzing Relations in Group Activity Recognition'
+  date:  'Nov. 2015'
+  imgurl: '/images/projects/zhiweid2015bprnn.jpg'
+  authors: 
+    - name: Z. Deng
+      url:  'http://www.sfu.ca/~zhiweid'
+    - name: A. Vahdat
+      url:  'http://www.cs.sfu.ca/~gza11/personal/'
+    - name: H. Hu
+      url:  ''
+    - name: G. Mori
+      url:  'https://www.cs.sfu.ca/~mori/'
+  publish:  'IEEE Conference on Computer Vision and Pattern Recognition(CVPR) 2016'
+  status:   'Submitted to'
+  desc: 'We propose a method to integrate graphical models and deep neural networks into a joint framework with a sequential prediction approximation, modeled by recurrent neural network.'
+  tags:
+    - name: 'arxiv'
+      url:  'http://arxiv.org/abs/1511.04196'
+
