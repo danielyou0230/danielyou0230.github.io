@@ -27,7 +27,8 @@ markdown: kramdown
 
 # permalink setting
 permalink: pretty
-highlighter: rouge
+# highlighter: rouge
+highlighter: pygments
 
 # customized document resources
 collections:
