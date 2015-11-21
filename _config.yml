@@ -4,17 +4,6 @@ description: "A simple site for Hexiang's public announcements, tech/non-tech po
 background: /images/background/background-cube.jpg
 deep_background: /images/background/background-deepcube-2.jpg
 
-# Site user settings
-user:
-  name:       "Hexiang(Frank) Hu"
-  title:      "student [at] Simon Fraser University"
-  email:      "hexiang_hu [at] sfu.ca"
-  head_pic:   /images/self-portrait/me.jpg
-  deep_pic:   /images/self-portrait/deep-me.jpg
-  desc:
-    title:    "In Deep."
-    content:  "I am passionte with Deep Learning as well as Computer Vision. My research interest majorly focuses on <em class='text-grey-bright'>Structured Visual Recognition with Deep Learning</em>."
-
 baseurl: ""
 # the subpath of your site, e.g. /blog/
 url: "https://hexiang-hu.github.io"
@@ -38,7 +27,7 @@ markdown: kramdown
 
 # permalink setting
 permalink: pretty
-highlighter: pygments
+highlighter: rouge
 
 # customized document resources
 collections:

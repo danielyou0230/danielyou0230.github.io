@@ -1,0 +1,13 @@
+name:       "Hexiang(Frank) Hu"
+title:      "student [at] Simon Fraser University"
+email:      "hexiang_hu [at] sfu.ca"
+head_pic:   /images/self-portrait/me.jpg
+deep_pic:   /images/self-portrait/deep-me.jpg
+long:
+  date:     "Nov. 2015"
+  title:    ""
+  content:  "<strong>Hexiang Hu</strong> is an undergraduate student at Simon Fraser University and Zhejiang University, currently working with <a href='https://www.cs.sfu.ca/~mori/'>Prof. Greg Mori</a> as Research Assistant. His research interests lie in the field of Machine Learning and Computer Vison, particularly in Deep Learning as well as its application over Vision and Natural Language Processing. He is looking for PhD/MS opportunities in North American now. "
+short:
+  date:  
+  title:  "In Deep."
+  content: "I am passionte with Deep Learning as well as Computer Vision. My research interest majorly focuses on <em class='text-grey-bright'>Structured Visual Recognition with Deep Learning</em>."
