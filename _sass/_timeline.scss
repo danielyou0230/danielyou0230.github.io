@@ -6,8 +6,9 @@ $timeline-padding: 20px;
 
 .timeline-brief, .timeline {
   font-family: 'Roboto',sans-serif, Helvetica;
-  font-size: 20px;
-  font-weight: 300;
+  margin-top:   #{$spacing-unit};
+  font-size:    20px;
+  font-weight:  300;
   @extend %clearfix;
 }
 
