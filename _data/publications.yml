@@ -1,6 +1,7 @@
 - title: 'Learning Structured Inference Neural Networks with Label Relations'
   date:  'Nov. 2015'
   imgurl: '/images/projects/hexiangh2015sinn.jpg'
+  selected: true
   authors: 
     - name: H. Hu
       url:  ''
@@ -21,6 +22,7 @@
 - title: 'Structure Inference Machines: Recurrent Neural Networks for Analyzing Relations in Group Activity Recognition'
   date:  'Nov. 2015'
   imgurl: '/images/projects/zhiweid2015bprnn.jpg'
+  selected: true
   authors: 
     - name: Z. Deng
       url:  'http://www.sfu.ca/~zhiweid'

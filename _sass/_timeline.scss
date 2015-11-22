@@ -11,52 +11,6 @@ $timeline-padding: 20px;
   @extend %clearfix;
 }
 
-.timeline-brief > .more > .heading  {
-  font-size:    20px;
-  font-color:   $primary-color-dark;
-  font-weight:  400;
-  text-align:   center;
-  @include media-query($on-palm) {
-    text-align: left;
-  }
-}
-
-.timeline-brief > .more {
-  padding:     10px;
-  margin-top:  25px;
-
-  a {
-    border: solid 1px darken($background-color, 10%);
-    border-radius: 0.2rem;
-    color: darken($background-color, 45%);
-    display: inline-block;
-    text-align: center;
-    padding: 0.5rem 2.0rem;
-    text-decoration: none;
-  }
-  em {
-    border: solid 1px darken($background-color, 10%);
-    border-radius: 0.2rem;
-    color: darken($background-color, 45%);
-    display: inline-block;
-    text-align: center;
-    padding: 0.5rem 0.9rem;
-  }
-}
-
-.timeline-brief > .more > .heading > a:hover {
-  color: lighten($background-color, 5%);
-  background-color: $grey-color-dark;
-  border: solid 1px $grey-color-dark;
-} 
-
-.timeline > .heading {
-  font-size:    28px;
-  font-color:   $primary-color-dark;
-  font-weight:  400;
-  text-align:   center;
-}
-
 .timeline-body {
   padding:    0;
 }

@@ -1,0 +1,44 @@
+---
+layout: home
+description: "Full publication list for Hexiang"
+---
+
+<div id="publications" class="publications">
+  <h1 class="heading">Publication List</h1>
+
+  {% for publication in site.data.publications %}
+  <div class="pub">
+    <div class="pub-left">
+      <img class="intro-img" src="{{ publication.imgurl | prepend: site.baseurl }}"/>
+    </div>
+    <div class="pub-right">
+      <div class="title">
+        {{ publication.title }}
+      </div>
+      <div class="authors">
+        {% for author in publication.authors %}
+        <a class="author" href="{{ author.url }}">{{ author.name | prepend: ' '}}</a>
+        {% endfor %}
+      </div>
+      <div class="desc">
+        <p>{{ publication.desc }}</p>
+      </div>
+      <div class="publish">
+        {{ publication.status }} <i>{{ publication.publish }}</i>
+      </div>
+      <div class="tags">
+        {% for tag in publication.tags %}
+        [<a class="tag" href="{{tag.url}}"> {{ tag.name }} </a>]
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+  <div class="button">
+    <h1 class="heading"><a href="{{ site.url }}">
+      <i class="fa fa-arrow-circle-left"></i> Back
+    </a></h1>
+  </div>
+
+</div>

@@ -11,7 +11,7 @@ layout: home
 
 
 <div id="timeline" class="timeline-brief">
-  <h1 class="index-heading">Timeline</h1>
+  <h1 class="index-heading">Recent Timeline</h1>
 
   <div class="timeline-body">
     {% for experience in site.data.experiences %}
@@ -31,17 +31,18 @@ layout: home
     {% endfor %}
   </div>
   
-  <div class="more">
+  <div class="button">
     <h1 class="heading"><a href="{{ '/timeline/' | prepend: site.baseurl }}">
-      <i class="fa fa-info-circle"></i> MORE
+      <i class="fa fa-info-circle"></i> Show More
     </a></h1>
   </div>
 </div>
 
 <div id="publications" class="publications">
-  <h1 class="index-heading">Publications</h1>
+  <h1 class="index-heading">Selected Publications</h1>
 
   {% for publication in site.data.publications %}
+  {% if publication.selected %}
   <div class="pub">
     <div class="pub-left">
       <img class="intro-img" src="{{ publication.imgurl | prepend: site.baseurl }}"/>
@@ -68,5 +69,12 @@ layout: home
       </div>
     </div>
   </div>
+  {% endif %}
   {% endfor %}
+
+  <div class="button">
+    <h1 class="heading"><a href="{{ '/publications/' | prepend: site.baseurl }}">
+      <i class="fa fa-info-circle"></i> Check Full List
+    </a></h1>
+  </div>
 </div>

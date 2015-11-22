@@ -243,3 +243,50 @@
       }
   }
 }
+
+.heading {
+  font-size:    30px;
+  font-color:   $primary-color-dark;
+  font-weight:  600;
+  text-align:   center;
+}
+
+
+.button > .heading  {
+  font-size:    20px;
+  font-color:   $primary-color-dark;
+  font-weight:  400;
+  text-align:   center;
+  @include media-query($on-palm) {
+    text-align: left;
+  }
+}
+
+.button {
+  padding:     10px;
+  margin-top:  25px;
+
+  a {
+    border: solid 1px darken($background-color, 10%);
+    border-radius: 0.2rem;
+    color: darken($background-color, 45%);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 2.0rem;
+    text-decoration: none;
+  }
+  em {
+    border: solid 1px darken($background-color, 10%);
+    border-radius: 0.2rem;
+    color: darken($background-color, 45%);
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 0.9rem;
+  }
+}
+
+.button > .heading > a:hover {
+  color: lighten($background-color, 5%);
+  background-color: $grey-color-dark;
+  border: solid 1px $grey-color-dark;
+} 
