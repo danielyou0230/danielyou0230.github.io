@@ -4,6 +4,7 @@ title: "Graphics: Understanding Local Reflectance Model"
 comments: True
 date: 2015-03-22
 categories: "graphics"
+description: "Illumination and reflectance over objects makes image looks real, since light-material interaction in real world caused each point of the object have different colors and shades.This post is written to discuss some factors about illumination and reflectance models(global, local, etc.), and explore how computer graphic deals with illumination and reflectance of objects."
 ---
 
 Illumination and reflectance over objects makes image looks real, since light-material interaction in real world caused each point of the object have different colors and shades.This post is written to discuss some factors about illumination and reflectance models(global, local, etc.), and explore how computer graphic deals with illumination and reflectance of objects.

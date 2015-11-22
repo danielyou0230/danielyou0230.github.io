@@ -4,6 +4,7 @@ title: "A Closed-From Solution to Natural Image Matting"
 date: 2015-02-25
 comments: True
 categories: "vision"
+description: "This article is a summary for PAMI 2013 paper - A closed-form solution to natural image matting."
 ---
 
 This article is a summary for PAMI 2013 paper - A closed-form solution to natural image matting.

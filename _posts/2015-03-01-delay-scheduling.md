@@ -5,6 +5,7 @@ Locality and Fairness in Cluster Scheduling"
 date: 2015-03-01
 comments: True
 categories: "big-data"
+description: "This is a paper motivated by the scheduling problem raised in traditional FIFO strategy in data-intensive cluster computing system. The proposed methodology is designed to get a good tradeoff point between the conflicts of fairness and data locality, which practically improve response time for small jobs by 5x in a multi-user workload and double throughput in an IO-heavy workload."
 ---
 
 This is a paper motivated by the scheduling problem raised in traditional FIFO strategy in data-intensive cluster computing system.

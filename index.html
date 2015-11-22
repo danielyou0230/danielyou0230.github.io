@@ -2,7 +2,7 @@
 layout: home
 ---
 
-<div class="bio">
+<div id="bio" class="bio">
   <h1 class="index-heading"> Bio </h1>
   <div class="bio-body">
     <p> {{ site.data.bio.long.content }} </p>
@@ -10,7 +10,7 @@ layout: home
 </div>
 
 
-<div class="timeline-brief">
+<div id="timeline" class="timeline-brief">
   <h1 class="index-heading">Timeline</h1>
 
   <div class="timeline-body">
@@ -38,7 +38,7 @@ layout: home
   </div>
 </div>
 
-<div class="publications">
+<div id="publications" class="publications">
   <h1 class="index-heading">Publications</h1>
 
   {% for publication in site.data.publications %}
