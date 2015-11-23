@@ -32,7 +32,7 @@ layout: home
   </div>
   
   <div class="button">
-    <h1 class="heading"><a href="{{ '/timeline/' | prepend: site.baseurl }}">
+    <h1 class="heading"><a href="{{ '/timeline/#timeline' | prepend: site.baseurl }}">
       <i class="fa fa-info-circle"></i> Show More
     </a></h1>
   </div>
@@ -71,12 +71,39 @@ layout: home
   </div>
   {% endif %}
   {% endfor %}
-
-  <!--  
+ 
   <div class="button">
-    <h1 class="heading"><a href="{{ '/publications/' | prepend: site.baseurl }}">
-      <i class="fa fa-info-circle"></i> Check Full List
+    <h1 class="heading"><a href="{{ '/publications/#publications' | prepend: site.baseurl }}">
+      <i class="fa fa-info-circle"></i> Full List
     </a></h1>
   </div> 
-  -->
+</div>
+
+
+<div class="posts">
+  <h1 class="index-heading">Recent Posts</h1>
+
+  <ul class="post-list">
+  {% for post in site.posts limit: 3 %}
+    <li class="post-item">
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <div class="content preview">
+        {% if post.content contains '<!--more-->' %}
+          {{ post.content | split:'<!--more-->' | first }}
+        {% else %}
+          {{ post.content }}
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+  <div class="button">
+    <h1 class="heading"><a href="{{ '/posts/#posts' | prepend: site.baseurl }}">
+      <i class="fa fa-info-circle"></i> Check More
+    </a></h1>
+  </div> 
 </div>

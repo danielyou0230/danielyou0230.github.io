@@ -9,7 +9,6 @@ $timeline-padding: 20px;
   margin-top:   #{$spacing-unit};
   font-size:    20px;
   font-weight:  300;
-  @extend %clearfix;
 }
 
 .timeline-body {

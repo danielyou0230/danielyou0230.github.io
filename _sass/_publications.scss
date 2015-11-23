@@ -3,19 +3,15 @@
   max-width:        -webkit-calc(100% - (#{$spacing-unit} / 2));
   max-width:        calc(100% - (#{$spacing-unit} / 2));
   margin-top:       #{$spacing-unit};
-  margin-left:      auto;
-  margin-right:     auto;
-  font-family: 'Roboto',sans-serif, Helvetica;
+  font-family:      'Roboto',sans-serif, Helvetica;
+  overflow:         auto;
 }
 
 .pub {
-  border-top: thin solid #c0c0c0;
+  border-top:     thin solid #c0c0c0;
   radius:         15px;
   float:          left !important;
-  margin-top:     5px;
-  margin-bottom:  5px;
-  margin-left:    auto;
-  margin-right:   auto;
+  margin-top:     10px;
   padding:        10px;
   // background-color: rgba(240, 240, 240, .8);
 

@@ -15,7 +15,7 @@ url: "https://hexiang-hu.github.io"
 # the base hostname & protocol for your sit
 
 # Paginationœ
-paginate: 10
+paginate: 6
 paginate_path: "/posts/page/:num/"
 
 # Build settings
