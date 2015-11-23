@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+noindex:  true
 ---
 
 ## The Site
