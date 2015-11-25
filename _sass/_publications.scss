@@ -4,6 +4,9 @@
   max-width:        calc(100% - (#{$spacing-unit} / 2));
   margin-top:       #{$spacing-unit};
   font-family:      'Roboto',sans-serif, Helvetica;
+}
+
+.pub-list {
   overflow:         auto;
 }
 
@@ -11,10 +14,9 @@
   border-top:     thin solid #c0c0c0;
   radius:         15px;
   float:          left !important;
-  margin-top:     10px;
-  padding:        10px;
-  // background-color: rgba(240, 240, 240, .8);
-
+  margin-top:     #{$spacing-unit};
+  padding-top:    #{$spacing-unit};
+  overflow:       auto;
 }
 
 .pub-left {
@@ -38,6 +40,7 @@
   .pub-left,
   .pub-right {
     float:         none;
+    margin:        10px auto;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
@@ -48,8 +51,8 @@
     position:   relative;
     margin:     10px auto;
     float:      none;
-    width: -webkit-calc( 100% );
-    width:         calc( 100% );
+    width: -webkit-calc( 100% - (#{$spacing-unit} / 2));
+    width:         calc( 100% - (#{$spacing-unit} / 2));
   }
 
 }
@@ -66,14 +69,11 @@
 .pub-right > .tags > .tag {
   color:          $red-color-dark;
   font-weight:    500;
+  font-size:      14px;
 }
 
 .pub-right > .publish {
   color:          $green-color-dark;
   font-weight:    400;
   font-size:      13px;
-}
-
-.pub-right > .tags {
-
 }
