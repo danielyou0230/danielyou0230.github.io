@@ -3,7 +3,7 @@ layout: home
 ---
 
 <div id="bio" class="bio">
-  <h1 class="index-heading"> Bio </h1>
+  <h1 class="md-heading text-center"> Bio </h1>
   <div class="bio-body">
     <p> {{ site.data.bio.normal.content }} </p>
   </div>
@@ -11,7 +11,7 @@ layout: home
 
 
 <div id="timeline" class="timeline-brief">
-  <h1 class="index-heading">Recent Timeline</h1>
+  <h1 class="md-heading text-center">Recent Timeline</h1>
 
   <div class="timeline-body">
     {% for experience in site.data.experiences %}
@@ -32,14 +32,14 @@ layout: home
   </div>
   
   <div class="button">
-    <h1 class="heading"><a href="{{ '/timeline/#timeline' | prepend: site.baseurl }}">
+    <h1 class="sm-heading text-center"><a href="{{ '/timeline/#timeline' | prepend: site.baseurl }}">
       <i class="fa fa-info-circle"></i> Show More
     </a></h1>
   </div>
 </div>
 
 <div id="publications" class="publications">
-  <h1 class="index-heading">Selected Publications</h1>
+  <h1 class="md-heading text-center">Selected Publications</h1>
 
   <div class="pub-list">
   {% for publication in site.data.publications %}
@@ -75,7 +75,7 @@ layout: home
   </div>
  
   <div class="button">
-    <h1 class="heading"><a href="{{ '/publications/#publications' | prepend: site.baseurl }}">
+    <h1 class="sm-heading text-center"><a href="{{ '/publications/#publications' | prepend: site.baseurl }}">
       <i class="fa fa-info-circle"></i> Full List
     </a></h1>
   </div> 
@@ -83,7 +83,7 @@ layout: home
 
 
 <div class="posts">
-  <h1 class="index-heading">Recent Posts</h1>
+  <h1 class="md-heading text-center">Recent Posts</h1>
 
   <ul class="post-list">
   {% for post in site.posts limit: 3 %}
@@ -104,7 +104,7 @@ layout: home
   {% endfor %}
   </ul>
   <div class="button">
-    <h1 class="heading"><a href="{{ '/posts/#posts' | prepend: site.baseurl }}">
+    <h1 class="sm-heading text-center"><a href="{{ '/posts/#posts' | prepend: site.baseurl }}">
       <i class="fa fa-info-circle"></i> Check More
     </a></h1>
   </div> 

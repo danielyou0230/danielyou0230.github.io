@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 start:
   date: 1992
   title: He was Born
@@ -8,7 +8,9 @@ noindex:  true
 ---
 
 <div id="timeline" class="timeline">
-  <h1 class="heading">Timeline</h1>
+  <h1 class="lg-heading text-center">Timeline</h1>
+
+  <div class="timeline-navigator"></div>
 
   <div class="timeline-body">
     {% for experience in site.data.experiences %}
@@ -33,8 +35,9 @@ noindex:  true
       {{ page.start.title }}
     </div>
   </div>
+  
   <div class="button">
-    <h1 class="heading"><a href="{{ site.url }}">
+    <h1 class="sm-heading text-center"><a href="{{ site.url }}">
       <i class="fa fa-arrow-circle-left"></i> Back
     </a></h1>
   </div>

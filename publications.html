@@ -1,11 +1,13 @@
 ---
-layout: home
+layout: page
 description: "Full publication list for Hexiang"
 noindex:  true
 ---
 
 <div id="publications" class="publications">
-  <h1 class="heading">Publication List</h1>
+  <h1 class="lg-heading text-center">Publication List</h1>
+
+  <div class="pub-navigator"></div>
 
   {% for publication in site.data.publications %}
   <div class="pub">
@@ -37,7 +39,7 @@ noindex:  true
   {% endfor %}
 
   <div class="button">
-    <h1 class="heading"><a href="{{ site.url }}">
+    <h1 class="sm-heading text-center"><a href="{{ site.url }}">
       <i class="fa fa-arrow-circle-left"></i> Back
     </a></h1>
   </div>
