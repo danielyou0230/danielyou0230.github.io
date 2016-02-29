@@ -24,7 +24,7 @@ markdown: kramdown
 # permalink setting
 permalink: pretty
 # highlighter: rouge
-highlighter: pygments
+highlighter: rouge
 
 # Social media link for the site
 social:

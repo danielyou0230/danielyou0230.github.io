@@ -61,7 +61,7 @@ layout: home
           <p>{{ publication.desc }}</p>
         </div>
         <div class="publish">
-          {{ publication.status }} <i>{{ publication.publish }}</i>
+          <b>{{ publication.publish }}</b> <span class="status">{{ publication.status }}</span>
         </div>
         <div class="tags">
           {% for tag in publication.tags %}
