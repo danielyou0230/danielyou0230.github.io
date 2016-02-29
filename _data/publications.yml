@@ -14,7 +14,7 @@
     - name: G. Mori
       url:  'https://www.cs.sfu.ca/~mori/'
   publish:  'IEEE Conference on Computer Vision and Pattern Recognition(CVPR) 2016'
-  status:   'Submitted to'
+  status:   'Accepted as'
   desc: 'We propose a generic structured model that leverages diverse label relations to improve image classification performance. It employs a novel stacked label prediction neural network, capturing both inter-level and intra-level label semantics.'
   tags:
     - name: 'arXiv'
@@ -35,7 +35,7 @@
     - name: G. Mori
       url:  'https://www.cs.sfu.ca/~mori/'
   publish:  'IEEE Conference on Computer Vision and Pattern Recognition(CVPR) 2016'
-  status:   'Submitted to'
+  status:   'Accepted as'
   desc: 'We propose a method to integrate graphical models and deep neural networks into a joint framework with a sequential prediction approximation, modeled by recurrent neural network.'
   tags:
     - name: 'arXiv'
