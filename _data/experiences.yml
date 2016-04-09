@@ -2,7 +2,7 @@
   title: "PhD student @ UCLA"
   desc:  "Deep Learning and Computer Vision"
   host:
-    name: "<a href='http://web.cs.ucla.edu/~feisha/'>Prof.Fei Sha</a>"
+    name: "<a href='http://web.cs.ucla.edu/~feisha/'>Prof. Fei Sha</a>"
     role: "Supervisor"
   brief: false
 - date:  "Summer 2016"
@@ -29,7 +29,7 @@
   desc:  ".NET Malware Inspectation"
   host:  false
   brief: true
-- date:  "Sept. 2013 - Apr. 2016"
+- date:  "2013 - 2016"
   title: "Undergraduate student @ SFU"
   desc:  "B.Sc. in Computing Science (with special concentration on Artificial Intelligence and System)"
   host:  false
