@@ -91,6 +91,11 @@ $timeline-padding: 20px;
   font-weight:    200;
 }
 
+.timeline-host {
+  font-size:      14px;
+  font-weight:    400;
+}
+
 .timeline > .timeline-body > .timeline-item:last-child:after
 {
   bottom:         0;
@@ -165,23 +170,27 @@ $timeline-padding: 20px;
   }
 
   .timeline-item:before {
-      left: -8px;
+    left: -8px;
   }
 
   .timeline-item:after {
-      left: -8px;
+    left: -8px;
   }
 
   .timeline-date {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .timeline-title {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .timeline-desc {
-      font-size: 12px;
+    font-size: 12px;
+  }
+
+  .timeline-host {
+    font-size: 10px;
   }
 }
 

@@ -1,24 +1,41 @@
-- date:  Jun. 2015 - 
-  title: Research Assistant @ VML SFU
-  desc:  Under supervision of <a href="http://www.cs.sfu.ca/~mori">Dr. Greg Mori</a> at Simon Fraser University
-  brief: true
-- date:  Jan. 2015 - Jun. 2015 
-  title: Research Assistant @ MIAL SFU
-  desc:  Under supervision of Dr. Ghassan Harmarneh at Simon Fraser University
-  brief: true
-- date:  Summer 2014
-  title: Anti-virus Research Intern @ Microsoft
-  desc:  Research on .NET Malware Inspectation
-  brief: true
-- date:  Sept. 2013 -
-  title: Undergraduate student @ SFU
-  desc:  Bachler of Science in Computing Science (with special concentration on Artificial Intelligence and System) - ZU/SFU Dual Degree Program
+- date:  "2016 - "
+  title: "PhD student @ UCLA"
+  desc:  "Deep Learning and Computer Vision"
+  host:
+    name: "<a href='http://web.cs.ucla.edu/~feisha/'>Prof.Fei Sha</a>"
+    role: "Supervisor"
   brief: false
-- date:  Summer 2012
-  title: Exchange student @ UCLA
-  desc:  Exchange student in a collaborated program by ZJU and UCLA
+- date:  "Summer 2016"
+  title: "Research Intern @ Face++"
+  desc:  "Deep Learning for Pedestrain Detection"
+  brief: true
+- date:  "Jun. 2015 - Apr. 2016"
+  title: "Research Assistant @ VML SFU"
+  desc:  "Deep Learning and Structured Infenrence"
+  host: 
+    name: "<a href='http://www.cs.sfu.ca/~mori'>Prof. Greg Mori</a>"
+    role: "Supervisor"
+  brief: true
+- date:  "Jan. 2015 - Jun. 2015 "
+  title: "Research Assistant @ MIAL SFU"
+  desc:  "Deep Learning for Skin Disease Classification"
+  host: 
+    name:  "<a href='http://www.cs.sfu.ca/~hamarneh/'>Prof. Ghassan Harmarneh</a>"
+    role: "Supervisor"
   brief: false
-- date:  2011 - 2013
-  title: Undergraduate student @ ZJU
-  desc:  Bachler of Engineering in Computer Science and Technology - ZU/SFU Dual Degree
+- date:  "Summer 2014"
+  title: "Security Research Intern @ Microsoft"
+  desc:  ".NET Malware Inspectation"
+  brief: true
+- date:  "Sept. 2013 - Apr. 2016"
+  title: "Undergraduate student @ SFU"
+  desc:  "B.Sc. in Computing Science (with special concentration on Artificial Intelligence and System)"
   brief: false
+- date:  "Summer 2012"
+  title: "Exchange student @ UCLA"
+  desc:  "Collaborated program by ZJU and UCLA"
+  brief: false
+- date:  "2011 - 2016"
+  title: "Undergraduate student @ ZJU"
+  desc:  "B.Eng. in Computer Science and Technology"
+  brief: true
