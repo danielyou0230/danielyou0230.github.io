@@ -26,11 +26,11 @@ layout: home
       <div class="timeline-desc">
         {{ experience.desc }}
       </div>
-      {% if experience.host != blank %}
+      {% unless experience.host == blank %}
       <div class="timeline-host">
         {{ experience.host.role }}: {{ experience.host.name }}
       </div>      
-      {% endif %}
+      {% endunless %}
     </div>
     {% endif %}
     {% endfor %}
