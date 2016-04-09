@@ -8,6 +8,7 @@
 - date:  "Summer 2016"
   title: "Research Intern @ Face++"
   desc:  "Deep Learning for Pedestrain Detection"
+  host:  false
   brief: true
 - date:  "Jun. 2015 - Apr. 2016"
   title: "Research Assistant @ VML SFU"
@@ -26,16 +27,20 @@
 - date:  "Summer 2014"
   title: "Security Research Intern @ Microsoft"
   desc:  ".NET Malware Inspectation"
+  host:  false
   brief: true
 - date:  "Sept. 2013 - Apr. 2016"
   title: "Undergraduate student @ SFU"
   desc:  "B.Sc. in Computing Science (with special concentration on Artificial Intelligence and System)"
+  host:  false
   brief: false
 - date:  "Summer 2012"
   title: "Exchange student @ UCLA"
   desc:  "Collaborated program by ZJU and UCLA"
+  host:  false
   brief: false
 - date:  "2011 - 2016"
   title: "Undergraduate student @ ZJU"
   desc:  "B.Eng. in Computer Science and Technology"
+  host:  false
   brief: true

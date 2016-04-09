@@ -24,7 +24,7 @@ noindex:  true
       <div class="timeline-desc">
         {{ experience.desc }}
       </div>
-      {% unless experience.host == blank %}
+      {% unless experience.host == false %}
       <div class="timeline-host">
         {{ experience.host.role }}: {{ experience.host.name }}
       </div>      
