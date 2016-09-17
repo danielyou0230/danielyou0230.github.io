@@ -2,12 +2,12 @@
   date:  'Nov. 2015'
   imgurl: '/images/projects/hexiangh2015sinn.jpg'
   selected: true
-  authors: 
+  authors:
     - name: H. Hu
       url:  ''
     - name: G.-T. Zhou
       url:  'http://www.cs.sfu.ca/~gza11/personal/'
-    - name: Z. Deng 
+    - name: Z. Deng
       url:  'http://www.sfu.ca/~zhiweid'
     - name: Z. Liao
       url:  'http://web.engr.illinois.edu/~liao17/'

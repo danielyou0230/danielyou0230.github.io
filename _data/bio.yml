@@ -1,17 +1,13 @@
 name:       "Hexiang(Frank) Hu"
-title:      "Student [at] Simon Fraser University"
-email:      "hexiang_hu [at] sfu.ca"
+title:      "Student [at] UCLA"
+email:      "hexiang.frank.hu [at] gmail.com"
 head_pic:   /images/self-portrait/me.jpg
 deep_pic:   /images/self-portrait/deep-me.jpg
 normal:
-  date:     "Nov. 2015"
+  date:     "Sept. 2016"
   title:    ""
-  content:  "<strong>Hexiang Hu</strong> is an undergraduate student at Zhejiang University and Simon Fraser University, currently working with <a href='https://www.cs.sfu.ca/~mori/'>Prof. Greg Mori</a> as a Research Assistant. His research interests lie in the field of <strong>Machine Learning</strong>(<em>Deep Learning</em>) and <strong>Computer Vision</strong>."
-long:
-  date:     "Nov. 2015"
-  title:    ""
-  content:  "<strong>Hexiang Hu</strong> is an undergraduate student at Simon Fraser University and Zhejiang University, currently working with <a href='https://www.cs.sfu.ca/~mori/'>Prof. Greg Mori</a> as a Research Assistant. His research interests lie in the field of <strong>Machine Learning</strong>(<em>Deep Learning</em>) and <strong>Computer Vision</strong>."
+  content:  "<strong>Hexiang Hu</strong> is a Ph.D. student at University of California Los Angeles(UCLA), working with <a href='http://www-bcf.usc.edu/~feisha/'>Prof. Fei Sha</a>. His research interests lie in the field of <strong>Machine Learning</strong>, <strong>Computer Vision</strong> and <strong>Natural Language Processing</strong>."
 short:
-  date:  
+  date:
   title:  "In Deep."
-  content: "I am passionte with Deep Learning as well as Computer Vision. My research interest majorly focuses on <em class='text-grey-bright'>Structured Visual Recognition with Deep Learning</em>."
+  content: "I am passionte with Machine Learning, Computer Vision as well as Natural Language Processing. I aim to combine <em class='text-grey-bright'>the great power of vision and language</em>."
