@@ -16,8 +16,15 @@
 }
 
 .maxim > div > strong,
+.maxim > p > strong,
 .maxim > strong {
   color: $red-color-dark;
+}
+
+.maxim > div > b,
+.maxim > p > b,
+.maxim > b {
+  color: $green-color-dark;
 }
 
 .maxim > div > s,

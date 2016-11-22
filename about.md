@@ -13,7 +13,7 @@ The site is basically created when exploring  [_jekyll framework_](https://www.h
 * __1. Sales Page__
 
 <div class="maxim">
-  Just as most personal site did, to <strong>display</strong>/<s>show off</s> my personal achievements for coming opportunities...
+  Just as most personal site did, to <strong>display</strong> my personal achievements for coming opportunities...
 </div>
 
 * __2. Mixture of Things__

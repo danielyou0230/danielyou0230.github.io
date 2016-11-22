@@ -36,7 +36,7 @@ social:
 
 # customized document resources
 collections:
-  toys:
+  projects:
     output: true
 
 scss:
