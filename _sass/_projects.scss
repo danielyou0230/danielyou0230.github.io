@@ -8,6 +8,7 @@
 }
 
 .project-header > h1 {
+  font-size:      20pt;
   font-weight:    800;
   text-align:     center;
 }
@@ -21,6 +22,8 @@
 .project-header > .project-contributors {
   margin-left:      auto;
   margin-right:     auto;
+  width:          -webkit-calc(96% - (#{$spacing-unit} / 4));
+  width:          -calc(96% - (#{$spacing-unit} / 4));
 }
 
 .project-contributor {
@@ -31,8 +34,18 @@
   color: $blue-color;
 }
 
+.project-figure {
+  margin-bottom:  5pt;
+  margin:         auto;
+  width:          -webkit-calc(96%);
+  width:          -calc(96%);
+}
+
+.project-figure > img {
+  align:          middle;
+}
+
 .project-content {
-  // border-top: thin solid #c0c0c0;
   margin-bottom: $spacing-unit;
 
   h2 {
