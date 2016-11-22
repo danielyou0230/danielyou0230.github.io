@@ -10,7 +10,7 @@ layout: default
         <div class='project-contributor'><a href="{{author.url}}">{{ author.name }}</a></div>
       {% endfor %} 
     </div>
-    <p class="project-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="project-meta">{% if page.author %} | {{ page.author }}{% endif %}{% if page.meta %} | {{ page.meta }}{% endif %} | {{ page.date | date: "%b %-d, %Y" }} |</p>
   </header>
 
   <article class="project-content">
