@@ -34,6 +34,12 @@
   color: $blue-color;
 }
 
+.footnote{
+  font-size:  $small-font-size;
+  color:      $grey-color;
+  float:      left;
+}
+
 .project-figure {
   margin-bottom:  5pt;
   margin:         auto;
@@ -70,11 +76,6 @@
 .project-desc > .tag,
 .project-desc > .tags > .tag {
   color:        $red-color-dark;
-}
-
-.footnote{
-  font-size:  $small-font-size;
-  color:      $grey-color;
 }
 
 .publisher {
