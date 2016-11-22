@@ -15,7 +15,7 @@
 
 .project-header > .project-meta {
   font-size:  $small-font-size;
-  color:      $grey-color;
+  color:      $grey-color-dark;
   float:      right
 }
 
@@ -43,6 +43,44 @@
 
 .project-figure > img {
   align:          middle;
+}
+
+.project-desc {
+  background-color: $grey-color-light;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 20px;
+  border-radius: 4px;
+  color: $blue-color-dark;
+  @include media-query($on-palm) {
+    padding:  2px;
+    margin:   2px;
+  }
+}
+
+.project-desc > div > strong,
+.project-desc > p > strong,
+.project-desc > strong {
+  color: $red-color-dark;
+}
+
+.project-desc > .tags {
+  font-weight:  600;
+}
+
+.project-desc > .tag,
+.project-desc > .tags > .tag {
+  color:        $red-color-dark;
+}
+
+.footnote{
+  font-size:  $small-font-size;
+  color:      $grey-color;
+}
+
+.publisher {
+  color:        $green-color-dark;
+  font-size:    14px;
+  font-weight:  600;
 }
 
 .project-content {

@@ -21,6 +21,8 @@
       url:  'http://arxiv.org/abs/1511.05616'
     - name: 'pdf'
       url:  'http://arxiv.org/pdf/1511.05616.pdf'
+    - name: 'project'
+      url:  '/projects/sinn'
 - title: 'Structure Inference Machines: Recurrent Neural Networks for Analyzing Relations in Group Activity Recognition'
   date:  'Nov. 2015'
   imgurl: '/images/projects/2015/zhiweid2015bprnn.jpg'
