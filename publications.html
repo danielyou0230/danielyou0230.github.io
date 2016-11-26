@@ -27,11 +27,12 @@ noindex:  true
         <p>{{ publication.desc }}</p>
       </div>
       <div class="publish">
-        {{ publication.status }} <i>{{ publication.publish }}</i>
+        <b>{{ publication.publish }}</b>
+        <i>{{ publication.status }}</i>
       </div>
       <div class="tags">
         {% for tag in publication.tags %}
-        [<a class="tag" href="{{tag.url}}"> {{ tag.name }} </a>]
+        [<a class="tag" href="{{tag.url}}"> <strong> {{ tag.name }} </strong> </a>]
         {% endfor %}
       </div>
     </div>

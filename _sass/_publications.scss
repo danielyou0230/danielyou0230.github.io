@@ -72,8 +72,21 @@
   font-size:      14px;
 }
 
+.pub-right > .desc > p {
+  margin: auto;
+}
+
 .pub-right > .publish {
+  float: right;
+}
+
+.pub-right > .publish > i {
+  color:          $grey-color-dark;
+  font-weight:    500;
+  font-size:      13px;
+}
+
+.pub-right > .publish > b {
   color:          $green-color-dark;
-  font-weight:    600;
   font-size:      13px;
 }
