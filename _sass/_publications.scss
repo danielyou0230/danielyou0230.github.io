@@ -80,13 +80,15 @@
   float: right;
 }
 
-.pub-right > .publish > i {
-  color:          $grey-color-dark;
-  font-weight:    500;
-  font-size:      13px;
+.pub-right > .publish > .publisher {
+  color:          $green-color-dark;
+  font-style:     italic;
+  font-size:      16px;
 }
 
-.pub-right > .publish > b {
-  color:          $green-color-dark;
-  font-size:      13px;
+.pub-right > .publish > .status {
+  color:          $grey-color-dark;
+  font-weight:    500;
+  font-style:     italic;
+  font-size:      14px;
 }

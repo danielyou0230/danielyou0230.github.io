@@ -14,7 +14,7 @@
     - name: G. Mori
       url:  'https://www.cs.sfu.ca/~mori/'
   publish:  'ArXiv'
-  status:   '(preprint)'
+  status:   ''
   desc: 'We advocate that high-recall holistic inference of image concepts provides valuable information for detailed pixel labeling. A two-stream neural network architecture is proposed to facilitate information flow from holistic information to local pixels.'
   tags:
     - name: 'arXiv'
@@ -39,7 +39,7 @@
     - name: G. Mori
       url:  'https://www.cs.sfu.ca/~mori/'
   publish:  'CVPR 2016'
-  status:   ''
+  status:   'in Las Vegas, US.'
   desc: 'We propose a generic structured model that leverages diverse label relations to improve image classification performance. It employs a novel stacked label prediction neural network, capturing both inter-level and intra-level label semantics.'
   tags:
     - name: 'arXiv'
@@ -62,7 +62,7 @@
     - name: G. Mori
       url:  'https://www.cs.sfu.ca/~mori/'
   publish:  'CVPR 2016'
-  status:   ''
+  status:   'in Las Vegas, US.'
   desc: 'We propose a method to integrate graphical models and deep neural networks into a joint framework with a sequential prediction approximation, modeled by recurrent neural network.'
   tags:
     - name: 'arXiv'
