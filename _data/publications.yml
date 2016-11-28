@@ -18,9 +18,9 @@
   desc: 'We advocate that high-recall holistic inference of image concepts provides valuable information for detailed pixel labeling. A two-stream neural network architecture is proposed to facilitate information flow from holistic information to local pixels.'
   tags:
     - name: 'arXiv'
-      url:  ''
+      url:  'https://arxiv.org/abs/1611.08061'
     - name: 'pdf'
-      url:  ''
+      url:  'https://arxiv.org/pdf/1611.08061v1.pdf'
     - name: 'project'
       url:  '/projects/holistic'
 - title: 'Learning Structured Inference Neural Networks with Label Relations'
