@@ -1,12 +1,12 @@
 name:       "Hexiang(Frank) Hu"
-title:      "Ph.D. Student [at] UCLA"
+title:      "Ph.D. Student [at] USC"
 email:      "hexiang.frank.hu [at] gmail.com"
 head_pic:   /images/self-portrait/me.jpg
 deep_pic:   /images/self-portrait/deep-me.jpg
 normal:
   date:     "Sept. 2016"
   title:    ""
-  content:  "<strong>Hexiang Hu</strong> is a Ph.D. student at University of California Los Angeles(UCLA), working with <a href='http://www-bcf.usc.edu/~feisha/'>Prof. Fei Sha</a>. His research interests lie in the field of <strong>Machine Learning</strong>, <strong>Computer Vision</strong> and <strong>Natural Language Processing</strong>."
+  content:  "<strong>Hexiang Hu</strong> is a Ph.D. student at <strong>University of Southern California(USC)</strong>, working with <a href='http://www-bcf.usc.edu/~feisha/'>Prof. Fei Sha</a>. His research interests lie in the field of <strong>Machine Learning</strong>, <strong>Computer Vision</strong> and <strong>Natural Language Processing</strong>."
 short:
   date:
   title:  "In Deep."

@@ -8,7 +8,7 @@ $timeline-padding: 20px;
   font-family: 'Roboto',sans-serif, Helvetica;
   margin-top:   #{$spacing-unit};
   font-size:    20px;
-  font-weight:  300;
+  font-weight:  400;
 }
 
 .timeline-body {
@@ -75,13 +75,13 @@ $timeline-padding: 20px;
 
 .timeline-date {
   font-size:      16px;
-  font-weight:    400;
+  font-weight:    600;
   color:          $secondary-color-dark;
 }
 
 .timeline-title {
   font-size:      20px;
-  font-weight:    600;
+  font-weight:    500;
   font-family:    'Roboto', sans-serif;
   color:          $primary-color-dark;
 }

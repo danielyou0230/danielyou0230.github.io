@@ -1,6 +1,13 @@
-- date:  "2016 - "
+- date:  "2017 - "
+  title: "PhD student @ USC"
+  desc:  "Large Scale Machine Learning, Vision and Language"
+  host:
+    name: "<a href='http://web.cs.ucla.edu/~feisha/'>Prof. Fei Sha</a>"
+    role: "Supervisor"
+  brief: true
+- date:  "2016 - 2017"
   title: "PhD student @ UCLA"
-  desc:  "Machine Learning, Computer Vision and Natural Language Processing"
+  desc:  "Object Detection, Semantic Segmentation"
   host:
     name: "<a href='http://web.cs.ucla.edu/~feisha/'>Prof. Fei Sha</a>"
     role: "Supervisor"
@@ -11,14 +18,14 @@
   host:  false
   brief: true
 - date:  "Jun. 2015 - Apr. 2016"
-  title: "Research Assistant @ VML SFU"
+  title: "Research Assistant @ VML"
   desc:  "Multi-label Classification and Group Activity Recognition"
   host:
     name: "<a href='http://www.cs.sfu.ca/~mori'>Prof. Greg Mori</a>"
     role: "Supervisor"
   brief: true
 - date:  "Jan. 2015 - Jun. 2015 "
-  title: "Research Assistant @ MIAL SFU"
+  title: "Research Assistant @ MIAL"
   desc:  "Skin Disease Classification"
   host:
     name:  "<a href='http://www.cs.sfu.ca/~hamarneh/'>Prof. Ghassan Harmarneh</a>"

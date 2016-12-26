@@ -50,13 +50,13 @@ $facebook-color:    #3B5998;
 $github-color:      #000000;
 
 // Site color scheme[primary and secondary]
-$primary-color:             $brand-color-dark;
-$primary-color-light:       $brand-color;
-$primary-color-dark:        $blue-color-dark;
+$primary-color:             $red-color-dark;
+$primary-color-light:       $red-color;
+$primary-color-dark:        $red-color-dark;
 
-$secondary-color:           $red-color;
-$secondary-color-light:     $red-color-light;
-$secondary-color-dark:      $red-color-dark;
+$secondary-color:           $brand-color;
+$secondary-color-light:     $brand-color-light;
+$secondary-color-dark:      $brand-color-dark;
 
 // Width of the content area
 $content-width:     1024px;
