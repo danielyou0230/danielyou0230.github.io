@@ -13,7 +13,7 @@
       url:  'http://www-bcf.usc.edu/~feisha/'
     - name: G. Mori
       url:  'https://www.cs.sfu.ca/~mori/'
-  publish:  'ArXiv'
+  publish:  'Pre-prints'
   status:   ''
   desc: 'We advocate that high-recall holistic inference of image concepts provides valuable information for detailed pixel labeling. A two-stream neural network architecture is proposed to facilitate information flow from holistic information to local pixels.'
   tags:
@@ -23,6 +23,31 @@
       url:  'https://arxiv.org/pdf/1611.08061v1.pdf'
     - name: 'project'
       url:  '/projects/holistic'
+- title: 'FastMask: Segment Multi-scale Object Candidates in One Shot'
+  date:  'Nov. 2016'
+  imgurl: '/images/projects/2016/hexiang2016fastmask.png'
+  selected: true
+  authors:
+    - name: <strong>H. Hu</strong>
+      url:  ''
+    - name: S. Lan
+      url:  ''
+    - name: Y. Jiang
+      url:  ''
+    - name: Z. Cao
+      url:  ''
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+  publish:  'Pre-prints'
+  status:   ''
+  desc: 'We present a novel segment proposal framework, namely FastMask, which takes advantage of the hierarchical structure in deep convolutional neural network to segment multi-scale objects in one shot. Innovatively, we generalize segment proposal network into three different functional components (body, neck and head). We further propose a weight-shared residual neck module as well as a scale-tolerant attentional head module for multi-scale training and efficient one-shot inference.'
+  tags:
+    - name: 'arXiv'
+      url:  'https://arxiv.org/abs/1612.08843'
+    - name: 'pdf'
+      url:  'https://arxiv.org/pdf/1612.08843v3.pdf'
+    - name: 'code'
+      url:  'https://github.com/voidrank/FastMask'
 - title: 'Learning Structured Inference Neural Networks with Label Relations'
   date:  'Nov. 2015'
   imgurl: '/images/projects/2015/hexiangh2015sinn.jpg'
