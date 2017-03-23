@@ -20,15 +20,20 @@ noindex:  true
       </div>
       <div class="authors">
         {% for author in publication.authors %}
-        <a class="author" href="{{ author.url }}">{{ author.name | prepend: ' '}}</a>
+        <a class="author" href="{{ author.url }}">
+          {{ author.name | prepend: ' '}}
+          {% if author.equal_contribution %} * {% endif %}
+        </a>
+        {% if forloop.last == false %},{% endif %}
         {% endfor %}
       </div>
       <div class="desc">
         <p>{{ publication.desc }}</p>
       </div>
       <div class="publish">
-        <span class="publisher">{{ publication.publish }}</span>
+        <span class="publisher">{{ publication.publisher }}</span>
         <span class="status">{{ publication.status }}</span>
+        <span class="place">{{ publication.place }}</span>
       </div>
       <div class="tags">
         {% for tag in publication.tags %}

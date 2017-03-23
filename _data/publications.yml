@@ -5,8 +5,10 @@
 #   authors:
 #     - name: <strong>H. Hu</strong>
 #       url:  ''
+#       equal_contribution: true
 #     - name: Z. Deng
 #       url:  'http://www.sfu.ca/~zhiweid'
+#       equal_contribution: true
 #     - name: G.-T. Zhou
 #       url:  'http://www.cs.sfu.ca/~gza11/personal/'
 #     - name: F. Sha
@@ -30,16 +32,19 @@
   authors:
     - name: <strong>H. Hu</strong>
       url:  ''
+      equal_contribution: true
     - name: S. Lan
       url:  ''
+      equal_contribution: true
     - name: Y. Jiang
       url:  ''
     - name: Z. Cao
       url:  ''
     - name: F. Sha
       url:  'http://www-bcf.usc.edu/~feisha/'
-  publish:  'to appear at CVPR 2017'
-  status:   ''
+  publisher:  'CVPR 2017'
+  status:   '(Spotlight)'
+  place:    'in Honolulu, Hawaii'
   desc: 'We present a novel segment proposal framework, namely FastMask, which takes advantage of the hierarchical structure in deep convolutional neural network to segment multi-scale objects in one shot. Innovatively, we generalize segment proposal network into three different functional components (body, neck and head). We further propose a weight-shared residual neck module as well as a scale-tolerant attentional head module for multi-scale training and efficient one-shot inference.'
   tags:
     - name: 'arXiv'
@@ -63,8 +68,9 @@
       url:  'http://web.engr.illinois.edu/~liao17/'
     - name: G. Mori
       url:  'https://www.cs.sfu.ca/~mori/'
-  publish:  'CVPR 2016'
-  status:   'in Las Vegas, US.'
+  publisher:  'CVPR 2016'
+  status:  ''
+  place:   'in Las Vegas, Nevada'
   desc: 'We propose a generic structured model that leverages diverse label relations to improve image classification performance. It employs a novel stacked label prediction neural network, capturing both inter-level and intra-level label semantics.'
   tags:
     - name: 'arXiv'
@@ -86,8 +92,9 @@
       url:  ''
     - name: G. Mori
       url:  'https://www.cs.sfu.ca/~mori/'
-  publish:  'CVPR 2016'
-  status:   'in Las Vegas, US.'
+  publisher:  'CVPR 2016'
+  status:   ''
+  place:   'in Las Vegas, Nevada'
   desc: 'We propose a method to integrate graphical models and deep neural networks into a joint framework with a sequential prediction approximation, modeled by recurrent neural network.'
   tags:
     - name: 'arXiv'
