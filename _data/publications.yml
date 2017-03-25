@@ -43,8 +43,8 @@
       url:  'http://www-bcf.usc.edu/~feisha/'
     - name: G. Mori
       url:  'https://www.cs.sfu.ca/~mori/'
-  publisher: 'Pre-prints'
-  status:    ''
+  publisher: 'ArXiv 2016'
+  status:    '(Tech. Report)'
   place:     ''
   desc: 'We advocate that high-recall holistic inference of image concepts provides valuable information for detailed pixel labeling. A two-stream neural network architecture is proposed to facilitate information flow from holistic information to local pixels.'
   tags:
