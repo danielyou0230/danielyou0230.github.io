@@ -1,30 +1,3 @@
-# - title: 'Recalling Holistic Information for Semantic Segmentation'
-#   date:  'Nov. 2016'
-#   imgurl: '/images/projects/2016/hexiang2016holistic.png'
-#   selected: true
-#   authors:
-#     - name: <strong>H. Hu</strong>
-#       url:  ''
-#       equal_contribution: true
-#     - name: Z. Deng
-#       url:  'http://www.sfu.ca/~zhiweid'
-#       equal_contribution: true
-#     - name: G.-T. Zhou
-#       url:  'http://www.cs.sfu.ca/~gza11/personal/'
-#     - name: F. Sha
-#       url:  'http://www-bcf.usc.edu/~feisha/'
-#     - name: G. Mori
-#       url:  'https://www.cs.sfu.ca/~mori/'
-#   publish:  'Pre-prints'
-#   status:   ''
-#   desc: 'We advocate that high-recall holistic inference of image concepts provides valuable information for detailed pixel labeling. A two-stream neural network architecture is proposed to facilitate information flow from holistic information to local pixels.'
-#   tags:
-#     - name: 'arXiv'
-#       url:  'https://arxiv.org/abs/1611.08061'
-#     - name: 'pdf'
-#       url:  'https://arxiv.org/pdf/1611.08061v1.pdf'
-#     - name: 'project'
-#       url:  '/projects/holistic'
 - title: 'FastMask: Segment Multi-scale Object Candidates in One Shot'
   date:  'Nov. 2016'
   imgurl: '/images/projects/2016/hexiang2016fastmask.png'
@@ -45,7 +18,7 @@
   publisher:  'CVPR 2017'
   status:   '(Spotlight)'
   place:    'in Honolulu, Hawaii'
-  desc: 'We present a novel segment proposal framework, namely FastMask, which takes advantage of the hierarchical structure in deep convolutional neural network to segment multi-scale objects in one shot. Innovatively, we generalize segment proposal network into three different functional components (body, neck and head). We further propose a weight-shared residual neck module as well as a scale-tolerant attentional head module for multi-scale training and efficient one-shot inference.'
+  desc: 'We present a novel segment proposal framework, namely FastMask, which takes advantage of the hierarchical structure in deep convolutional neural network to segment multi-scale objects in one shot. Through leveraging feature pyramid and sliding-window region attention, we made instance proposal not only fast but more accurate.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1612.08843'
@@ -53,6 +26,34 @@
       url:  'https://arxiv.org/pdf/1612.08843v3.pdf'
     - name: 'code'
       url:  'https://github.com/voidrank/FastMask'
+- title: 'Recalling Holistic Information for Semantic Segmentation'
+  date:  'Nov. 2016'
+  imgurl: '/images/projects/2016/hexiang2016holistic.png'
+  selected: true
+  authors:
+    - name: <strong>H. Hu</strong>
+      url:  ''
+      equal_contribution: true
+    - name: Z. Deng
+      url:  'http://www.sfu.ca/~zhiweid'
+      equal_contribution: true
+    - name: G.-T. Zhou
+      url:  'http://www.cs.sfu.ca/~gza11/personal/'
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+    - name: G. Mori
+      url:  'https://www.cs.sfu.ca/~mori/'
+  publisher: 'Pre-prints'
+  status:    ''
+  place:     ''
+  desc: 'We advocate that high-recall holistic inference of image concepts provides valuable information for detailed pixel labeling. A two-stream neural network architecture is proposed to facilitate information flow from holistic information to local pixels.'
+  tags:
+    - name: 'arXiv'
+      url:  'https://arxiv.org/abs/1611.08061'
+    - name: 'pdf'
+      url:  'https://arxiv.org/pdf/1611.08061v1.pdf'
+    # - name: 'project'
+    #   url:  '/projects/holistic'
 - title: 'Learning Structured Inference Neural Networks with Label Relations'
   date:  'Nov. 2015'
   imgurl: '/images/projects/2015/hexiangh2015sinn.jpg'
@@ -71,7 +72,7 @@
   publisher:  'CVPR 2016'
   status:  ''
   place:   'in Las Vegas, Nevada'
-  desc: 'We propose a generic structured model that leverages diverse label relations to improve image classification performance. It employs a novel stacked label prediction neural network, capturing both inter-level and intra-level label semantics.'
+  desc: 'We propose a generic structured model that leverages diverse label relations to improve image classification performance. It employs a novel stacked label prediction neural network, capturing both inter-level and intra-level label semantics. The design of this framework naurally extends to leverage partial observations in the label space to inference the rest label space.'
   tags:
     - name: 'arXiv'
       url:  'http://arxiv.org/abs/1511.05616'
@@ -95,7 +96,7 @@
   publisher:  'CVPR 2016'
   status:   ''
   place:   'in Las Vegas, Nevada'
-  desc: 'We propose a method to integrate graphical models and deep neural networks into a joint framework with a sequential prediction approximation, modeled by recurrent neural network.'
+  desc: 'We propose a method to integrate graphical models and deep neural networks into a joint framework with a sequential prediction approximation, modeled by recurrent neural network. This framework simultaneously predicts the underline structure of interactions between people and inferences the corresponding labels for individual and group.'
   tags:
     - name: 'arXiv'
       url:  'http://arxiv.org/abs/1511.04196'
