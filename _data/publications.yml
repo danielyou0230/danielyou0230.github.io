@@ -29,7 +29,7 @@
 - title: 'Recalling Holistic Information for Semantic Segmentation'
   date:  'Nov. 2016'
   imgurl: '/images/projects/2016/hexiang2016holistic.png'
-  selected: true
+  selected: false
   authors:
     - name: <strong>H. Hu</strong>
       url:  ''
