@@ -3,7 +3,10 @@ layout: home
 ---
 
 <div id="bio" class="bio">
-  <h1 class="md-heading text-center"> Bio </h1>
+  <h1 class="md-heading text-center">
+    <i class="fa fa-id-card" aria-hidden="true"></i>
+    Biography 
+  </h1>
   <div class="bio-body">
     <p> {{ site.data.bio.normal.content }} </p>
   </div>
@@ -11,7 +14,10 @@ layout: home
 
 
 <div id="timeline" class="timeline-brief">
-  <h1 class="md-heading text-center">Recent Timeline</h1>
+  <h1 class="md-heading text-center">
+    <i class="fa fa-tasks" aria-hidden="true"></i>
+    Timeline
+  </h1>
 
   <div class="timeline-body">
     {% for experience in site.data.experiences %}
@@ -38,13 +44,18 @@ layout: home
 
   <div class="button">
     <h1 class="sm-heading text-center">
-      <a href="{{ '/timeline/#timeline' | prepend: site.baseurl }}"><i class="fa fa-info-circle"></i> Show More</a>
+      <a href="{{ '/timeline/#timeline' | prepend: site.baseurl }}">
+        <i class="fa fa-info-circle"></i> More
+      </a>
     </h1>
   </div>
 </div>
 
 <div id="publications" class="publications">
-  <h1 class="md-heading text-center">Selected Publications</h1>
+  <h1 class="md-heading text-center">
+    <i class="fa fa-file" aria-hidden="true"></i>
+    Publications
+  </h1>
 
   <div class="pub-list">
   {% for publication in site.data.publications %}
@@ -87,7 +98,9 @@ layout: home
  
   <div class="button">
     <h1 class="sm-heading text-center">
-      <a href="{{ '/publications/#publications' | prepend: site.baseurl }}"><i class="fa fa-info-circle"></i> Detailed Publication List</a>
+      <a href="{{ '/publications/#publications' | prepend: site.baseurl }}">
+        <i class="fa fa-info-circle"></i> All Publications
+      </a>
     </h1>
   </div> 
 </div>
