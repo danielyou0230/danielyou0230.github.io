@@ -15,7 +15,7 @@ noindex:  true
   {% for publication in site.data.publications %}
   <div class="pub">
     <div class="pub-left">
-      <img class="intro-img" src="{{ publication.imgurl | prepend: site.baseurl }}"/>
+      <img class="intro-img {{publication.imgprop}}" src="{{ publication.imgurl | prepend: site.baseurl }}"/>
     </div>
     <div class="pub-right">
       <div class="title">

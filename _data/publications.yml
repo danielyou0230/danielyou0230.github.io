@@ -1,6 +1,7 @@
 - title: 'FastMask: Segment Multi-scale Object Candidates in One Shot'
   date:  'Nov. 2016'
   imgurl: '/images/projects/2016/hexiang2016fastmask.png'
+  imgprop: 'frame'
   selected: true
   authors:
     - name: <strong>H. Hu</strong>
