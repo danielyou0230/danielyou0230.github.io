@@ -1,3 +1,30 @@
+- title: 'LabelBank: Revisiting Global Perspectives for Semantic Segmentation'
+  date:  'March. 2017'
+  imgurl: '/images/projects/2017/hexiang2017labelbank.png'
+  imgprop: 'frame'
+  selected: true
+  authors:
+    - name: <strong>H. Hu</strong>
+      url:  ''
+      equal_contribution: true
+    - name: Z. Deng
+      url:  'http://www.sfu.ca/~zhiweid'
+      equal_contribution: true
+    - name: G.-T. Zhou
+      url:  'http://www.cs.sfu.ca/~gza11/personal/'
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+    - name: G. Mori
+      url:  'https://www.cs.sfu.ca/~mori/'
+  publisher:  'ArXiv 2017'
+  status:   '(Tech Report)'
+  place:    ''
+  desc: 'We show the ability of our framework to improve semantic segmentation performance in a variety of settings. We learn models for extracting a holistic LabelBank from visual cues, attributes, and/or textual descriptions. We demonstrate improvements in semantic segmentation accuracy on standard datasets across a range of state-of-the-art segmentation architectures and holistic inference approaches.'
+  tags:
+    - name: 'arXiv'
+      url:  'https://arxiv.org/abs/1703.09891'
+    - name: 'pdf'
+      url:  '/pdf/hexiang2017labelbank'
 - title: 'FastMask: Segment Multi-scale Object Candidates in One Shot'
   date:  'Nov. 2016'
   imgurl: '/images/projects/2016/hexiang2016fastmask.png'
