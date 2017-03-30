@@ -24,7 +24,7 @@
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1703.09891'
     - name: 'pdf'
-      url:  '/pdf/hexiang2017labelbank'
+      url:  '/pdf/hexiang2017labelbank.pdf'
 - title: 'FastMask: Segment Multi-scale Object Candidates in One Shot'
   date:  'Nov. 2016'
   imgurl: '/images/projects/2016/hexiang2016fastmask.png'
