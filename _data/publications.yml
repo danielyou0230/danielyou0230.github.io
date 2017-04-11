@@ -51,7 +51,7 @@
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1612.08843'
     - name: 'pdf'
-      url:  'https://arxiv.org/pdf/1612.08843v3.pdf'
+      url:  '/pdf/hexiang2016fastmask.pdf'
     - name: 'code'
       url:  'https://github.com/voidrank/FastMask'
 - title: 'Recalling Holistic Information for Semantic Segmentation'
