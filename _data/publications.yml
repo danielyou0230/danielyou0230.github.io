@@ -1,3 +1,26 @@
+- title: 'Being Negative but Constructively: Lessons Learnt from Creating Better Visual Question Answering Datasets'
+  date:  'April. 2017'
+  imgurl: '/images/projects/2017/hexiang2017negative.png'
+  imgprop: 'frame'
+  selected: true
+  authors:
+    - name: W.L. Chao
+      url:  'http://www-scf.usc.edu/~weilunc/index.html'
+      equal_contribution: true
+    - name: <strong>H. Hu</strong>
+      url:  ''
+      equal_contribution: true
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+  publisher:  'ArXiv 2017'
+  status:   '(Tech Report)'
+  place:    ''
+  desc: 'We show the design of the decoy answers has a significant impact on how and what the learning models learn from the datasets. In particular, the resulting learner can ignore the visual information, the question, or the both while still doing well on the task. Inspired by this, we propose automatic procedures of how to remedy such design deficiencies.'
+  tags:
+    - name: 'arXiv'
+      url:  ''
+    - name: 'pdf'
+      url:  '/pdf/hexiang2017negative.pdf'
 - title: 'LabelBank: Revisiting Global Perspectives for Semantic Segmentation'
   date:  'March. 2017'
   imgurl: '/images/projects/2017/hexiang2017labelbank.png'
