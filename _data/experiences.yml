@@ -5,6 +5,11 @@
     name: "<a href='http://www-bcf.usc.edu/~feisha/'>Prof. Fei Sha</a>"
     role: "Supervisor"
   brief: true
+- date:  "Summer 2017"
+  title: "Applied Scientist Intern @ AWS DL"
+  desc:  "Large Scale Machine Learning"
+  host:  false
+  brief: true
 - date:  "2016 - 2017"
   title: "PhD student @ UCLA"
   desc:  "Object Detection, Semantic Segmentation"
