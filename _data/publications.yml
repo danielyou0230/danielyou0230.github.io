@@ -21,6 +21,8 @@
       url:  ''
     - name: 'pdf'
       url:  '/pdf/hexiang2017negative.pdf'
+    - name: 'project'
+      url:  'http://www.teds.usc.edu/website_vqa'
 - title: 'LabelBank: Revisiting Global Perspectives for Semantic Segmentation'
   date:  'March. 2017'
   imgurl: '/images/projects/2017/hexiang2017labelbank.png'
