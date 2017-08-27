@@ -1,3 +1,10 @@
+- date:  "2017 Fall "
+  title: "Teaching Assistant"
+  desc:  "<a href='http://csci-599.github.io'>CSCI-599 Deep Learning@USC</a>"
+  host:
+    name: "<a href='http://www-bcf.usc.edu/~limjj/'>Prof. Joseph Lim</a>"
+    role: "Instructor"
+  brief: false
 - date:  "2017 - "
   title: "PhD student @ USC"
   desc:  "Large Scale Machine Learning, Vision and Language"
