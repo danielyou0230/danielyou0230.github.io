@@ -14,12 +14,12 @@
   brief: true
 - date:  "Summer 2017"
   title: "Applied Scientist Intern @ AWS DL"
-  desc:  "Large Scale Machine Learning"
+  desc:  "Large Scale Machine Learning on Video"
   host:  false
   brief: true
 - date:  "2016 - 2017"
   title: "PhD student @ UCLA"
-  desc:  "Object Detection, Semantic Segmentation"
+  desc:  "Deep Learning, Vision"
   host:
     name: "<a href='http://www-bcf.usc.edu/~feisha/'>Prof. Fei Sha</a>"
     role: "Supervisor"
