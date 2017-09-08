@@ -34,6 +34,10 @@ social:
   linkedin:   hexianghu
   rss:        /feed.xml
 
+google_analytics_token: "UA-60071442-1"
+google_tags_token: "GTM-K5ZTMW"
+
+
 # customized document resources
 collections:
   projects:
