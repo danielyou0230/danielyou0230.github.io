@@ -13,8 +13,8 @@
     role: "Supervisor"
   brief: true
 - date:  "Summer 2017"
-  title: "Applied Scientist Intern @ AWS DL"
-  desc:  "Large Scale Machine Learning on Video"
+  title: "Applied Scientist Intern @ AWS AI"
+  desc:  "Large Scale Machine Learning on Videos"
   host:  false
   brief: true
 - date:  "2016 - 2017"

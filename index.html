@@ -5,10 +5,15 @@ layout: home
 <div id="bio" class="bio">
   <h1 class="md-heading text-center">
     <i class="fa fa-id-card" aria-hidden="true"></i>
-    Biography 
+    Biography
   </h1>
   <div class="bio-body">
-    <p> {{ site.data.bio.normal.content }} </p>
+    <p>
+      {{ site.data.bio.normal.content }}
+      [<strong>
+        <a href='{{ site.data.bio.resume | prepend: site.baseurl }}'>Résumé</a>
+      </strong>]
+    </p>
   </div>
 </div>
 
@@ -95,14 +100,14 @@ layout: home
   {% endif %}
   {% endfor %}
   </div>
- 
+
   <div class="button">
     <h1 class="sm-heading text-center">
       <a href="{{ '/publications/#publications' | prepend: site.baseurl }}">
         <i class="fa fa-info-circle"></i> All Publications
       </a>
     </h1>
-  </div> 
+  </div>
 </div>
 
 </div>
