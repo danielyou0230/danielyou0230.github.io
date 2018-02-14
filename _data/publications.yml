@@ -12,9 +12,9 @@
       equal_contribution: true
     - name: F. Sha
       url:  'http://www-bcf.usc.edu/~feisha/'
-  publisher:  'ArXiv 2017'
-  status:   '(Tech Report)'
-  place:    ''
+  publisher:  'NAACL-HLT 2018'
+  status:   '(Oral)'
+  place:    'in New Orleans, Louisiana'
   desc: 'We show the design of the decoy answers has a significant impact on how and what the learning models learn from the datasets. In particular, the resulting learner can ignore the visual information, the question, or the both while still doing well on the task. Inspired by this, we propose automatic procedures of how to remedy such design deficiencies.'
   tags:
     - name: 'arXiv'
@@ -157,4 +157,3 @@
       url:  'http://arxiv.org/pdf/1511.04196.pdf'
     - name: 'site'
       url:  'http://www.sfu.ca/~zhiweid/projects/SIF_project.html'
-
