@@ -1,3 +1,74 @@
+- title: 'Learning Answer Embedding For Visual Question Answering'
+  date:  'Feb. 2018'
+  imgurl: '/images/projects/2018/hexiang2018ansemb.png'
+  imgprop: 'frame'
+  selected: true
+  authors:
+    - name: <strong>H. Hu</strong>
+      url:  ''
+      equal_contribution: true
+    - name: W.-L. Chao
+      url:  'http://www-scf.usc.edu/~weilunc/index.html'
+      equal_contribution: true
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+  publisher:  'CVPR 2018'
+  status:   ''
+  place:    'in Salt Lake City, Utah'
+  desc: 'We propose a novel probabilistic model for visual question answering (Visual QA). The key idea is to infer two sets of embeddings: one for the image and the question jointly and the other for the answers. The learning objective is to learn the best parameterization of those embeddings such that the correct answer has higher likelihood among all possible answers.'
+  tags:
+    - name: 'arXiv'
+      url:  ''
+    - name: 'pdf'
+      url:  ''
+- title: 'Cross-Dataset Adaptation for Visual Question Answering'
+  date:  'Feb. 2018'
+  imgurl: '/images/projects/2018/hexiang2018adaptation.png'
+  imgprop: 'frame'
+  selected: true
+  authors:
+    - name: <strong>H. Hu</strong>
+      url:  ''
+      equal_contribution: true
+    - name: W.-L. Chao
+      url:  'http://www-scf.usc.edu/~weilunc/index.html'
+      equal_contribution: true
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+  publisher:  'CVPR 2018'
+  status:   ''
+  place:    'in Salt Lake City, Utah'
+  desc: 'We investigate the problem of cross-dataset adaptation for visual question answering (Visual QA). Our goal is to train a Visual QA model on a source dataset  but apply it to another target one. Analogous to domain adaptation for visual recognition, this setting is appealing when the target dataset does not have a sufficient amount of labeled data to learn an "in-domain" model.'
+  tags:
+    - name: 'arXiv'
+      url:  ''
+    - name: 'pdf'
+      url:  ''
+- title: 'Compressed Video Action Recognition'
+  date:  'Jan. 2018'
+  imgurl: '/images/projects/2018/cywu2018coviar.png'
+  imgprop: 'frame'
+  selected: false
+  authors:
+    - name: 'C.-Y. Chao'
+      url:  'http://www.cs.utexas.edu/~cywu/'
+    - name: 'M. Zaheer'
+      url:  'http://manzil.ml/'
+    - name: <strong>H. Hu</strong>
+      url:  ''
+    - name: 'A. Smola'
+      url:  'https://alex.smola.org/'
+    - name: 'P. Krähenbühl'
+      url:  'http://www.philkr.net/'
+  publisher:  'CVPR 2018'
+  status:   ''
+  place:    'in Salt Lake City, Utah'
+  desc: 'Training robust deep video representations has proven to be much more challenging than learning deep image representations and consequently hampered tasks like video action recognition. The "true" and interesting signal is often drowned in too much irrelevant data. Motivated by the fact that the superfluous information can be reduced by up to two orders of magnitude with video compression techniques (like H.264, HEVC, etc.), in this work, we propose to train a deep network directly on the compressed video, devoid of redundancy, rather than the traditional highly redundant RGB stream.'
+  tags:
+    - name: 'arXiv'
+      url:  'https://arxiv.org/abs/1712.00636'
+    - name: 'pdf'
+      url:  ''
 - title: 'Being Negative but Constructively: Lessons Learnt from Creating Better Visual Question Answering Datasets'
   date:  'April. 2017'
   imgurl: '/images/projects/2017/hexiang2017negative.png'
@@ -27,7 +98,7 @@
   date:  'March. 2017'
   imgurl: '/images/projects/2017/hexiang2017labelbank.png'
   imgprop: 'frame'
-  selected: true
+  selected: false
   authors:
     - name: <strong>H. Hu</strong>
       url:  ''
@@ -136,7 +207,7 @@
 - title: 'Structure Inference Machines: Recurrent Neural Networks for Analyzing Relations in Group Activity Recognition'
   date:  'Nov. 2015'
   imgurl: '/images/projects/2015/zhiweid2015bprnn.jpg'
-  selected: true
+  selected: false
   authors:
     - name: Z. Deng
       url:  'http://www.sfu.ca/~zhiweid'
