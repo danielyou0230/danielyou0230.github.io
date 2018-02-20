@@ -15,7 +15,7 @@
   publisher:  'CVPR 2018'
   status:   ''
   place:    'in Salt Lake City, Utah'
-  desc: 'We propose a novel probabilistic model for visual question answering (Visual QA). The key idea is to infer two sets of embeddings: one for the image and the question jointly and the other for the answers. The learning objective is to learn the best parameterization of those embeddings such that the correct answer has higher likelihood among all possible answers.'
+  desc: 'We propose a novel probabilistic model for visual question answering. <!--more--> The key idea is to infer two sets of embeddings: one for the image and the question jointly and the other for the answers. The learning objective is to learn the best parameterization of those embeddings such that the correct answer has higher likelihood among all possible answers.'
   tags:
     - name: 'arXiv'
       url:  ''
@@ -38,7 +38,7 @@
   publisher:  'CVPR 2018'
   status:   ''
   place:    'in Salt Lake City, Utah'
-  desc: 'We investigate the problem of cross-dataset adaptation for visual question answering (Visual QA). Our goal is to train a Visual QA model on a source dataset  but apply it to another target one. Analogous to domain adaptation for visual recognition, this setting is appealing when the target dataset does not have a sufficient amount of labeled data to learn an "in-domain" model.'
+  desc: 'We investigate the problem of cross-dataset adaptation for visual question answering. <!--more--> Our goal is to train a Visual QA model on a source dataset  but apply it to another target one. Analogous to domain adaptation for visual recognition, this setting is appealing when the target dataset does not have a sufficient amount of labeled data to learn an "in-domain" model.'
   tags:
     - name: 'arXiv'
       url:  ''
@@ -48,7 +48,7 @@
   date:  'Jan. 2018'
   imgurl: '/images/projects/2018/cywu2018coviar.png'
   imgprop: 'frame'
-  selected: false
+  selected: true
   authors:
     - name: 'C.-Y. Chao'
       url:  'http://www.cs.utexas.edu/~cywu/'
@@ -63,7 +63,7 @@
   publisher:  'CVPR 2018'
   status:   ''
   place:    'in Salt Lake City, Utah'
-  desc: 'Training robust deep video representations has proven to be much more challenging than learning deep image representations and consequently hampered tasks like video action recognition. The "true" and interesting signal is often drowned in too much irrelevant data. Motivated by the fact that the superfluous information can be reduced by up to two orders of magnitude with video compression techniques (like H.264, HEVC, etc.), in this work, we propose to train a deep network directly on the compressed video, devoid of redundancy, rather than the traditional highly redundant RGB stream.'
+  desc: 'Training robust deep video representations has proven to be much more challenging than learning deep image representations and consequently hampered tasks like video action recognition. Motivated by the fact that the superfluous information can be reduced by up to two orders of magnitude with video compression techniques, in this work, we propose to train a deep network directly on the compressed video, devoid of redundancy'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1712.00636'
@@ -86,7 +86,7 @@
   publisher:  'NAACL-HLT 2018'
   status:   '(Oral)'
   place:    'in New Orleans, Louisiana'
-  desc: 'We show the design of the decoy answers has a significant impact on how and what the learning models learn from the datasets. In particular, the resulting learner can ignore the visual information, the question, or the both while still doing well on the task. Inspired by this, we propose automatic procedures of how to remedy such design deficiencies.'
+  desc: 'We show the design of the decoy answers has a significant impact on how and what the learning models learn from the datasets. In particular, the resulting learner can ignore the visual information, the question, or the both while still doing well on the task. <!--more--> Inspired by this, we propose automatic procedures of how to remedy such design deficiencies.'
   tags:
     - name: 'arXiv'
       url:  ''

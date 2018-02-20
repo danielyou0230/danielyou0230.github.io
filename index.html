@@ -83,7 +83,13 @@ layout: home
           {% endfor %}
         </div>
         <div class="desc">
-          <p>{{ publication.desc }}</p>
+          <p>
+          {% if publication.desc contains '<!--more-->' %}
+            {{ publication.desc | split:'<!--more-->' | first }}
+          {% else %}
+            {{ publication.desc }}
+          {% endif %}
+          </p>
         </div>
         <div class="publish">
           <span class="publisher">{{ publication.publisher }}</span>
