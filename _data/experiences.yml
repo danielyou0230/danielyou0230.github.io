@@ -4,7 +4,7 @@
   host:
     name: "<a href='https://lvdmaaten.github.io/'>Dr. Laurens van der Maaten</a>"
     role: "Mentor"
-  brief: true
+  brief: false
 - date:  "2017 Fall "
   title: "Teaching Assistant"
   desc:  "<a href='http://csci-599.github.io'>CSCI-599 Deep Learning@USC</a>"
@@ -30,7 +30,7 @@
   host:
     name: "<a href='http://www-bcf.usc.edu/~feisha/'>Prof. Fei Sha</a>"
     role: "Supervisor"
-  brief: false
+  brief: true
 - date:  "Summer 2016"
   title: "Research Intern @ Megvii Inc. (Face++)"
   desc:  "Instance-level Segmentation"
