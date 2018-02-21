@@ -15,7 +15,9 @@
 - date:  "Summer 2017"
   title: "Applied Scientist Intern @ Amazon AI"
   desc:  "Large Scale Machine Learning on Videos"
-  host:  false
+  host:
+    name: "<a href='http://ciir.cs.umass.edu/~manmatha/'>Dr. R. Manmatha</a> <!-- & <a href='https://www.cs.cmu.edu/~deva/'>Prof. Deva Ramanan</a> -->"
+    role: "Mentor"
   brief: true
 - date:  "2017 - "
   title: "PhD student @ USC"
