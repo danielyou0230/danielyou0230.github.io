@@ -61,7 +61,7 @@
     - name: 'P. Krähenbühl'
       url:  'http://www.philkr.net/'
   publisher:  'CVPR 2018'
-  status:   ''
+  status:   '(Spotlight)'
   place:    'in Salt Lake City, Utah'
   desc: 'Training robust deep video representations has proven to be much more challenging than learning deep image representations and consequently hampered tasks like video action recognition. Motivated by the fact that the superfluous information can be reduced by up to two orders of magnitude with video compression techniques, in this work, we propose to train a deep network directly on the compressed video, devoid of redundancy'
   tags:
