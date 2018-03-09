@@ -32,6 +32,10 @@ $blue-color-dark:   darken($blue-color,  25%);
 $white-color:       #ffffff;
 $white-color-dark:  darken($white-color, 5%);
 
+$yellow-color:       #FFCC00 !default;
+$yellow-color-light: lighten($yellow-color, 40%) !default;
+$yellow-color-dark:  darken($yellow-color, 25%) !default;
+
 $grey-color:        #828282;
 $grey-color-light:  lighten($grey-color, 40%);
 $grey-color-bright: lighten($grey-color, 50%);
