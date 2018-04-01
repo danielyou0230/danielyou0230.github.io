@@ -69,6 +69,8 @@
       url:  'https://arxiv.org/abs/1712.00636'
     - name: 'pdf'
       url:  ''
+    - name: 'details'
+      url:  'https://www.cs.utexas.edu/~cywu/projects/coviar/'
 - title: 'Being Negative but Constructively: Lessons Learnt from Creating Better Visual Question Answering Datasets'
   date:  'April. 2017'
   imgurl: '/images/projects/2017/hexiang2017negative.png'
