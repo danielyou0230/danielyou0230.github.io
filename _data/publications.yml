@@ -52,10 +52,8 @@
   authors:
     - name: Soravit (Beer) Changpinyo
       url:  'http://www-scf.usc.edu/~schangpi/index.html'
-      equal_contribution: true
     - name: <strong>H. Hu</strong>
       url:  ''
-      equal_contribution: true
     - name: F. Sha
       url:  'http://www-bcf.usc.edu/~feisha/'
   publisher:  'Coling 2018'
