@@ -1,3 +1,26 @@
+- title: 'Synthesize Policies for Transfer and Adaptation across Environments and Tasks'
+  date:  'May. 2018'
+  imgurl: '/images/projects/placeholder.png'
+  imgprop: 'frame'
+  selected: true
+  authors:
+    - name: <strong>H. Hu</strong>
+      url:  ''
+      equal_contribution: true
+    - name: L. Chen
+      url:  ''
+      equal_contribution: true
+    - name: B. Gong
+      url:  'http://boqinggong.info/'
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+  publisher:  'in submission to NIPS 2018'
+  status:   ''
+  place:    'Montreal, QC'
+  desc: 'In this paper, we consider the problem of learning to simultaneously transfer across both environments (ENV) and tasks, probably more importantly, by learning from only sparse (ENV, TASK) pairs out of all the possible combinations. We propose a novel compositional neural network architecture which depicts a meta rule for composing policies from the environment and task embeddings.'
+  tags:
+    - name: 'arXiv (coming soon)'
+      url:  ''
 - title: 'Learning Answer Embedding for Visual Question Answering'
   date:  'Feb. 2018'
   imgurl: '/images/projects/2018/hexiang2018ansemb.png'
