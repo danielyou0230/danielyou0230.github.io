@@ -90,7 +90,7 @@
   tags:
     # - name: 'arXiv'
     #   url:  ''
-    - name: 'pdf(coming soon)'
+    - name: 'pdf (coming soon)'
       url:  ''
 - title: 'Compressed Video Action Recognition'
   date:  'Jan. 2018'
