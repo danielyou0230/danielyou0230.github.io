@@ -90,7 +90,7 @@
   tags:
     # - name: 'arXiv'
     #   url:  ''
-    - name: 'pdf(coming soon)'
+    - name: 'pdf (coming soon)'
       url:  ''
 - title: 'Compressed Video Action Recognition'
   date:  'Jan. 2018'
@@ -144,6 +144,8 @@
       url:  'http://www.teds.usc.edu/website_vqa'
     - name: 'poster'
       url:  '/pdf/negative2017cvprw.pdf'
+    - name: 'slides'
+      url:  '/pdf/negative2018naacl.pdf'
     - name: 'bib'
       url:  '/bib/chao2017being.bib'
 - title: 'LabelBank: Revisiting Global Perspectives for Semantic Segmentation'
