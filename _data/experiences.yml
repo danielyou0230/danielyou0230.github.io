@@ -4,7 +4,7 @@
   host:
     name: "<a href='https://lvdmaaten.github.io/'>Dr. Laurens van der Maaten</a>"
     role: "Mentor"
-  brief: false
+  brief: true
 - date:  "2017 Fall "
   title: "Teaching Assistant"
   desc:  "<a href='http://csci-599.github.io'>CSCI-599 Deep Learning@USC</a>"
