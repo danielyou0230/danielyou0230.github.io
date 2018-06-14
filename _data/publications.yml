@@ -1,8 +1,9 @@
-- title: 'Synthesize Policies for Transfer and Adaptation across Environments and Tasks'
+# - title: 'Synthesize Policies for Transfer and Adaptation across Environments and Tasks'
+- title: 'Anonymous Submission'
   date:  'May. 2018'
   imgurl: '/images/projects/placeholder.png'
   imgprop: 'frame'
-  selected: true
+  selected: false
   authors:
     - name: <strong>H. Hu</strong>
       url:  ''
@@ -17,7 +18,8 @@
   publisher:  'in submission to NIPS 2018'
   status:   ''
   place:    'Montreal, QC'
-  desc: 'In this paper, we consider the problem of learning to simultaneously transfer across both environments (ENV) and tasks, probably more importantly, by learning from only sparse (ENV, TASK) pairs out of all the possible combinations. We propose a novel compositional neural network architecture which depicts a meta rule for composing policies from the environment and task embeddings.'
+  desc: 'Description not available'
+  # desc: 'In this paper, we consider the problem of learning to simultaneously transfer across both environments (ENV) and tasks, probably more importantly, by learning from only sparse (ENV, TASK) pairs out of all the possible combinations. We propose a novel compositional neural network architecture which depicts a meta rule for composing policies from the environment and task embeddings.'
   tags:
     - name: 'arXiv (coming soon)'
       url:  ''
