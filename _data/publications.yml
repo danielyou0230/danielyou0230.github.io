@@ -23,6 +23,27 @@
   tags:
     - name: 'arXiv (coming soon)'
       url:  ''
+- title: 'Cross-Modal and Hierarchical Modeling of Video and Text'
+  date:  'Jul. 2018'
+  imgurl: '/images/projects/2018/bowen2018hse.png'
+  imgprop: 'frame'
+  selected: false
+  authors:
+    - name: B. Zhang
+      url:  'http://http://zbwglory.github.io/'
+      equal_contribution: true
+    - name: <strong>H. Hu</strong>
+      url:  ''
+      equal_contribution: true
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+  publisher:  'ECCV 2018'
+  status:   ''
+  place:    'in München, Germany'
+  desc: 'Visual data and text data are composed of information at multiple granularity. In this paper, we investigate the modeling techniques for such hierarchical sequential data where there are correspondences across multiple modalities.'
+  tags:
+    - name: 'arXiv (coming soon)'
+      url:  ''
 - title: 'Learning Answer Embedding for Visual Question Answering'
   date:  'Feb. 2018'
   imgurl: '/images/projects/2018/hexiang2018ansemb.png'
