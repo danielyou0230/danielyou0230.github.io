@@ -27,7 +27,7 @@
   date:  'Jul. 2018'
   imgurl: '/images/projects/2018/bowen2018hse.png'
   imgprop: 'frame'
-  selected: false
+  selected: true
   authors:
     - name: B. Zhang
       url:  'http://http://zbwglory.github.io/'
