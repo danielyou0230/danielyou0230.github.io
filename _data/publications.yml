@@ -48,6 +48,58 @@
       url:  '/pdf/zhang2018cross.pdf'
     - name: 'bib'
       url:  '/bib/zhang2018cross.bib'
+- title: 'Multi-Task Learning for Sequence Tagging: An Empirical Study'
+  date:  'May. 2018'
+  imgurl: '/images/projects/2018/beer2018mtl.png'
+  imgprop: 'frame'
+  selected: true
+  authors:
+    - name: Soravit (Beer) Changpinyo
+      url:  'http://www-scf.usc.edu/~schangpi/index.html'
+    - name: <strong>H. Hu</strong>
+      url:  ''
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+  publisher:  'Coling 2018'
+  status:   ''
+  place:    'in Santa Fe, New-Mexico'
+  desc: 'We study three general multi-task learning (MTL) approaches on 11 sequence tagging tasks. Our extensive empirical results show that in about 50\% of cases, jointly learning all 11 tasks improves either learning tasks independently or pairwise learning of tasks. We also show that pairwise MTL can inform us what tasks can benefit others or what tasks can be benefited if they are learned jointly. We additionally identify tasks that can always benefit others as well as tasks that can always be harmed by others.'
+  tags:
+    - name: 'pdf'
+      url:  '/pdf/changpinyo2018multitask.pdf'
+    - name: 'bib'
+      url:  '/bib/changpinyo2018multitask.bib'
+- title: 'Being Negative but Constructively: Lessons Learnt from Creating Better Visual Question Answering Datasets'
+  date:  'April. 2017'
+  imgurl: '/images/projects/2017/hexiang2017negative.png'
+  imgprop: 'frame'
+  selected: true
+  authors:
+    - name: W.-L. Chao
+      url:  'http://www-scf.usc.edu/~weilunc/index.html'
+      equal_contribution: true
+    - name: <strong>H. Hu</strong>
+      url:  ''
+      equal_contribution: true
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+  publisher:  'NAACL-HLT 2018'
+  status:   '(Oral)'
+  place:    'in New Orleans, Louisiana'
+  desc: 'We show the design of the decoy answers has a significant impact on how and what the learning models learn from the datasets. In particular, the resulting learner can ignore the visual information, the question, or the both while still doing well on the task. <!--more--> Inspired by this, we propose automatic procedures of how to remedy such design deficiencies.'
+  tags:
+    - name: 'pdf'
+      url:  '/pdf/hexiang2017negative.pdf'
+    - name: 'project'
+      url:  'http://www.teds.usc.edu/website_vqa'
+    - name: 'poster'
+      url:  '/pdf/negative2017cvprw.pdf'
+    - name: 'slides'
+      url:  '/pdf/negative2018naacl.pdf'
+    - name: 'video'
+      url:  'https://vimeo.com/276455887'
+    - name: 'bib'
+      url:  '/bib/chao2017being.bib'
 - title: 'Learning Answer Embedding for Visual Question Answering'
   date:  'Feb. 2018'
   imgurl: '/images/projects/2018/hexiang2018ansemb.png'
@@ -100,27 +152,6 @@
       url:  '/pdf/posters/cvpr2018_adaptation.pdf'
     - name: 'bib'
       url:  '/bib/chao2018cross.bib'
-- title: 'Multi-Task Learning for Sequence Tagging: An Empirical Study'
-  date:  'May. 2018'
-  imgurl: '/images/projects/2018/beer2018mtl.png'
-  imgprop: 'frame'
-  selected: true
-  authors:
-    - name: Soravit (Beer) Changpinyo
-      url:  'http://www-scf.usc.edu/~schangpi/index.html'
-    - name: <strong>H. Hu</strong>
-      url:  ''
-    - name: F. Sha
-      url:  'http://www-bcf.usc.edu/~feisha/'
-  publisher:  'Coling 2018'
-  status:   ''
-  place:    'in Santa Fe, New-Mexico'
-  desc: 'We study three general multi-task learning (MTL) approaches on 11 sequence tagging tasks. Our extensive empirical results show that in about 50\% of cases, jointly learning all 11 tasks improves either learning tasks independently or pairwise learning of tasks. We also show that pairwise MTL can inform us what tasks can benefit others or what tasks can be benefited if they are learned jointly. We additionally identify tasks that can always benefit others as well as tasks that can always be harmed by others.'
-  tags:
-    - name: 'pdf'
-      url:  '/pdf/changpinyo2018multitask.pdf'
-    - name: 'bib'
-      url:  '/bib/changpinyo2018multitask.bib'
 - title: 'Compressed Video Action Recognition'
   date:  'Jan. 2018'
   imgurl: '/images/projects/2018/cywu2018coviar.png'
@@ -148,37 +179,6 @@
       url:  'https://www.cs.utexas.edu/~cywu/projects/coviar/'
     - name: 'code'
       url:  'https://github.com/chaoyuaw/pytorch-coviar'
-- title: 'Being Negative but Constructively: Lessons Learnt from Creating Better Visual Question Answering Datasets'
-  date:  'April. 2017'
-  imgurl: '/images/projects/2017/hexiang2017negative.png'
-  imgprop: 'frame'
-  selected: true
-  authors:
-    - name: W.-L. Chao
-      url:  'http://www-scf.usc.edu/~weilunc/index.html'
-      equal_contribution: true
-    - name: <strong>H. Hu</strong>
-      url:  ''
-      equal_contribution: true
-    - name: F. Sha
-      url:  'http://www-bcf.usc.edu/~feisha/'
-  publisher:  'NAACL-HLT 2018'
-  status:   '(Oral)'
-  place:    'in New Orleans, Louisiana'
-  desc: 'We show the design of the decoy answers has a significant impact on how and what the learning models learn from the datasets. In particular, the resulting learner can ignore the visual information, the question, or the both while still doing well on the task. <!--more--> Inspired by this, we propose automatic procedures of how to remedy such design deficiencies.'
-  tags:
-    - name: 'pdf'
-      url:  '/pdf/hexiang2017negative.pdf'
-    - name: 'project'
-      url:  'http://www.teds.usc.edu/website_vqa'
-    - name: 'poster'
-      url:  '/pdf/negative2017cvprw.pdf'
-    - name: 'slides'
-      url:  '/pdf/negative2018naacl.pdf'
-    - name: 'video'
-      url:  'https://vimeo.com/276455887'
-    - name: 'bib'
-      url:  '/bib/chao2017being.bib'
 - title: 'LabelBank: Revisiting Global Perspectives for Semantic Segmentation'
   date:  'March. 2017'
   imgurl: '/images/projects/2017/hexiang2017labelbank.png'
