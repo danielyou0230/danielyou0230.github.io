@@ -14,13 +14,91 @@
       url:  'http://boqinggong.info/'
     - name: F. Sha
       url:  'http://www-bcf.usc.edu/~feisha/'
-  publisher:  'in submission to NIPS 2018'
-  status:   ''
+  publisher:  'NIPS 2018'
+  status:   '(Spotlight)'
   place:    'Montreal, QC'
-  desc: 'In this paper, we consider the problem of learning to simultaneously transfer across both environments (ENV) and tasks, probably more importantly, by learning from only sparse (ENV, TASK) pairs out of all the possible combinations. We propose a novel compositional neural network architecture which depicts a meta rule for composing policies from the environment and task embeddings.'
+  desc: 'Description not available'
+  # desc: 'In this paper, we consider the problem of learning to simultaneously transfer across both environments (ENV) and tasks, probably more importantly, by learning from only sparse (ENV, TASK) pairs out of all the possible combinations. We propose a novel compositional neural network architecture which depicts a meta rule for composing policies from the environment and task embeddings.'
   tags:
     - name: 'arXiv (coming soon)'
       url:  ''
+- title: 'Cross-Modal and Hierarchical Modeling of Video and Text'
+  date:  'Jul. 2018'
+  imgurl: '/images/projects/2018/bowen2018hse.png'
+  imgprop: 'frame'
+  selected: true
+  authors:
+    - name: B. Zhang
+      url:  'http://http://zbwglory.github.io/'
+      equal_contribution: true
+    - name: <strong>H. Hu</strong>
+      url:  ''
+      equal_contribution: true
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+  publisher:  'ECCV 2018'
+  status:   ''
+  place:    'in München, Germany'
+  desc: 'Visual data and text data are composed of information at multiple granularity. In this paper, we investigate the modeling techniques for such hierarchical sequential data where there are correspondences across multiple modalities.'
+  tags:
+    - name: 'arXiv (coming soon)'
+      url:  ''
+    - name: 'pdf'
+      url:  '/pdf/zhang2018cross.pdf'
+    - name: 'bib'
+      url:  '/bib/zhang2018cross.bib'
+- title: 'Multi-Task Learning for Sequence Tagging: An Empirical Study'
+  date:  'May. 2018'
+  imgurl: '/images/projects/2018/beer2018mtl.png'
+  imgprop: 'frame'
+  selected: false
+  authors:
+    - name: Soravit (Beer) Changpinyo
+      url:  'http://www-scf.usc.edu/~schangpi/index.html'
+    - name: <strong>H. Hu</strong>
+      url:  ''
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+  publisher:  'Coling 2018'
+  status:   ''
+  place:    'in Santa Fe, New-Mexico'
+  desc: 'We study three general multi-task learning (MTL) approaches on 11 sequence tagging tasks. Our extensive empirical results show that in about 50\% of cases, jointly learning all 11 tasks improves either learning tasks independently or pairwise learning of tasks. We also show that pairwise MTL can inform us what tasks can benefit others or what tasks can be benefited if they are learned jointly. We additionally identify tasks that can always benefit others as well as tasks that can always be harmed by others.'
+  tags:
+    - name: 'pdf'
+      url:  '/pdf/changpinyo2018multitask.pdf'
+    - name: 'bib'
+      url:  '/bib/changpinyo2018multitask.bib'
+- title: 'Being Negative but Constructively: Lessons Learnt from Creating Better Visual Question Answering Datasets'
+  date:  'April. 2017'
+  imgurl: '/images/projects/2017/hexiang2017negative.png'
+  imgprop: 'frame'
+  selected: true
+  authors:
+    - name: W.-L. Chao
+      url:  'http://www-scf.usc.edu/~weilunc/index.html'
+      equal_contribution: true
+    - name: <strong>H. Hu</strong>
+      url:  ''
+      equal_contribution: true
+    - name: F. Sha
+      url:  'http://www-bcf.usc.edu/~feisha/'
+  publisher:  'NAACL-HLT 2018'
+  status:   '(Oral)'
+  place:    'in New Orleans, Louisiana'
+  desc: 'We show the design of the decoy answers has a significant impact on how and what the learning models learn from the datasets. In particular, the resulting learner can ignore the visual information, the question, or the both while still doing well on the task. <!--more--> Inspired by this, we propose automatic procedures of how to remedy such design deficiencies.'
+  tags:
+    - name: 'pdf'
+      url:  '/pdf/hexiang2017negative.pdf'
+    - name: 'project'
+      url:  'http://www.teds.usc.edu/website_vqa'
+    - name: 'poster'
+      url:  '/pdf/negative2017cvprw.pdf'
+    - name: 'slides'
+      url:  '/pdf/negative2018naacl.pdf'
+    - name: 'video'
+      url:  'https://vimeo.com/276455887'
+    - name: 'bib'
+      url:  '/bib/chao2017being.bib'
 - title: 'Learning Answer Embedding for Visual Question Answering'
   date:  'Feb. 2018'
   imgurl: '/images/projects/2018/hexiang2018ansemb.png'
@@ -40,10 +118,10 @@
   place:    'in Salt Lake City, Utah'
   desc: 'We propose a novel probabilistic model for visual question answering. <!--more--> The key idea is to infer two sets of embeddings: one for the image and the question jointly and the other for the answers. The learning objective is to learn the best parameterization of those embeddings such that the correct answer has higher likelihood among all possible answers.'
   tags:
-    # - name: 'arXiv'
-    #   url:  ''
     - name: 'pdf'
       url:  '/pdf/hu2018learning.pdf'
+    - name: 'poster'
+      url:  '/pdf/posters/cvpr2018_answer_embeddings.pdf'
     - name: 'bib'
       url:  '/bib/hu2018learning.bib'
 - title: 'Cross-Dataset Adaptation for Visual Question Answering'
@@ -69,29 +147,10 @@
     #   url:  ''
     - name: 'pdf'
       url:  '/pdf/chao2018cross.pdf'
+    - name: 'poster'
+      url:  '/pdf/posters/cvpr2018_adaptation.pdf'
     - name: 'bib'
       url:  '/bib/chao2018cross.bib'
-- title: 'Multi-Task Learning for Sequence Tagging: An Empirical Study'
-  date:  'May. 2018'
-  imgurl: '/images/projects/2018/beer2018mtl.png'
-  imgprop: 'frame'
-  selected: true
-  authors:
-    - name: Soravit (Beer) Changpinyo
-      url:  'http://www-scf.usc.edu/~schangpi/index.html'
-    - name: <strong>H. Hu</strong>
-      url:  ''
-    - name: F. Sha
-      url:  'http://www-bcf.usc.edu/~feisha/'
-  publisher:  'Coling 2018'
-  status:   ''
-  place:    'in Santa Fe, New-Mexico'
-  desc: 'We study three general multi-task learning (MTL) approaches on 11 sequence tagging tasks. Our extensive empirical results show that in about 50\% of cases, jointly learning all 11 tasks improves either learning tasks independently or pairwise learning of tasks. We also show that pairwise MTL can inform us what tasks can benefit others or what tasks can be benefited if they are learned jointly. We additionally identify tasks that can always benefit others as well as tasks that can always be harmed by others.'
-  tags:
-    # - name: 'arXiv'
-    #   url:  ''
-    - name: 'pdf (coming soon)'
-      url:  ''
 - title: 'Compressed Video Action Recognition'
   date:  'Jan. 2018'
   imgurl: '/images/projects/2018/cywu2018coviar.png'
@@ -119,33 +178,6 @@
       url:  'https://www.cs.utexas.edu/~cywu/projects/coviar/'
     - name: 'code'
       url:  'https://github.com/chaoyuaw/pytorch-coviar'
-- title: 'Being Negative but Constructively: Lessons Learnt from Creating Better Visual Question Answering Datasets'
-  date:  'April. 2017'
-  imgurl: '/images/projects/2017/hexiang2017negative.png'
-  imgprop: 'frame'
-  selected: true
-  authors:
-    - name: W.-L. Chao
-      url:  'http://www-scf.usc.edu/~weilunc/index.html'
-      equal_contribution: true
-    - name: <strong>H. Hu</strong>
-      url:  ''
-      equal_contribution: true
-    - name: F. Sha
-      url:  'http://www-bcf.usc.edu/~feisha/'
-  publisher:  'NAACL-HLT 2018'
-  status:   '(Oral)'
-  place:    'in New Orleans, Louisiana'
-  desc: 'We show the design of the decoy answers has a significant impact on how and what the learning models learn from the datasets. In particular, the resulting learner can ignore the visual information, the question, or the both while still doing well on the task. <!--more--> Inspired by this, we propose automatic procedures of how to remedy such design deficiencies.'
-  tags:
-    - name: 'pdf'
-      url:  '/pdf/hexiang2017negative.pdf'
-    - name: 'project'
-      url:  'http://www.teds.usc.edu/website_vqa'
-    - name: 'poster'
-      url:  '/pdf/negative2017cvprw.pdf'
-    - name: 'bib'
-      url:  '/bib/chao2017being.bib'
 - title: 'LabelBank: Revisiting Global Perspectives for Semantic Segmentation'
   date:  'March. 2017'
   imgurl: '/images/projects/2017/hexiang2017labelbank.png'
@@ -228,8 +260,6 @@
       url:  'https://arxiv.org/abs/1611.08061'
     - name: 'pdf'
       url:  'https://arxiv.org/pdf/1611.08061v1.pdf'
-    # - name: 'project'
-    #   url:  '/projects/holistic'
 - title: 'Learning Structured Inference Neural Networks with Label Relations'
   date:  'Nov. 2015'
   imgurl: '/images/projects/2015/hexiangh2015sinn.jpg'
