@@ -155,7 +155,7 @@
   date:  'Jan. 2018'
   imgurl: '/images/projects/2018/cywu2018coviar.png'
   imgprop: 'frame'
-  selected: true
+  selected: false
   authors:
     - name: 'C.-Y. Chao'
       url:  'http://www.cs.utexas.edu/~cywu/'
