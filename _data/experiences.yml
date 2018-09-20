@@ -1,78 +1,17 @@
-- date:  "Summer 2018"
-  title: "Intern @ Facebook AI Research"
-  desc:  ""
+- date:  "July 2018 - present"
+  title: "Research Assistant @ Academia Sinica"
+  desc:  "Computer Vision Laboratory"
   host:
-    name: "<a href='https://lvdmaaten.github.io/'>Dr. Laurens van der Maaten</a>"
-    role: "Mentor"
+    name: "Action Recognition"
   brief: true
-- date:  "2017 Fall "
-  title: "Teaching Assistant"
-  desc:  "<a href='http://csci-599.github.io'>CSCI-599 Deep Learning@USC</a>"
-  host:
-    name: "<a href='http://www-bcf.usc.edu/~limjj/'>Prof. Joseph Lim</a>"
-    role: "Instructor"
-  brief: false
-- date:  "Summer 2017"
-  title: "Applied Scientist Intern @ Amazon AI"
-  desc:  "Large Scale Machine Learning on Videos"
-  host:
-    name: "<a href='http://ciir.cs.umass.edu/~manmatha/'>Dr. R. Manmatha</a> <!-- & <a href='https://www.cs.cmu.edu/~deva/'>Prof. Deva Ramanan</a> -->"
-    role: "Mentor"
+- date:  "Spring 2018"
+  title: "Exchange Student @ UIUC"
+  desc:  "Exchange Student in Electrical and Computer Engineering"
   brief: true
-- date:  "2017 - "
-  title: "PhD student @ USC"
-  desc:  "Large Scale Machine Learning, Vision and Language"
-  host:
-    name: "<a href='http://www-bcf.usc.edu/~feisha/'>Prof. Fei Sha</a>"
-    role: "Supervisor"
-  brief: true
-- date:  "2016 - 2017"
-  title: "PhD student @ UCLA"
-  desc:  "Deep Learning, Vision"
-  host:
-    name: "<a href='http://www-bcf.usc.edu/~feisha/'>Prof. Fei Sha</a>"
-    role: "Supervisor"
-  brief: true
-- date:  "Summer 2016"
-  title: "Research Intern @ Megvii Inc. (Face++)"
-  desc:  "Instance-level Segmentation"
-  host:  false
-  brief: false
-- date:  "Jun. 2015 - Apr. 2016"
-  title: "Research Assistant @ VML"
-  desc:  "Multi-label Classification and Group Activity Recognition"
-  host:
-    name: "<a href='http://www.cs.sfu.ca/~mori'>Prof. Greg Mori</a>"
-    role: "Supervisor"
-  brief: false
-- date:  "Jan. 2015 - Jun. 2015 "
-  title: "Research Assistant @ MIAL"
-  desc:  "Skin Disease Classification"
-  host:
-    name:  "<a href='http://www.cs.sfu.ca/~hamarneh/'>Prof. Ghassan Harmarneh</a>"
-    role: "Supervisor"
-  brief: false
-- date:  "Summer 2014"
-  title: "Software Engineer Intern @ Microsoft"
-  desc:  ".NET Virtual Machine Inspectation"
-  host:  false
-  brief: false
-- date:  "2013 - 2016"
-  title: "Undergraduate student @ SFU"
-  desc:  "B.Sc. in Computing Science"
-  host:
-    name: "A.I. and System"
-    role: "Concentration"
-  brief: false
-- date:  "Summer 2012"
-  title: "Exchange student @ UCLA"
-  desc:  "Collaborated program by ZJU and UCLA"
-  host:  false
-  brief: false
-- date:  "2011 - 2016"
-  title: "Undergraduate student @ ZJU"
-  desc:  "B.Eng. in Computer Science and Technology"
+- date:  "2014 - 2018"
+  title: "Undergraduate Student @ NCTU"
+  desc:  "B.S. in Electronics Engineering"
   host:
     name: "<a href='http://zichengl.net/'>Prof. Zicheng Liao</a>"
     role: "Thesis Advisor"
-  brief: false
+  brief: true

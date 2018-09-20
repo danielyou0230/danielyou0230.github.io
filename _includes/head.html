@@ -5,9 +5,7 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" lang="en" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description.en }}{% endif %}">
-  <meta name="description" lang="cn" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description.cn }}{% endif %}">
   <meta name="keywords" lang="en" content="{{ site.keywords.en }}" />
-  <meta name="keywords" lang="cn" content="{{ site.keywords.cn }}" />
   
   {% if page.description %}
     <meta name="description" content="{{ page.description }}">

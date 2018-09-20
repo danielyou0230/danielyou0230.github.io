@@ -12,7 +12,7 @@
 }
 
 .site-title {
-  color:            $yellow-color;
+  color:            $blue-color;
   font-size:        20px;
   font-weight:      400;
   font-family:      'Roboto',sans-serif, Helvetica;
@@ -23,7 +23,7 @@
 
   &,
   &:visited {
-      color:        $yellow-color;
+      color:        $blue-color;
   }
 }
 
@@ -40,7 +40,7 @@
   .page-link {
       font-size:    16px;
       font-weight:  300;
-      color:        $yellow-color;
+      color:        $blue-color; // Title bar color for name/home/posts
       line-height:  $base-line-height;
 
       // Gaps between nav items, but not on the first one

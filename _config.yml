@@ -4,8 +4,8 @@ description:
   en: "This is an academic website for Daniel You borrowed from Hexiang Hu's"
 keywords:
   en: "Daniel You, Natural Language Processing, Computer Vision, Machine Learning, Deep Learning"
-background: /images/background/background-cube.jpg
-deep_background: /images/background/background-deepcube-2.jpg
+background: /images/background/background_danielyou.jpg
+deep_background: /images/background/background_danielyou-night.jpg
 
 baseurl: ""
 # the subpath of your site, e.g. /blog/
@@ -32,8 +32,8 @@ social:
   # twitter:    Hexiang_Hu
   # facebook:   Hu.Hexiang
 
-google_analytics_token: "UA-60071442-1"
-google_tags_token: "GTM-K5ZTMW"
+# google_analytics_token: "UA-60071442-1"
+# google_tags_token: "GTM-K5ZTMW"
 
 
 # customized document resources
@@ -45,5 +45,5 @@ scss:
   sass_dir: _scss
   style: :compressed
 
-gems:
+plugins:
   ['jekyll-paginate', 'jekyll/scholar', 'jekyll-sitemap']

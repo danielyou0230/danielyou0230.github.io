@@ -54,9 +54,9 @@ $facebook-color:    #3B5998;
 $github-color:      #000000;
 
 // Site color scheme[primary and secondary]
-$primary-color:             $red-color-dark;
-$primary-color-light:       $red-color;
-$primary-color-dark:        $red-color-dark;
+$primary-color:             $white-color; // $red-color-dark;
+$primary-color-light:       $white-color; // $red-color;
+$primary-color-dark:        $white-color-dark; // $red-color-dark;
 
 $secondary-color:           $brand-color;
 $secondary-color-light:     $brand-color-light;
