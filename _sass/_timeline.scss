@@ -5,7 +5,7 @@
 $timeline-padding: 20px;
 
 .timeline-brief, .timeline {
-  font-family: 'Roboto',sans-serif, Helvetica;
+  font-family: 'Roboto',sans-serif, Helvetica; // Inconsolata;
   margin-top:   #{$spacing-unit};
   font-size:    20px;
   font-weight:  400;
@@ -63,6 +63,7 @@ $timeline-padding: 20px;
   padding-right:  $timeline-padding;
   border-right:   5px solid #333;
   text-align:     right;
+
 }
 
 .timeline-item:nth-child(even):before {
@@ -83,7 +84,7 @@ $timeline-padding: 20px;
   font-size:      20px;
   font-weight:    500;
   font-family:    'Roboto', sans-serif;
-  color:          $primary-color-dark;
+  color:          $red-color-dark; // $primary-color-dark;
 }
 
 .timeline-desc {

@@ -1,22 +1,25 @@
-- title: 'Synthesize Policies for Transfer and Adaptation across Environments and Tasks'
-  date:  'May. 2018'
+- title: 'Machine Learning-based Filter-Convolutional Template Attack'
+  date:  'Nov. 2017'
   imgurl: '/images/projects/placeholder.png'
   imgprop: 'frame'
   selected: true
   authors:
-    - name: <strong>H. Hu</strong>
+    - name: Yun-Wen Lu
       url:  ''
       equal_contribution: true
-    - name: L. Chen
+    - name: <strong>Teng-Jie You</strong>
       url:  ''
       equal_contribution: true
-    - name: B. Gong
-      url:  'http://boqinggong.info/'
-    - name: F. Sha
-      url:  'http://www-bcf.usc.edu/~feisha/'
-  publisher:  'NIPS 2018'
+    - name: Wen-Yu Chung
+      url:  ''
+      equal_contribution: true
+    - name: Hsie-Chia Chang
+      # url:  ''
+    - name: Chen-Yi Lee
+      # url:  ''
+  publisher:  'ISIPS 2017'
 #  status:   '(Spotlight)'
-  place:    'Montreal, QC'
+  place:    'Fukuoka, Japan'
   desc: 'Description not available'
   tags:
     - name: 'arXiv (coming soon)'

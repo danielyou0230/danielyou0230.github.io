@@ -37,6 +37,9 @@ layout: home
       <div class="timeline-desc">
         {{ experience.desc }}
       </div>
+      <div class="timeline-icon">
+        {{ experience.icon }}
+      </div>
       {% unless experience.host == false %}
       <div class="timeline-host">
         {{ experience.host.role }}: {{ experience.host.name }}

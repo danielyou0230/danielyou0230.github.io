@@ -4,8 +4,8 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family:  'Roboto', Helvetica, Arial, sans-serif;
-$base-font-size:    16px;
+$base-font-family:  Noto Sans, Helvetica, Arial, sans-serif; // Inconsolata
+$base-font-size:    18px;
 $small-font-size:   $base-font-size * 0.875;
 $tiny-font-size:    $small-font-size * 0.875;
 $base-line-height:  1.5;
@@ -69,8 +69,8 @@ $on-mobile:         400px;
 $on-palm:           600px;
 $on-laptop:         800px;
 
-$cover-img:         "/images/background/background-cube.jpg";
-$deep-cover-img:    "/images/background/background-deepcube-2.jpg";
+$cover-img:         "/images/background/background_danielyou.jpg";
+// $deep-cover-img:    "/images/background/background_danielyou-night.jpg";
 
 // Using media queries with like this:
 // @include media-query($on-palm) {

@@ -39,7 +39,7 @@ body {
 
 body:after{
   display:none;
-  content: url($cover-img) url($deep-cover-img);
+  content: url($cover-img); // url($deep-cover-img);
 }
 
 /**
