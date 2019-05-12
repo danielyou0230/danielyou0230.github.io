@@ -1,4 +1,11 @@
-- date:  "July 2018 - Present"
+- date:  "Sept. 2019 -"
+  title: "University of Califonia, San Diego (UCSD)"
+  desc:  "M.S. in Electrical and Computer Engineering"
+  host:
+    name: "Machine Learning and Data Science (EC93)"
+    role: "Major"
+  brief: true
+- date:  "July 2018 - Jan. 2019"
   title: "Research Assistant @ Academia Sinica"
   desc:  "Computer Vision Laboratory, Institution of Information Science"
   host:
@@ -6,14 +13,14 @@
     role: "Advisor"
   brief: true
 - date:  "Spring 2018"
-  title: "Exchange Student @ UIUC"
+  title: "University of Illinois at Urbana Champaign (UIUC)"
   desc:  "Exchange Student in Electrical and Computer Engineering"
   host:
     name: "<a href='http://hanj.cs.illinois.edu/'>Prof. Jia-Wei Han</a> and <a href='http://web.engr.illinois.edu/~elkishk2/'>Ahmed El-kishky</a>"
     role: "Advisor"
   brief: true
 - date:  "Sept. 2014 - June 2018"
-  title: "Undergraduate Student @ NCTU"
+  title: "National Chiao Tung University (NCTU)"
   desc:  "B.S. in Electronics Engineering"
   host:
     name: "<a href='http://www.ee.nctu.edu.tw/People/Professor/individual.php?index=46'>Prof. Chen-Yi Lee</a> and <a href='http://www.ee.nctu.edu.tw/People/Professor/individual.php?index=26'>Prof. Hsie-Chia Chang</a>"
