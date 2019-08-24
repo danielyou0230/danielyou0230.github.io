@@ -1,14 +1,14 @@
-name:       "Daniel (Teng-Jie) You"
-title:      "R.A. @ Academia Sinica"
-email:      "danielyou0230@gmail.com"
+name:       "Daniel You"
+title:      "M.S. in ECE @ UC San Diego"
+email:      "tyou (at) ucsd.edu"
 head_pic:   "/images/self-portrait/me.jpg"
 deep_pic:   "/images/self-portrait/deep-me.jpg"
-resume:     ""
+resume:     "/assets/resume/resume.pdf"
 normal:
   date:     "Sept. 2018"
   title:    ""
-  content:  "<strong>Daniel You</strong> is a Research Assistant at Institution of Information Science (IIS) in Academia Sinica. He earned his Bachelor’s degrees in Electronics Engineering from <strong>National Chiao-Tung University (NCTU)</strong>. His research interests lie in the field of <strong>Machine Learning</strong>, <strong>Computer Vision</strong> and <strong>Natural Language Processing</strong>."
+  content:  "<strong>Daniel You</strong> is currently in his first-year of master in Electrical and Computer Engineering in <strong>University of California San Diego (UC San Diego)</strong>. He earned his Bachelor’s degrees in Electronics Engineering from <strong>National Chiao-Tung University (NCTU)</strong>."
 short:
   date:
-  title:  "Deep Learner"
-  content: "I am passionate with Machine Learning, Computer Vision as well as Natural Language Processing."
+  title:  ""
+  content: "I am passionate of being a software engineer."

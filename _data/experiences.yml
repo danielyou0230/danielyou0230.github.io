@@ -1,9 +1,16 @@
-- date:  "Sept. 2019 -"
-  title: "University of Califonia, San Diego (UCSD)"
+- date:  "Sept. 2019 - Present"
+  title: "University of Califonia, San Diego (UC San Diego)"
   desc:  "M.S. in Electrical and Computer Engineering"
   host:
-    name: "Machine Learning and Data Science (EC93)"
+    name: "Machine Learning and Data Science"
     role: "Major"
+  brief: true
+- date:  "July 2019 - Aug. 2019"
+  title: "Software Engineer Intern @ Deep Force Inc."
+  desc:  "Software Application"
+  host:
+    name: ""
+    role: ""
   brief: true
 - date:  "July 2018 - Jan. 2019"
   title: "Research Assistant @ Academia Sinica"
